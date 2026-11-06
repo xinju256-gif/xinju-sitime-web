@@ -1,0 +1,1141 @@
+type,name,original,local,status
+industry,汽车电子,https://www.sitime.com/applications/automotive,#read/industry/automotive,on-site original editorial content
+industry,航空航天与国防,https://www.sitime.com/applications/aerospace-defense,#read/industry/aerospace-defense,on-site original editorial content
+industry,通信与企业基础设施,https://www.sitime.com/applications/communications-enterprise,#read/industry/communications-enterprise,on-site original editorial content
+industry,消费电子,https://www.sitime.com/applications/consumer,#read/industry/consumer,on-site original editorial content
+industry,工业与自动化,https://www.sitime.com/applications/industrial,#read/industry/industrial,on-site original editorial content
+industry,物联网,https://www.sitime.com/applications/internet-of-things-iot,#read/industry/internet-of-things-iot,on-site original editorial content
+industry,医疗电子,https://www.sitime.com/applications/medical,#read/industry/medical,on-site original editorial content
+industry,移动设备,https://www.sitime.com/applications/mobile,#read/industry/mobile,on-site original editorial content
+solution,微波室外单元（ODU）,https://www.sitime.com/applications/communications-enterprise/microwave-outdoor-units-odu-timing-solutions,#read/solution/microwave-outdoor-units-odu-timing-solutions,on-site original editorial content
+solution,5G 无线电（NR）,https://www.sitime.com/applications/communications-enterprise/5g-new-radio-nr-timing-solutions,#read/solution/5g-new-radio-nr-timing-solutions,on-site original editorial content
+solution,加固型 GNSS 系统,https://www.sitime.com/applications/aerospace-defense/ruggedized-gnss-applications-timing-solutions,#read/solution/ruggedized-gnss-applications-timing-solutions,on-site original editorial content
+solution,战术背负式无线电,https://www.sitime.com/applications/tactical-manpack-radio-timing-solutions,#read/solution/tactical-manpack-radio-timing-solutions,on-site original editorial content
+solution,低轨卫星通信,https://www.sitime.com/applications/aerospace-defense/leo-satellite-communications-timing-solutions,#read/solution/leo-satellite-communications-timing-solutions,on-site original editorial content
+solution,地面防务车辆通信,https://www.sitime.com/applications/aerospace-defense/land-defense-vehicle-communications-timing-solutions,#read/solution/land-defense-vehicle-communications-timing-solutions,on-site original editorial content
+solution,无人驾驶航空器,https://www.sitime.com/applications/aerospace-defense/uncrewed-aerial-vehicles-uav,#read/solution/uncrewed-aerial-vehicles-uav,on-site original editorial content
+solution,智能网卡（SmartNIC）,https://www.sitime.com/applications/communications-enterprise/smart-network-interface-card-nic-and-ieee-1588,#read/solution/smart-network-interface-card-nic-and-ieee-1588,on-site original editorial content
+solution,前传交换机,https://www.sitime.com/applications/communications-enterprise/fronthaul-switches,#read/solution/fronthaul-switches,on-site original editorial content
+solution,机架顶与叶交换机,https://www.sitime.com/applications/communications-enterprise/top-rack-switch-leaf-switch,#read/solution/top-rack-switch-leaf-switch,on-site original editorial content
+solution,汽车摄像头,https://www.sitime.com/applications/automotive-cameras,#read/solution/automotive-cameras,on-site original editorial content
+solution,ADAS 计算平台,https://www.sitime.com/applications/automotive-adas-computer,#read/solution/automotive-adas-computer,on-site original editorial content
+solution,血压监测仪,https://www.sitime.com/applications/medical/blood-pressure-monitors,#read/solution/blood-pressure-monitors,on-site original editorial content
+solution,工厂自动化,https://www.sitime.com/applications/industrial/factory-automation,#read/solution/factory-automation,on-site original editorial content
+solution,示波器与频谱分析仪,https://www.sitime.com/applications/communications-enterprise/oscilloscopes-and-spectrum-analyzers,#read/solution/oscilloscopes-and-spectrum-analyzers,on-site original editorial content
+solution,O-RAN 分布式单元,https://www.sitime.com/applications/communications-enterprise/oran-distributed-unit,#read/solution/oran-distributed-unit,on-site original editorial content
+solution,光模块,https://www.sitime.com/applications/communications-enterprise/optical-modules,#read/solution/optical-modules,on-site original editorial content
+solution,工业机器人,https://www.sitime.com/applications/industrial/industrial-robotics,#read/solution/industrial-robotics,on-site original editorial content
+solution,智能电表,https://www.sitime.com/applications/industrial/smart-meters,#read/solution/smart-meters,on-site original editorial content
+solution,地震传感器,https://www.sitime.com/applications/industrial/seismic-sensors,#read/solution/seismic-sensors,on-site original editorial content
+solution,GNSS 驯服系统,https://www.sitime.com/applications/gnss-disciplined-systems,#read/solution/gnss-disciplined-systems,on-site original editorial content
+solution,智能手表与运动追踪器,https://www.sitime.com/applications/smart-watches-and-fitness-trackers,#read/solution/smart-watches-and-fitness-trackers,on-site original editorial content
+solution,信息娱乐与仪表系统,https://www.sitime.com/applications/automotive-infotainment-cluster,#read/solution/automotive-infotainment-cluster,on-site original editorial content
+solution,音视频广播设备,https://www.sitime.com/applications/industrial/audio-video-broadcasting-equipment,#read/solution/audio-video-broadcasting-equipment,on-site original editorial content
+solution,电池管理系统,https://www.sitime.com/applications/industrial/battery-management-system,#read/solution/battery-management-system,on-site original editorial content
+solution,储能系统（ESS）,https://www.sitime.com/applications/industrial/energy-storage-systems,#read/solution/energy-storage-systems,on-site original editorial content
+solution,垂直起降与商用无人机,https://www.sitime.com/applications/industrial/vtol-and-commercial-uavs,#read/solution/vtol-and-commercial-uavs,on-site original editorial content
+solution,伺服驱动器,https://www.sitime.com/applications/industrial/servo-drives,#read/solution/servo-drives,on-site original editorial content
+solution,固定无线接入（FWA）,https://www.sitime.com/applications/communications-enterprise/fixed-wireless-access,#read/solution/fixed-wireless-access,on-site original editorial content
+solution,汽车电子控制单元,https://www.sitime.com/applications/automotive/automotive-ecu,#read/solution/automotive-ecu,on-site original editorial content
+solution,驾驶员监测系统,https://www.sitime.com/applications/automotive/driver-monitoring-system,#read/solution/driver-monitoring-system,on-site original editorial content
+solution,智能后视镜,https://www.sitime.com/applications/automotive/smart-mirrors,#read/solution/smart-mirrors,on-site original editorial content
+solution,汽车激光雷达,https://www.sitime.com/applications/automotive/lidar,#read/solution/lidar,on-site original editorial content
+solution,患者监护仪,https://www.sitime.com/applications/patient-monitors,#read/solution/patient-monitors,on-site original editorial content
+solution,AI／ML 卸载引擎,https://www.sitime.com/applications/communications-enterprise/ai-ml-offload-engines,#read/solution/ai-ml-offload-engines,on-site original editorial content
+solution,主机总线适配器（HBA）,https://www.sitime.com/applications/communications-enterprise/host-bus-adapter,#read/solution/host-bus-adapter,on-site original editorial content
+solution,PAM4 高速链路,https://www.sitime.com/applications/communications-enterprise/pam4-high-speed-links,#read/solution/pam4-high-speed-links,on-site original editorial content
+solution,内窥镜,https://www.sitime.com/applications/medical/endoscopes,#read/solution/endoscopes,on-site original editorial content
+solution,汽车 PCI Express 应用,https://www.sitime.com/applications/automotive/pci-express-automotive-applications,#read/solution/pci-express-automotive-applications,on-site original editorial content
+solution,计算机数控（CNC）,https://www.sitime.com/applications/industrial/computer-numerical-control,#read/solution/computer-numerical-control,on-site original editorial content
+solution,FPD-Link 车载链路,https://www.sitime.com/applications/automotive/fpd-link,#read/solution/fpd-link,on-site original editorial content
+solution,井下仪器,https://www.sitime.com/applications/downhole-instrumentation,#read/solution/downhole-instrumentation,on-site original editorial content
+solution,自主地面车辆,https://www.sitime.com/applications/automotive/autonomous-ground-vehicles,#read/solution/autonomous-ground-vehicles,on-site original editorial content
+solution,超声波镜头清洁,https://www.sitime.com/applications/automotive/ultrasonic-lens-cleaning,#read/solution/ultrasonic-lens-cleaning,on-site original editorial content
+solution,采矿与工程设备,https://www.sitime.com/applications/industrial/mining-and-construction-equipment,#read/solution/mining-and-construction-equipment,on-site original editorial content
+solution,采矿用电子雷管,https://www.sitime.com/applications/industrial/electronic-detonators-for-mining,#read/solution/electronic-detonators-for-mining,on-site original editorial content
+solution,FPGA 时钟,https://www.sitime.com/applications/automotive/fpga-clocking,#read/solution/fpga-clocking,on-site original editorial content
+solution,工业相机,https://www.sitime.com/applications/industrial/industrial-cameras,#read/solution/industrial-cameras,on-site original editorial content
+solution,工业自主移动设备（AGV）,https://www.sitime.com/applications/industrial/industrial-autonomous-ground-vehicles,#read/solution/industrial-autonomous-ground-vehicles,on-site original editorial content
+solution,GNSS 接收器,https://www.sitime.com/applications/gnss-receivers,#read/solution/gnss-receivers,on-site original editorial content
+solution,电动汽车充电,https://www.sitime.com/applications/automotive/ev-charging,#read/solution/ev-charging,on-site original editorial content
+solution,V3Link 工业链路,https://www.sitime.com/applications/industrial/v3link,#read/solution/v3link,on-site original editorial content
+solution,气象无线探空仪,https://www.sitime.com/applications/industrial/radiosondes,#read/solution/radiosondes,on-site original editorial content
+solution,运动追踪器,https://www.sitime.com/applications/fitness-trackers,#read/solution/fitness-trackers,on-site original editorial content
+solution,MOSA 开放式架构,https://www.sitime.com/applications/aerospace-defense/open-architectures,#read/solution/open-architectures,on-site original editorial content
+solution,采用 A2L 制冷剂的暖通空调系统,https://www.sitime.com/applications/industrial/a2l,#read/solution/a2l,on-site original editorial content
+solution,战术通信,https://www.sitime.com/applications/aerospace-defense/tactical-communication,#read/solution/tactical-communication,on-site original editorial content
+news,什么是电磁干扰 EMI,https://www.sitime.com/company/newsroom/blog/what-electromagnetic-interference,#read/news/bc52f6538f1c37,on-site original editorial content
+news,什么是锁相环 PLL,https://www.sitime.com/company/newsroom/blog/what-pll,#read/news/fc0e5b9aac316c,on-site original editorial content
+news,SiTime 将公布2026年第三季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-third-quarter-2026-financial-results,#read/news/b8c1cedc3a0ca3,on-site original editorial content
+news,人类与机器表现背后的智能技术,https://www.sitime.com/company/newsroom/blog/intelligence-behind-human-and-machine-performance,#read/news/b5c015a6643692,on-site original editorial content
+news,超越 GNSS：可信 PNT 的实现思路,https://www.sitime.com/company/newsroom/blog/enabling-assured-pnt-beyond-gnss,#read/news/39c74f29c48144,on-site original editorial content
+news,什么是 AI Token,https://www.sitime.com/company/newsroom/blog/what-token,#read/news/ff4bb115701ae9,on-site original editorial content
+news,什么是谐振器,https://www.sitime.com/company/newsroom/blog/what-resonator,#read/news/b11e1c89fa8fc1,on-site original editorial content
+news,SiTime 将出席 2026 Goldman Sachs Communacopia + Technology 会议,https://www.sitime.com/company/newsroom/press-release/sitime-present-goldman-sachs-communacopia-technology-conference,#read/news/f3508bf16e68f7,on-site original editorial content
+news,什么是振荡器老化,https://www.sitime.com/company/newsroom/blog/what-aging,#read/news/66cf971414a3cf,on-site original editorial content
+news,紧凑型 GNSS 驯服振荡器与 24 小时保持能力,https://www.sitime.com/company/newsroom/blog/new-gnss-disciplined-oscillator-24-hour-holdover-postage-stamp-size,#read/news/e0b1c324c3a96a,on-site original editorial content
+news,SiTime 公布2026年第二季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-second-quarter-2026-financial-results,#read/news/4a7e4fb13dfbb8,on-site original editorial content
+news,GNSS 受限环境下航空航天与国防系统的计时,https://www.sitime.com/company/newsroom/blog/precision-timing-aerospace-and-defense-systems-gnss-contested-environments,#read/news/43749c40608af3,on-site original editorial content
+news,关于精密计时技术的五项基础认识,https://www.sitime.com/company/newsroom/blog/5-facts-about-precision-timing-technology-and-why-it-matters-more-you-think,#read/news/077b9ae95bf89d,on-site original editorial content
+news,SiTime 将公布2026年第二季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-second-quarter-2026-financial-results,#read/news/4f7a7cf7931f0a,on-site original editorial content
+news,SiTime 宣布完成 Renesas 计时业务收购,https://www.sitime.com/company/newsroom/press-release/sitime-completes-acquisition-renesas-timing-business,#read/news/ac508a91e76bb6,on-site original editorial content
+news,产品聚焦：Chorus 2 时钟发生器的性能与抖动设计,https://www.sitime.com/company/newsroom/blog/product-spotlight-2x-better-performance-and-2x-lower-jitter-chorus-2-clock,#read/news/355ea537b0e74b,on-site original editorial content
+news,什么是计时噪声,https://www.sitime.com/company/newsroom/blog/what-timing-noise,#read/news/76aee5c6cb47ca,on-site original editorial content
+news,SiTime CEO Vashist 谈 Renesas 业务收购与 AI 布局,https://www.sitime.com/company/newsroom/blog/sitime-ceo-vashist-acquisition-renesas-business-drive-ai-expansion,#read/news/1822fadb39ca72,on-site original editorial content
+news,精密计时为何成为现代电子系统的基础,https://www.sitime.com/company/newsroom/blog/why-precision-timing-foundational-modern-electronics,#read/news/84ad4040c771d8,on-site original editorial content
+news,SiTime 将出席 2026 Evercore 全球 TMT 会议,https://www.sitime.com/company/newsroom/press-release/sitime-present-evercore-global-tmt-conference-june-3-2026,#read/news/9a2cb75ea48498,on-site original editorial content
+news,SiTime 公布扩大发行规模后的 12 亿美元可转换票据定价,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announces-pricing-upsized-offering-12-billion,#read/news/7a487a069700f2,on-site original editorial content
+news,SiTime 宣布拟发行可转换高级票据,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announces-proposed-convertible-senior-notes,#read/news/3945bfa2041148,on-site original editorial content
+news,智能燃气表为何依赖精密计时,https://www.sitime.com/company/newsroom/blog/why-smart-gas-meters-depend-precision-timing,#read/news/96aaf5a104e853,on-site original editorial content
+news,SiTime 宣布 HSR 反垄断等待期届满,https://www.sitime.com/company/newsroom/press-release/sitime-announces-expiration-hart-scott-rodino-waiting-period,#read/news/d1b917ecb431fc,on-site original editorial content
+news,2025 企业可持续发展报告：创新、行动与诚信,https://www.sitime.com/company/newsroom/blog/corporate-sustainability-report-2025-innovation-intention-and-integrity,#read/news/07c46f7a5fa774,on-site original editorial content
+news,SiTime 公布2026年第一季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-first-quarter-2026-financial-results,#read/news/ece231b305a952,on-site original editorial content
+news,产品聚焦：Elite 2 Super-TCXO 与 AI 数据中心 GPU 利用率,https://www.sitime.com/company/newsroom/blog/product-spotlight-elite-2-super-tcxo-increases-gpu-utilization-ai-data,#read/news/d80d663837e7de,on-site original editorial content
+news,SiTime 发布面向 AI 数据中心的 Elite 2 Super-TCXO,https://www.sitime.com/company/newsroom/press-release/sitime-boosts-gpu-utilization-ai-data-centers-elite-2-super-tcxo,#read/news/14ce4cf0da15a6,on-site original editorial content
+news,提升 AI 能效中的精密计时设计,https://www.sitime.com/company/newsroom/blog/scaling-ai-responsibly-how-precision-timing-enables-greater-energy-efficiency,#read/news/995712bf5ac10e,on-site original editorial content
+news,什么是 SmartNIC,https://www.sitime.com/company/newsroom/blog/what-smartnic,#read/news/81fb786f0e3141,on-site original editorial content
+news,SiTime 将公布2026年第一季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-first-quarter-2026-financial-results-may,#read/news/f3725837aa1977,on-site original editorial content
+news,五项 AI 发展趋势背后的计时需求,https://www.sitime.com/company/newsroom/blog/hidden-enabler-behind-5-biggest-ai-trends,#read/news/868d8b1d42ed06,on-site original editorial content
+news,精密计时与可信 PNT 的基础,https://www.sitime.com/company/newsroom/blog/precision-timing-foundation-assured-pnt,#read/news/1c452580737362,on-site original editorial content
+news,Titan 微型 MEMS 谐振器面向可穿戴与物联网终端,https://www.sitime.com/company/newsroom/blog/sitime-titan-platformtm-ultra-small-mems-resonators-wearable-and-iot-endpoint,#read/news/04155131458707,on-site original editorial content
+news,Futurum 报告探讨 Titan MEMS 谐振器的市场影响,https://www.sitime.com/company/newsroom/blog/new-futurum-analyst-report-why-titantm-mems-resonators-are-disrupting-timing,#read/news/f2cab991b2a580,on-site original editorial content
+news,消费级可穿戴与无屏物联网设备的计时需求,https://www.sitime.com/company/newsroom/blog/precision-timing-requirements-consumer-wearables-and-screenless-iot-devices,#read/news/8f1e5b7ad8db21,on-site original editorial content
+news,2026 国际妇女节：支持女性发展与共同进步,https://www.sitime.com/company/newsroom/blog/investing-women-accelerates-progress-everyone-international-womens-day-2026,#read/news/e6f43fdff2f45f,on-site original editorial content
+news,SiTime 将出席 2026 Morgan Stanley 技术、媒体与电信会议,https://www.sitime.com/company/newsroom/press-release/sitime-present-morgan-stanley-technology-media-telecom-conference-1,#read/news/e25ed7aac8bcb1,on-site original editorial content
+news,什么是加速度敏感度,https://www.sitime.com/company/newsroom/blog/what-g-sensitivity,#read/news/e99fc971167078,on-site original editorial content
+news,超声波智能水表为何需要精密计时,https://www.sitime.com/company/newsroom/blog/why-ultrasonic-smart-water-meters-require-precision-timing,#read/news/cd6562f4a462fb,on-site original editorial content
+news,什么是黄氏定律,https://www.sitime.com/company/newsroom/blog/what-huangs-law,#read/news/09afafcf84dd3f,on-site original editorial content
+news,什么是边缘计算、边缘 AI 与物理 AI,https://www.sitime.com/company/newsroom/blog/what-edge-computing-edge-ai-and-physical-ai,#read/news/ec2ea59efbe5c1,on-site original editorial content
+news,SiTime 宣布拟收购 Renesas 计时业务,https://www.sitime.com/company/newsroom/press-release/sitime-acquire-renesas-timing-business,#read/news/6806696790e331,on-site original editorial content
+news,SiTime 公布2025年第四季度及全年财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-fourth-quarter-and-fiscal-year-2025-financial-results,#read/news/5975c47bbf0d6b,on-site original editorial content
+news,SiTime 确认正与 Renesas 洽谈潜在计时业务收购,https://www.sitime.com/company/newsroom/press-release/sitime-confirms-discussions-renesas-regarding-potential-acquisition,#read/news/5197e3e4600575,on-site original editorial content
+news,反无人机雷达、传感器及防御系统的计时需求,https://www.sitime.com/company/newsroom/blog/precision-timing-uas-defense-mems-solutions-counter-drone-radar-sensors-and,#read/news/0f1d39281ec0a3,on-site original editorial content
+news,2026 技术趋势：精密计时成为电子系统的重要设计环节,https://www.sitime.com/company/newsroom/blog/2026-technology-trends-precision-timing-becomes-strategic-priority-advanced,#read/news/764514956e9c50,on-site original editorial content
+news,SiTime 任命 Faraj Aalaei 加入董事会,https://www.sitime.com/company/newsroom/press-release/sitime-expands-board-directors-appointment-faraj-aalaei,#read/news/7cefa911da7694,on-site original editorial content
+news,精密计时系统如何支撑电子世界,https://www.sitime.com/company/newsroom/blog/precision-timing-systems-hold-electronic-world-together,#read/news/b287204805cfb7,on-site original editorial content
+news,SiTime 将公布2025年第四季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-fourth-quarter-2025-financial-results,#read/news/5fdecd8d718b48,on-site original editorial content
+news,SiTime 将出席 2026 年 Needham Growth Conference,https://www.sitime.com/company/newsroom/press-release/sitime-present-needham-growth-conference-january-13-2026,#read/news/46179e49f3b5ed,on-site original editorial content
+news,从悉尼到旧金山：跨年倒计时背后的计时技术,https://www.sitime.com/company/newsroom/blog/sydney-san-francisco-timing-tech-behind-new-year-countdown,#read/news/09d6e7bcdf15d7,on-site original editorial content
+news,什么是计时系统中的保持模式,https://www.sitime.com/company/newsroom/blog/what-holdover-timing-systems,#read/news/27a1bbcaaad96c,on-site original editorial content
+news,案例：PNT 与 GPS/GNSS 导航中的精密计时,https://www.sitime.com/company/newsroom/blog/case-study-significance-precision-timing-pnt-gpsgnss-navigation,#read/news/17a46151ce2de4,on-site original editorial content
+news,导弹防御中的计时技术：石英、MEMS 与原子钟,https://www.sitime.com/company/newsroom/blog/timing-technologies-missile-defense-quartz-mems-or-atomic,#read/news/479e3eb301ed29,on-site original editorial content
+news,SiTime 发布应对 GNSS 干扰及欺骗的计时方案,https://www.sitime.com/company/newsroom/press-release/sitime-takes-gnss-threats-unveiling-jamming-and-spoofing-resilient,#read/news/db0f1f982af5b5,on-site original editorial content
+news,产品聚焦：Endura Super-TCXO 与 GNSS 干扰环境中的 PNT 韧性,https://www.sitime.com/company/newsroom/blog/product-spotlight-endura-super-tcxo-advances-pnt-resilience-against-gnss,#read/news/1380ad865bd269,on-site original editorial content
+news,感恩节里的善意与关怀,https://www.sitime.com/company/newsroom/blog/celebrating-kindness-thanksgiving,#read/news/e12f5c3784684d,on-site original editorial content
+news,SiTime 将出席 UBS 全球技术与 AI 会议,https://www.sitime.com/company/newsroom/press-release/sitime-present-ubs-global-technology-and-ai-conference,#read/news/8d455b5994b011,on-site original editorial content
+news,计时技术将带来哪些系统变化,https://www.sitime.com/company/newsroom/blog/why-timing-next-big-disruptor,#read/news/4c7c1f7e134998,on-site original editorial content
+news,SiTime 公布2025年第三季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-third-quarter-2025-financial-results,#read/news/544a9f2d3c604e,on-site original editorial content
+news,软件如何完善计时架构,https://www.sitime.com/company/newsroom/blog/software-solution-complete-timing-architecture,#read/news/8dff1d490007b3,on-site original editorial content
+news,时间敏感网络与更具韧性的电网,https://www.sitime.com/company/newsroom/blog/balancing-load-time-sensitive-networking-more-resilient-grid,#read/news/871324d9821dba,on-site original editorial content
+news,SiTime 任命 Ganesh Moorthy 为董事，Tom Yiu 离任,https://www.sitime.com/company/newsroom/press-release/sitime-appoints-ganesh-moorthy-board-directors-tom-yiu-steps-down,#read/news/22d5339c083a79,on-site original editorial content
+news,SiTime 将公布2025年第三季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-third-quarter-2025-financial-results,#read/news/fc0c217db5ebad,on-site original editorial content
+news,同步的未来：精密计时的重要性,https://www.sitime.com/company/newsroom/blog/future-synchronized-why-precision-timing-matters-more-ever,#read/news/9984b798794d34,on-site original editorial content
+news,互联智能边缘为何需要精密计时,https://www.sitime.com/company/newsroom/blog/connected-intelligent-edge-why-precision-timing-matters,#read/news/58bd637a6f4c06,on-site original editorial content
+news,产品聚焦：Titan 微型谐振器,https://www.sitime.com/company/newsroom/blog/product-spotlight-industrys-smallest-resonator-titantm,#read/news/796d56c3ed384c,on-site original editorial content
+news,SiTime 以 Titan 平台进入谐振器市场,https://www.sitime.com/company/newsroom/press-release/sitime-enters-4b-resonator-market-titan-platformtm,#read/news/0a5ace04d079f6,on-site original editorial content
+news,精密计时如何影响数据中心效率,https://www.sitime.com/company/newsroom/blog/precision-timings-role-datacenter-efficiency,#read/news/2b1649bc0cd14c,on-site original editorial content
+news,工业 GPS/GNSS 应用为何需要精密振荡器,https://www.sitime.com/company/newsroom/blog/why-industrial-gpsgnss-applications-require-precision-timing-oscillators,#read/news/091a008bb1678b,on-site original editorial content
+news,精密计时的新阶段,https://www.sitime.com/company/newsroom/blog/new-era-precision-timing,#read/news/ec57c3820edb9e,on-site original editorial content
+news,SiTime 公布2025年第二季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-second-quarter-2025-financial-results,#read/news/7768ec0f5c1d40,on-site original editorial content
+news,交通系统演进中的精密计时,https://www.sitime.com/company/newsroom/blog/precision-timing-and-evolution-transportation,#read/news/819214a2a19127,on-site original editorial content
+news,云计算与 AI 驱动的数据中心计时架构,https://www.sitime.com/company/newsroom/blog/datacenter-transformation-precision-timing-advantage-cloud-driven-ai-powered,#read/news/03133be0c557fb,on-site original editorial content
+news,夏日系列：医疗系统中的精密计时,https://www.sitime.com/company/newsroom/blog/summer-series-why-precision-timing-matters-medical,#read/news/d7161fcdd021d5,on-site original editorial content
+news,夏日系列：物联网中的精密计时,https://www.sitime.com/company/newsroom/blog/summer-series-why-precision-timing-matters-iot,#read/news/0edb9513851ccd,on-site original editorial content
+news,TCXO 与 OCXO：如何为下一次设计选择方案,https://www.sitime.com/company/newsroom/blog/tcxos-vs-ocxos-which-one-right-your-next-design,#read/news/3bc14fefb6d3d5,on-site original editorial content
+news,夏日系列：航空航天与国防中的精密计时,https://www.sitime.com/company/newsroom/blog/summer-series-why-precision-timing-matters-aerospace-and-defense,#read/news/4fa22c061ad846,on-site original editorial content
+news,SiTime 将公布2025年第二季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-second-quarter-2025-financial-results,#read/news/b40bba5db303f8,on-site original editorial content
+news,夏日系列：汽车系统中的精密计时,https://www.sitime.com/company/newsroom/blog/summer-series-why-precision-timing-matters-automotive,#read/news/6a108d3c1cb677,on-site original editorial content
+news,SiTime 发布面向 AI 数据中心的 TimeFabric 软件套件,https://www.sitime.com/company/newsroom/press-release/sitime-enhances-ai-data-center-performance-and-utilization,#read/news/ea718f9ec0add9,on-site original editorial content
+news,产品聚焦：TimeFabric 软件套件与 AI 数据中心资源利用,https://www.sitime.com/company/newsroom/blog/product-spotlight-timefabric-precision-timing-software-suite-enhances-system,#read/news/8e85698b387faf,on-site original editorial content
+news,SiTime 宣布完成增发公开发行,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announces-completion-follow-public-offering-1,#read/news/f71b1d2e9d174f,on-site original editorial content
+news,夏日系列：工业与机器人为何需要精密计时,https://www.sitime.com/company/newsroom/blog/summer-series-why-precision-timing-matters-industrial-and-robotics,#read/news/a61bd573a48d71,on-site original editorial content
+news,SiTime 公布增发公开发行定价,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announces-pricing-follow-public-offering-2,#read/news/6f50f1c3e5bce0,on-site original editorial content
+news,SiTime 宣布启动增发公开发行,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announces-launch-follow-public-offering-2,#read/news/ab101b3705ef02,on-site original editorial content
+news,夏日系列：数据中心与 AI 为何需要精密计时,https://www.sitime.com/company/newsroom/blog/summer-series-why-precision-timing-matters-datacenters-and-ai,#read/news/e85fc25983faa4,on-site original editorial content
+news,精密计时与下一代物联网连接,https://www.sitime.com/company/newsroom/blog/why-precision-timing-critical-unlocking-next-gen-iot-connectivity-0,#read/news/d10e98ee1cc0fd,on-site original editorial content
+news,精密计时创新与可持续发展,https://www.sitime.com/company/newsroom/blog/innovating-precision-timing-and-driving-sustainability,#read/news/2dacb0e6e88078,on-site original editorial content
+news,电源噪声条件下的时钟性能优化,https://www.sitime.com/company/newsroom/blog/optimize-clock-performance-presence-power-supply-noise-0,#read/news/b16dad0dbd707b,on-site original editorial content
+news,SiTime 公布2025年第一季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-first-quarter-2025-financial-results,#read/news/45ed60cd31f761,on-site original editorial content
+news,SiTime 发布支持无线连接的 Symphonic 移动时钟发生器,https://www.sitime.com/company/newsroom/press-release/sitime-symphonic-mobile-clock-generator-enables-advanced-wireless,#read/news/28d5cdf2536f8c,on-site original editorial content
+news,产品聚焦：应对 5G 与 GNSS 设计需求的时钟发生器,https://www.sitime.com/company/newsroom/blog/product-spotlight-new-smarter-clock-generator-5g-and-gnss-design-challenges,#read/news/0488ba05b28af2,on-site original editorial content
+news,精密计时的演进与未来,https://www.sitime.com/company/newsroom/blog/evolution-and-future-precision-timing,#read/news/3b49c1b12ec108,on-site original editorial content
+news,重新评估光模块 SerDes 参考时钟的抖动分析,https://www.sitime.com/company/newsroom/blog/why-its-time-rethink-jitter-analysis-serdes-reference-clocks-optical-modules,#read/news/d4d0aa0de4d6dc,on-site original editorial content
+news,精密计时如何支持工厂自动化效率与可靠性,https://www.sitime.com/company/newsroom/blog/how-precision-timing-drives-factory-automation-efficiency-and-reliability,#read/news/065b6127a28c96,on-site original editorial content
+news,SiTime 将公布2025年第一季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-first-quarter-2025-financial-results-may,#read/news/dac5e12e7598c1,on-site original editorial content
+news,MEMS 与石英振荡器：优势、可靠性及应用,https://www.sitime.com/company/newsroom/blog/mems-vs-quartz-crystal-oscillators-benefits-reliability-applications,#read/news/db67637697b102,on-site original editorial content
+news,GPS 欺骗风险与应对思路,https://www.sitime.com/company/newsroom/blog/growing-threat-gps-spoofing-and-strategies-combat-it,#read/news/b0cfa46ee0d3c0,on-site original editorial content
+news,SiTime 在 2025 国际妇女节致敬科技女性,https://www.sitime.com/company/newsroom/blog/sitime-celebrates-women-tech-international-womens-day-2025,#read/news/fc5b861babca95,on-site original editorial content
+news,SiTime 将出席 Morgan Stanley 技术、媒体与电信会议,https://www.sitime.com/company/newsroom/press-release/sitime-present-morgan-stanley-technology-media-telecom-conference-0,#read/news/792d1144164571,on-site original editorial content
+news,气候变化、人工智能与精密计时的未来,https://www.sitime.com/company/newsroom/blog/climate-change-ai-and-future-precision-timekeeping,#read/news/2548e8991a4cf0,on-site original editorial content
+news,影响精密计时稳定性的八项因素,https://www.sitime.com/company/newsroom/blog/top-8-influencers-stability-precision-timing,#read/news/c186b4946c58a3,on-site original editorial content
+news,SiTime 公布2024年第四季度及全年财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-fourth-quarter-and-fiscal-year-2024-financial-results,#read/news/5ffb373aaefeb4,on-site original editorial content
+news,智能电网：能源基础设施韧性与精密计时,https://www.sitime.com/company/newsroom/blog/smart-energy-grid-precision-timing-energy-infrastructure-resilience,#read/news/5b54e7f0dec62e,on-site original editorial content
+news,SiTime 精密计时支持更高效的 AI 数据中心架构,https://www.sitime.com/company/newsroom/press-release/sitime-precision-timing-enables-new-architectures-more-efficient-ai,#read/news/a8c8e1c2f2baa3,on-site original editorial content
+news,产品聚焦：SiT5977 Super-TCXO 与 AI 数据中心新架构,https://www.sitime.com/company/newsroom/blog/product-spotlight-sit5977-super-tcxo-enables-new-architecture-greater-ai,#read/news/5e0329e1437819,on-site original editorial content
+news,SiTime 将公布2024年第四季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-fourth-quarter-2024-financial-results,#read/news/e680559a65f7d3,on-site original editorial content
+news,计时发展史：从摆钟到 MEMS 振荡器,https://www.sitime.com/company/newsroom/blog/story-timekeeping-pendulum-clocks-mems-oscillators-part-3-3,#read/news/5ae277a7153051,on-site original editorial content
+news,SiTime 将出席 2025 年 Needham Growth Conference,https://www.sitime.com/company/newsroom/press-release/sitime-present-needham-growth-conference-january-17-2025,#read/news/5bec9dfbe6322a,on-site original editorial content
+news,计时发展史：机械钟如何改变世界,https://www.sitime.com/company/newsroom/blog/story-timekeeping-how-mechanical-clocks-redefined-our-world-part-2-3,#read/news/407028c43c2095,on-site original editorial content
+news,计时发展史：古代文明如何测量时间,https://www.sitime.com/company/newsroom/blog/story-timekeeping-measuring-time-ancient-civilizations-part-1-3,#read/news/b7e305d5bd749e,on-site original editorial content
+news,从开球到达阵：体育赛事中的精密计时,https://www.sitime.com/company/newsroom/blog/getting-your-game-precision-timing-kick-final-touchdown,#read/news/56c158f3c6a2c3,on-site original editorial content
+news,SiTime 将出席 Raymond James TMT 与消费行业会议,https://www.sitime.com/company/newsroom/press-release/sitime-present-raymond-james-tmt-and-consumer-conference-december-10,#read/news/c725505d8bfcd5,on-site original editorial content
+news,重新理解感恩节传统,https://www.sitime.com/company/newsroom/blog/embracing-gratitude-thanksgiving-traditions-reimagined,#read/news/db22ba5a8b19d3,on-site original editorial content
+news,国防开放式架构中的精密计时,https://www.sitime.com/company/newsroom/blog/precision-timing-heart-defense-open-architecture-systems,#read/news/8e4042fbff304d,on-site original editorial content
+news,SiTime 公布2024年第三季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-third-quarter-2024-financial-results,#read/news/461144d963a695,on-site original editorial content
+news,专家圆桌：软件定义汽车的系统挑战,https://www.sitime.com/company/newsroom/blog/ojo-yoshida-report-expert-panel-discusses-software-defined-vehicle-elephant,#read/news/4487559b7a00ab,on-site original editorial content
+news,访谈 Fang Tuurnala：相信自己，认可自身价值,https://www.sitime.com/company/newsroom/blog/qa-sitime-executive-fang-tuurnala-trust-yourself-be-proud-who-you-are,#read/news/5cc44b9dd72674,on-site original editorial content
+news,精密计时与石英比较：可编程性篇,https://www.sitime.com/company/newsroom/blog/why-precision-timing-holds-high-ground-over-quartz-part-2-2-programmability,#read/news/fc4371aff58925,on-site original editorial content
+news,SiTime 将公布2024年第三季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-third-quarter-2024-financial-results,#read/news/a624fa71976cd5,on-site original editorial content
+news,精密计时与石英比较：硬件篇,https://www.sitime.com/company/newsroom/blog/why-precision-timing-holds-high-ground-over-quartz-part-1-2-hardware,#read/news/28e312b25e7cbf,on-site original editorial content
+news,产品聚焦：Chorus 汽车时钟发生器与 FailSafe 技术,https://www.sitime.com/company/newsroom/blog/product-spotlight-chorus-automotive-clock-generator-enables-high-levels,#read/news/b568374e93c15c,on-site original editorial content
+news,以 MEMS 精密计时应对工业自动化中的石英局限,https://www.sitime.com/company/newsroom/blog/conquer-quartz-limitations-mems-precision-timing-industrial-automation,#read/news/3e719178524565,on-site original editorial content
+news,射频系统中以低相噪 Super-TCXO 替代石英 OCXO 的思路,https://www.sitime.com/company/newsroom/blog/new-low-phase-noise-high-stability-mems-super-tcxos-replace-quartz-ocxos-rf,#read/news/03f9ae43f87d28,on-site original editorial content
+news,SiTime 公布2024年第二季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-second-quarter-2024-financial-results,#read/news/caa67e666605a9,on-site original editorial content
+news,低尺寸、重量与功耗 MEMS OCXO 支持 A-PNT 保持模式,https://www.sitime.com/company/newsroom/blog/low-swap-mems-ocxos-prolong-holdover-pnt-even-rough-environments,#read/news/b6110ea476b87f,on-site original editorial content
+news,产品聚焦：SiT1811 32 kHz 振荡器的稳定性、功耗与尺寸,https://www.sitime.com/company/newsroom/blog/product-spotlight-sit1811-32-khz-xos-deliver-superior-stability-lowest-power,#read/news/c6681009f22a97,on-site original editorial content
+news,认识 JEDEC JESD204 标准与 JESD204B 子类,https://www.sitime.com/company/newsroom/blog/why-jedec-jesd204-standard-gaining-traction-jesd204b-subclasses-and-what-you,#read/news/2fac85f06e80c3,on-site original editorial content
+news,SiTime 将公布2024年第二季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-second-quarter-2024-financial-results,#read/news/02d050560c31ee,on-site original editorial content
+news,以可持续发展与创新推动计时产业演进,https://www.sitime.com/company/newsroom/blog/transforming-timing-industry-commitment-sustainability-and-innovation,#read/news/352ad32b8af3ef,on-site original editorial content
+news,SerDes 应用中参考时钟抖动分析的新方法,https://www.sitime.com/company/newsroom/blog/modern-approach-refclk-jitter-analysis-serdes-applications,#read/news/44bdb38456ad28,on-site original editorial content
+news,SiTime 公布2024年第一季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-first-quarter-2024-financial-results,#read/news/7c427249475a13,on-site original editorial content
+news,高流量服务器中的 SmartNIC 为何需要精密计时,https://www.sitime.com/company/newsroom/blog/why-smartnics-require-precision-timing-high-traffic-server-environments,#read/news/7af7f73b297124,on-site original editorial content
+news,产品聚焦：Cascade 去抖时钟与高速通信同步,https://www.sitime.com/company/newsroom/blog/product-spotlight-synchronizing-high-speed-communication-systems-cascade,#read/news/a4b48a9619b58c,on-site original editorial content
+news,SiTime 发布面向 AI 数据中心的集成时钟芯片,https://www.sitime.com/company/newsroom/press-release/sitime-continues-advance-precision-timing-integrated-clock-chip-ai,#read/news/ef083e6afad51d,on-site original editorial content
+news,产品聚焦：面向 AI 数据中心的集成时钟,https://www.sitime.com/company/news/blog/product-spotlight-fully-integrated-chorus-clock-generators,#read/news/868967e0efb54e,on-site original editorial content
+news,SiTime 将公布2024年第一季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-first-quarter-2024-financial-results-0,#read/news/b316cda9728b84,on-site original editorial content
+news,SiTime Epoch 平台获 Embedded World 2024 展会奖项,https://www.sitime.com/company/newsroom/blog/sitimes-epoch-platform-receives-embedded-computing-designs-best-show-embedded,#read/news/ecc24a05d9d2ee,on-site original editorial content
+news,利用相位噪声曲线识别相位抖动来源,https://www.sitime.com/company/newsroom/blog/how-identify-source-phase-jitter-through-phase-noise-plots,#read/news/d412521d225cf8,on-site original editorial content
+news,数控振荡器在现代电子系统中的作用,https://www.sitime.com/company/newsroom/blog/understanding-role-and-impact-digitally-controlled-oscillators-modern,#read/news/9bc4d0f88374f7,on-site original editorial content
+news,访谈 Debra Severin：迎接挑战，走出舒适区,https://www.sitime.com/company/newsroom/blog/qa-hr-leader-debra-severin-embracing-challenges-and-getting-out-your-comfort,#read/news/b0e89362524f1a,on-site original editorial content
+news,解码时间：闰年与精密计时的关系,https://www.sitime.com/company/newsroom/blog/decoding-time-why-leap-years-are-essential-precision,#read/news/5b8bc17c0cac7c,on-site original editorial content
+news,SiTime 将出席 Morgan Stanley 技术、媒体与电信会议,https://www.sitime.com/company/newsroom/press-release/sitime-present-morgan-stanley-technology-media-telecom-conference,#read/news/80ee6aeaa80dc6,on-site original editorial content
+news,AI 半导体为何加速技术演进,https://www.sitime.com/company/newsroom/blog/ai-semiconductors-why-future-coming-faster-you-think,#read/news/55219ab27204e5,on-site original editorial content
+news,产品聚焦：SiTime 完整时钟产品组合,https://www.sitime.com/company/newsroom/blog/product-spotlight-sitime-complete-and-differentiated-clock-portfolio-now,#read/news/c1d26fd3e884e3,on-site original editorial content
+news,SiTime 公布2023年第四季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-fourth-quarter-2023-financial-results,#read/news/47b401885c38d4,on-site original editorial content
+news,汽车可靠性与安全设计中的 MEMS 精密计时,https://www.sitime.com/company/newsroom/blog/why-mems-precision-timing-upstages-quartz-automotive-reliability-and-safety,#read/news/4a3c0560a40a4c,on-site original editorial content
+news,SiTime Epoch MEMS OCXO 获年度产品奖,https://www.sitime.com/company/newsroom/blog/sitime-epoch-platform-mems-ocxo-wins-product-year,#read/news/7519bb0fe621dc,on-site original editorial content
+news,无 GPS 环境下的 PNT 计时技术,https://www.sitime.com/company/newsroom/blog/novel-timing-technology-pnt-gps-denied-environments,#read/news/f1eb85e63d0db9,on-site original editorial content
+news,SiTime 将公布2023年第四季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-fourth-quarter-2023-financial-results,#read/news/1de5e3b42ae3d5,on-site original editorial content
+news,SiTime 将出席 2024 年 Needham Growth Conference,https://www.sitime.com/company/newsroom/press-release/sitime-present-needham-growth-conference-january-16-2024,#read/news/3c4ec5f70453fc,on-site original editorial content
+news,SiTime 面向 GPS 国防系统提供计时方案,https://www.sitime.com/company/newsroom/press-release/sitime-solves-critical-challenges-gps-enabled-defense-systems,#read/news/6724bbac20a5e2,on-site original editorial content
+news,SiTime 完成 Aura Semiconductor 时钟产品收购,https://www.sitime.com/company/newsroom/press-release/sitime-completes-acquisition-clock-products-aura-semiconductor,#read/news/db03e141da5705,on-site original editorial content
+news,SiTime 将参加近期投资者会议,https://www.sitime.com/company/newsroom/press-release/sitime-participate-upcoming-investor-conferences,#read/news/1dde3d7d9dca2a,on-site original editorial content
+news,SiTime 入选 2023 Deloitte Technology Fast 500 榜单,https://www.sitime.com/company/newsroom/blog/sitime-named-2023-deloitte-technology-fast-500tm-list,#read/news/ab941318c322fc,on-site original editorial content
+news,SiTime 精密计时技术获 2023 LEAP 材料类奖项,https://www.sitime.com/company/newsroom/blog/sitimes-precision-timing-secures-top-spot-2023-leap-awards-advanced-materials,#read/news/bd047728b51ee0,on-site original editorial content
+news,SiTime 任命 Beth Howe 为执行副总裁兼 CFO，Art Chadwick 将退休,https://www.sitime.com/company/newsroom/press-release/sitime-appoints-beth-howe-executive-vice-president-and-chief,#read/news/ae892a2e62214a,on-site original editorial content
+news,SiTime 公布2023年第三季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-third-quarter-2023-financial-results,#read/news/a5597ea469407a,on-site original editorial content
+news,SiTime 宣布收购 Aura Semiconductor 时钟产品,https://www.sitime.com/company/newsroom/press-release/sitime-acquires-clock-products-aura-semiconductor,#read/news/523c68fe585d09,on-site original editorial content
+news,SiTime 将公布2023年第三季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-third-quarter-2023-financial-results,#read/news/87d098537b3d63,on-site original editorial content
+news,SiTime 精密计时创新获 2023 BIG IDEA 奖项,https://www.sitime.com/company/newsroom/blog/sitime-wins-top-honors-2023-big-idea-awards-outstanding-precision-timing,#read/news/06c73d87e774e0,on-site original editorial content
+news,SiTime 发布 Epoch 精密计时平台,https://www.sitime.com/company/newsroom/press-release/sitime-transforms-precision-timing-new-epoch-platform,#read/news/9446ddb5a697e3,on-site original editorial content
+news,精密计时方案的演变,https://www.sitime.com/company/newsroom/blog/evolution-precision-timing-solutions,#read/news/78c40de506bfc8,on-site original editorial content
+news,SiTime 公布2023年第二季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-second-quarter-2023-financial-results,#read/news/f7290ef9eb3712,on-site original editorial content
+news,SiTime 发布 Endura Super-TCXO 系统可靠性进展,https://www.sitime.com/company/newsroom/press-release/media-alert-sitime-endura-super-tcxo-delivers-100x-higher-system,#read/news/91cbbf1f375347,on-site original editorial content
+news,Endura Super-TCXO 面向航空航天与国防的可靠计时设计,https://www.sitime.com/company/newsroom/blog/new-endura-super-tcxo-rearchitects-precision-timing-aerospace-and-defense,#read/news/3aa0064bb36b08,on-site original editorial content
+news,SiTime 将公布2023年第二季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-second-quarter-2023-financial-results,#read/news/a0b51e7d3edab9,on-site original editorial content
+news,SiTime 将出席 Stifel 2023 Cross Sector Insight Conference,https://www.sitime.com/company/newsroom/press-release/sitime-present-stifel-2023-cross-sector-insight-conference,#read/news/b2c16d6217d26f,on-site original editorial content
+news,SiTime 创始人及首席科学家 Aaron Partridge 博士获奖,https://www.sitime.com/company/newsroom/blog/and-winner-sitime-founder-and-chief-scientist-dr-aaron-partridge,#read/news/072744319839cc,on-site original editorial content
+news,SiTime 公布2023年第一季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-first-quarter-2023-financial-results,#read/news/acd75da08354c3,on-site original editorial content
+news,SiTime 面向车内连接提供精密计时方案,https://www.sitime.com/company/newsroom/press-release/sitime-enables-higher-safety-precision-timing-car-connectivity,#read/news/2414b6a50f445e,on-site original editorial content
+news,SiTime 为 Lattice 低功耗 FPGA 提供精密计时方案,https://www.sitime.com/company/newsroom/press-release/sitime-delivers-precision-timing-solution-industry-leading-low-power,#read/news/aa9fc0e6d77292,on-site original editorial content
+news,SiTime 将公布2023年第一季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-first-quarter-2023-financial-results-may,#read/news/78709d94bec0d9,on-site original editorial content
+news,抖动入门：需要掌握的基础知识,https://www.sitime.com/company/newsroom/blog/jitter-101-what-you-need-know,#read/news/64c09a248810ec,on-site original editorial content
+news,提高设计效率并降低认证成本,https://www.sitime.com/company/newsroom/blog/maximize-efficiency-and-lower-qualification-costs,#read/news/6a76648aee94a2,on-site original editorial content
+news,何时用晶体，何时用振荡器：选择错误的代价,https://www.sitime.com/company/newsroom/blog/do-you-know-when-use-crystal-or-oscillator-wrong-answer-can-cost-you,#read/news/b65137269dc464,on-site original editorial content
+news,SiTime 将参加近期财务会议,https://www.sitime.com/company/newsroom/press-release/sitime-participate-upcoming-financial-conferences,#read/news/6ebee22a302acc,on-site original editorial content
+news,SiTime 发布面向航空航天与国防的高精度计时方案,https://www.sitime.com/company/newsroom/press-release/sitime-delivers-25x-better-timekeeping-aerospace-and-defense,#read/news/feb1576a2942e1,on-site original editorial content
+news,汽车系统计时复杂性为何持续增加,https://www.sitime.com/company/newsroom/blog/growing-complexity-automotive-system-timing,#read/news/23e060fbcc7190,on-site original editorial content
+news,SiTime 公布2022年第四季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-fourth-quarter-2022-financial-results,#read/news/8c3a87a23f1636,on-site original editorial content
+news,网络边缘时间敏感应用的计时选择,https://www.sitime.com/company/newsroom/blog/better-solution-time-sensitive-applications-network-edge,#read/news/362449414aacae,on-site original editorial content
+news,SiTime 以两款 Endura 振荡器系列拓展航空航天及国防产品线,https://www.sitime.com/company/newsroom/press-release/sitime-expands-portfolio-precision-timing-solutions-aerospace-and,#read/news/56fb8120a8cbbb,on-site original editorial content
+news,2023 年七项技术趋势中的精密计时需求,https://www.sitime.com/company/newsroom/blog/its-all-about-precision-timing-7-top-tech-trends-2023,#read/news/f5e1174ebd2174,on-site original editorial content
+news,SiTime 将公布2022年第四季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-fourth-quarter-2022-financial-results,#read/news/0580aea5d656b1,on-site original editorial content
+news,振荡器老化及其对精密计时的影响,https://www.sitime.com/company/newsroom/blog/oscillator-aging-and-its-importance-precision-timing,#read/news/44caaa3f05105b,on-site original editorial content
+news,SiTime 获 GSA 财务管理类半导体企业奖项,https://www.sitime.com/company/newsroom/press-release/sitime-wins-gsas-best-financially-managed-semiconductor-company,#read/news/80f4213bef1e7a,on-site original editorial content
+news,SiTime 以 Elite RF 平台扩展无线基础设施计时方案,https://www.sitime.com/company/newsroom/press-release/sitime-rearchitects-wireless-infrastructure-timing-new-elite-rf,#read/news/b881f19fbc981e,on-site original editorial content
+news,SiTime 为 AMD Alveo X3 系列平台提供时钟,https://www.sitime.com/company/newsroom/press-release/sitime-precision-timing-solution-provides-clocking-new-amd-alveo-x3,#read/news/7cacb2af270004,on-site original editorial content
+news,汽车 E/E 架构的演进及其对时钟的影响,https://www.sitime.com/company/newsroom/blog/future-ee-architecture-and-its-impact-clocks,#read/news/2b05e81bfbc44d,on-site original editorial content
+news,SiTime 发布面向数据中心与 5G 基础设施的精密振荡器,https://www.sitime.com/company/newsroom/press-release/sitime-sets-new-benchmark-timing-performance-new-precision,#read/news/a9ab80fb30090e,on-site original editorial content
+news,SiTime 将在 ITSF 2022 展示精密计时方案,https://www.sitime.com/company/newsroom/press-release/media-alert-sitime-showcase-precision-timing-solutions-itsf-2022,#read/news/cdab280568a2e7,on-site original editorial content
+news,SiTime 公布2022年第三季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-third-quarter-2022-financial-results,#read/news/a2562151ce26a7,on-site original editorial content
+news,SiTime 以新产品系列拓展汽车计时市场,https://www.sitime.com/company/newsroom/press-release/sitime-expands-automotive-sam-new-family-precision-timing-solutions,#read/news/45d0fdd19fd71e,on-site original editorial content
+news,SiTime 将在 2022 OCP 全球峰会展示精密计时方案,https://www.sitime.com/company/newsroom/press-release/sitime-showcase-precision-timing-solutions-open-compute-project-ocp,#read/news/3e20de39b60b36,on-site original editorial content
+news,SiTime 将公布2022年第三季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-third-quarter-2022-financial-results,#read/news/a37064e40f91aa,on-site original editorial content
+news,SiTime 为 Tesla Dojo AI 超级计算机提供计时方案,https://www.sitime.com/company/newsroom/press-release/sitime-delivers-precision-timing-solution-tesla-dojo-ai,#read/news/471879bfbbf2cc,on-site original editorial content
+news,SiTime 以自动驾驶计时方案拓展可服务市场,https://www.sitime.com/company/newsroom/press-release/sitime-expands-addressable-market-its-new-precision-timing-solution,#read/news/298292494df335,on-site original editorial content
+news,SiTime 公布2022年第二季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-second-quarter-2022-financial-results,#read/news/f2583767c718ae,on-site original editorial content
+news,SiTimeDirect 网上商店支持定制计时方案快速交付,https://www.sitime.com/company/newsroom/press-release/new-sitimedirect-online-store-ships-fully-customized-precision,#read/news/d919b34eb4fcb8,on-site original editorial content
+news,SiTime 将公布2022年第二季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-second-quarter-2022-financial-results,#read/news/c9cad89859d10a,on-site original editorial content
+news,SiTime 公布2022年第一季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-first-quarter-2022-financial-results,#read/news/f3ac5dd9e3ae1d,on-site original editorial content
+news,SiTime 计时技术用于 Cadence 仿真与原型验证平台,https://www.sitime.com/company/newsroom/press-release/sitime-precision-timing-technology-enables-cadences-emulation-and,#read/news/50e32d6e521355,on-site original editorial content
+news,SiTime 将公布2022年第一季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-first-quarter-2022-financial-results-may,#read/news/02f6bf17ce0733,on-site original editorial content
+news,SiTime 面向边缘网络推出精密计时方案,https://www.sitime.com/company/newsroom/press-release/sitime-transforms-precision-timing-market-edge-networks,#read/news/298cabf784744a,on-site original editorial content
+news,摩尔定律是否仍在延续,https://www.sitime.com/company/newsroom/blog/moores-law-still-ticking,#read/news/eb7057a911207a,on-site original editorial content
+news,SiTime 公布2021年第四季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-fourth-quarter-2021-financial-results,#read/news/ec0e53240e8552,on-site original editorial content
+news,SiTime 推出面向计时产品供应链需求的 XCalibur,https://www.sitime.com/company/newsroom/press-release/sitime-introduces-xcalibur-innovative-mems-solution-timing-industrys,#read/news/5e2ef0851ab07f,on-site original editorial content
+news,SiTime 如何应对芯片需求与市场竞争,https://www.sitime.com/company/newsroom/blog/how-sitime-conquering-competition-meet-chip-demand,#read/news/e4183340e54124,on-site original editorial content
+news,SiTime 将公布2021年第四季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-fourth-quarter-2021-financial-results,#read/news/901f35e0f4d0e1,on-site original editorial content
+news,SiTime 正式加入标普中型股 400 指数,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-joins-sp-midcap-400-index,#read/news/c4807eac4a5a55,on-site original editorial content
+news,SiTime 将被纳入标普中型股 400 指数,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-be-added-sp-midcap-400-index,#read/news/73ee1b2dcce692,on-site original editorial content
+news,SiTime 宣布完成增发公开发行,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announces-completion-follow-public-offering-0,#read/news/bebc3ceba4f3aa,on-site original editorial content
+news,SiTime 公布增发公开发行定价,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announces-pricing-follow-public-offering-1,#read/news/6b9941d61db49e,on-site original editorial content
+news,SiTime 宣布启动增发公开发行,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announces-launch-follow-public-offering-1,#read/news/5476e75719677f,on-site original editorial content
+news,SiTime 公布2021年第三季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-third-quarter-2021-financial-results,#read/news/2dedadfee4b678,on-site original editorial content
+news,SiTime 将公布2021年第三季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-third-quarter-2021-financial-results,#read/news/f345be6b869169,on-site original editorial content
+news,SiTime 发布支持提升无线充电速度的 MEMS 计时方案,https://www.sitime.com/company/newsroom/press-release/sitime-enables-25-faster-wireless-charging-mems-timing-solution,#read/news/b62dd67b928911,on-site original editorial content
+news,SiTime 推出计时知识学习平台 Learning Hub,https://www.sitime.com/company/newsroom/press-release/sitime-launches-learning-hub-educate-world-timing,#read/news/70f8cb86cc2f97,on-site original editorial content
+news,SiTime 公布2021年第二季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-second-quarter-2021-financial-results,#read/news/1d5c916075609d,on-site original editorial content
+news,SiTime MEMS 振荡器用于 Square 销售终端产品,https://www.sitime.com/company/newsroom/press-release/sitime-mems-oscillators-support-square-point-sale-products,#read/news/1592078845b791,on-site original editorial content
+news,SiTime 将公布2021年第二季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-second-quarter-2021-financial-results,#read/news/85419aed464981,on-site original editorial content
+news,SiTime 计时方案用于 Raytheon 精密制导系统,https://www.sitime.com/company/newsroom/press-release/sitime-mems-timing-solution-support-raytheons-precision-guidance,#read/news/9807395042a9e5,on-site original editorial content
+news,SiTime 公布2021年第一季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-first-quarter-2021-financial-results,#read/news/204e322668acc5,on-site original editorial content
+news,面向机载与低温地面应用的计时方案,https://www.sitime.com/company/newsroom/press-release/airborne-and-cold-temperature-terrestrial-applications-get-timing,#read/news/bb5733a136c2af,on-site original editorial content
+news,SiTime 将公布2021年第一季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-first-quarter-2021-financial-results-may,#read/news/9e1f881b217c91,on-site original editorial content
+news,SiTime 任命 Christine Heckart 为董事,https://www.sitime.com/company/newsroom/press-release/sitime-appoints-christine-heckart-board-directors,#read/news/2065f3a15ae915,on-site original editorial content
+news,SiTime 为工业与医疗客户简化库存管理及产品导入,https://www.sitime.com/company/newsroom/press-release/sitime-accelerates-time-revenue-simplifies-inventory-management,#read/news/0bfc7da5f75162,on-site original editorial content
+news,SiT9501 获展会优秀产品奖,https://www.sitime.com/company/newsroom/blog/silicon-mems-triumphs-sit9501-wins-best-show,#read/news/3074490f548c9b,on-site original editorial content
+news,SiTime 公布增发公开发行定价,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announces-pricing-follow-public-offering-0,#read/news/1ac54b642857bc,on-site original editorial content
+news,SiTime 宣布启动增发公开发行,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announces-launch-follow-public-offering-0,#read/news/88915e0bc2c994,on-site original editorial content
+news,SiTime 公布2020年第四季度及全年财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-fourth-quarter-and-fiscal-year-2020-financial-results,#read/news/baa11a3d1acb0f,on-site original editorial content
+news,SiTime 以低功耗 TCXO 扩充消费电子与物联网产品线,https://www.sitime.com/company/newsroom/press-release/sitime-expands-consumer-and-iot-portfolio-low-power-tcxo,#read/news/f112dfa7e0bd25,on-site original editorial content
+news,ADT 旗下 CellBounce 在家庭安防蜂窝桥接方案中采用 SiTime,https://www.sitime.com/company/newsroom/press-release/cellbounce-division-adt-uses-sitime-mems-timing-cellular-bridge,#read/news/1307037166174d,on-site original editorial content
+news,SiTime 将公布2020年第四季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-fourth-quarter-2020-financial-results,#read/news/9a728811f21f45,on-site original editorial content
+news,SiTime MEMS 计时产品累计出货达到二十亿颗,https://www.sitime.com/company/newsroom/press-release/sitime-continues-leadership-mems-timing-market-2-billion-units,#read/news/820220d5d1dbbf,on-site original editorial content
+news,SiTime 上调 2020 年第四季度收入指引,https://www.sitime.com/company/newsroom/press-release/sitime-raises-revenue-guidance-fourth-quarter-2020,#read/news/34b18327f798bb,on-site original editorial content
+news,SiTime 公布2020年第三季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-third-quarter-2020-financial-results,#read/news/78463a1a872a36,on-site original editorial content
+news,SiTime 以第三代 MEMS 技术进入精密谐振器市场,https://www.sitime.com/company/newsroom/press-release/sitime-enters-2b-precision-resonator-market-third-generation-mems,#read/news/1393df3037f8eb,on-site original editorial content
+news,SiTime 将公布2020年第三季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-third-quarter-2020-financial-results,#read/news/ae026619c06821,on-site original editorial content
+news,利用计时技术提升光模块性能,https://www.sitime.com/company/newsroom/blog/pushing-performance-boundaries-optical-modules-timing-technology,#read/news/f3d568125a8cfd,on-site original editorial content
+news,SiTime 支持 DASAN Network Solutions 的网络产品设计,https://www.sitime.com/company/newsroom/press-release/sitime-enables-dasan-network-solutions-deliver-game-changing,#read/news/37bfae4d614011,on-site original editorial content
+news,SiTime 上调 2020 年第三季度收入指引,https://www.sitime.com/company/newsroom/press-release/sitime-raises-revenue-guidance-third-quarter-2020,#read/news/3970ba222fa147,on-site original editorial content
+news,SiTime 公布2020年第二季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-second-quarter-2020-financial-results,#read/news/b9e5c4821b6ff3,on-site original editorial content
+news,SiTime 讨论高可靠计时对 5G 持续运行的作用,https://www.sitime.com/company/newsroom/press-release/sitime-enables-5g-vision-zero-downtime-10-times-higher-reliability,#read/news/5b2ceb394b4721,on-site original editorial content
+news,SiTime 面向户外 5G 部署提供光通信及数据通信计时方案,https://www.sitime.com/company/newsroom/press-release/sitime-enables-high-performance-optical-and-data-communications,#read/news/28e2000d9439f5,on-site original editorial content
+news,地震传感器为何需要稳定、准确的计时,https://www.sitime.com/company/newsroom/blog/importance-robust-and-accurate-timing-seismic-sensor-applications,#read/news/5ac0b1452b1b1e,on-site original editorial content
+news,SiTime 将公布2020年第二季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-second-quarter-2020-financial-results,#read/news/0533dbc98135e3,on-site original editorial content
+news,应对 5G 无线基础设施的计时挑战,https://www.sitime.com/company/newsroom/blog/solving-tough-timing-challenges-5g-wireless-infrastructure,#read/news/586d0addd712af,on-site original editorial content
+news,SiTime 宣布完成增发公开发行,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announces-completion-follow-public-offering,#read/news/9447aa1b4571f3,on-site original editorial content
+news,SiTime 公布增发公开发行定价,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announces-pricing-follow-public-offering,#read/news/acec97c9416b92,on-site original editorial content
+news,SiTime 宣布启动增发公开发行,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announces-launch-follow-public-offering,#read/news/50ac2374ffc8c8,on-site original editorial content
+news,SiTime 公布2020年第一季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-first-quarter-2020-financial-results,#read/news/fa8a75a36464be,on-site original editorial content
+news,SiTime 将公布2020年第一季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-first-quarter-2020-financial-results-may,#read/news/9afebe647ca9dc,on-site original editorial content
+news,SiTime 计时产品用于 Garmin 多款设备的性能与续航设计,https://www.sitime.com/company/newsroom/press-release/sitime-boosts-performance-reliability-and-extends-battery-life,#read/news/508ce8cffba8d4,on-site original editorial content
+news,SiTime 将被纳入 Russell 3000 与 Russell 2000 指数,https://www.sitime.com/company/newsroom/press-release/sitime-be-added-russell-3000-and-russell-2000-indexes,#read/news/d8cddd6dfcd3f5,on-site original editorial content
+news,SiTime 提供 MEMS 晶振全球 48 小时供应服务,https://www.sitime.com/company/newsroom/press-release/sitime-accelerates-customers-designs-48-hour-worldwide-availability,#read/news/32908938be5336,on-site original editorial content
+news,SiTime 将参加近期财务会议,https://www.sitime.com/company/newsroom/press-release/sitime-present-upcoming-financial-conferences,#read/news/fe6004724c136e,on-site original editorial content
+news,SiTime 公布2019年第四季度及全年财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-reports-fourth-quarter-and-fiscal-year-2019-financial-results,#read/news/085d468ca2d6ea,on-site original editorial content
+news,SiTime 将公布2019年第四季度财务业绩,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announce-fourth-quarter-2019-financial-results,#read/news/eef1f3b1155eb6,on-site original editorial content
+news,SiTime 将出席 2020 年 Needham Growth Conference,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-present-needham-growth-conference-january-15-2020,#read/news/5aade62c92560c,on-site original editorial content
+news,SiTime 宣布完成首次公开发行,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announces-ipo-completion,#read/news/ff275d3876fede,on-site original editorial content
+news,SiTime 公布首次公开发行定价,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announces-pricing-initial-public-offering,#read/news/2fac7b1eb1de0a,on-site original editorial content
+news,SiTime 宣布启动首次公开发行路演,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-announces-launch-ipo-roadshow,#read/news/17c315e99337b6,on-site original editorial content
+news,SiTime 提交拟首次公开发行的注册文件,https://www.sitime.com/company/newsroom/press-release/sitime-corporation-files-registration-statement-proposed-initial,#read/news/44aa0c2bf9e412,on-site original editorial content
+news,可编程计时对供应链的影响,https://www.sitime.com/company/newsroom/blog/top-supply-chain-benefits-programmable-timing,#read/news/2aa197126cd2ae,on-site original editorial content
+news,ES Components 成为 SiTime Endura 晶振分销及物流合作伙伴,https://www.sitime.com/company/newsroom/press-release/partner-news-es-components-appointed-distributor-and-logistics,#read/news/fb54f7ead983ca,on-site original editorial content
+news,面向航空航天与国防的 Endura 抗环境计时方案,https://www.sitime.com/company/newsroom/press-release/sitimes-endura-timing-solutions-aerospace-and-defense-standout,#read/news/006eab4c6793ac,on-site original editorial content
+news,可编程计时如何节省尺寸与功耗,https://www.sitime.com/company/newsroom/blog/top-size-and-power-saving-benefits-programmable-timing,#read/news/d15242cbbadf58,on-site original editorial content
+news,可编程计时如何提升系统性能,https://www.sitime.com/company/newsroom/blog/top-performance-enhancing-benefits-programmable-timing,#read/news/b8c557b3aaada0,on-site original editorial content
+news,SiTime 提供用于全球无线网络 5G 无线电同步的计时产品,https://www.sitime.com/company/newsroom/press-release/sitime-delivers-timing-products-5g-radio-synchronization-global,#read/news/a7558fc5a0eb46,on-site original editorial content
+news,5G 为 MEMS 振荡器带来哪些变化,https://www.sitime.com/company/newsroom/blog/5g-will-be-game-changer-mems-oscillators,#read/news/7c87c56825ebc4,on-site original editorial content
+news,自动驾驶中的 MEMS 计时需求,https://www.sitime.com/company/newsroom/blog/autonomous-vehicle-timing-means-mems,#read/news/5f6ef0c8b998d5,on-site original editorial content
+news,高温环境下的计时器件设计挑战,https://www.sitime.com/company/newsroom/blog/stay-cool-when-things-get-hot-operating-beyond-limits,#read/news/c9366dac6afcb9,on-site original editorial content
+news,支持 +105°C 的 Elite Super-TCXO 获年度产品奖,https://www.sitime.com/company/newsroom/press-release/sitimes-105degc-elite-super-tcxos-named-product-year-electronic,#read/news/3fe3f38648095c,on-site original editorial content
+news,可编程 OCXO 简化设计的六种方式,https://www.sitime.com/company/newsroom/blog/6-more-ways-programmable-ocxos-make-design-easier,#read/news/7469cdb644bf00,on-site original editorial content
+news,更强环境适应性的 Stratum 3E OCXO,https://www.sitime.com/company/newsroom/blog/more-robust-stratum-3e-ocxo,#read/news/7d5b1a31784f63,on-site original editorial content
+news,面向复杂环境的 OCXO 设计思路,https://www.sitime.com/company/newsroom/blog/ocxo-simply-works-anywhere,#read/news/e9f818c190cb68,on-site original editorial content
+news,SiTime 推出面向 5G 基础设施的 Emerald 平台,https://www.sitime.com/company/newsroom/press-release/sitime-launches-emerald-platform-game-changing-mems-timing-solution,#read/news/548e189c92838d,on-site original editorial content
+news,微型系统计时的五项潜在优势,https://www.sitime.com/company/newsroom/blog/5-hidden-advantages-micro-system-timing,#read/news/080d1d04b94b9d,on-site original editorial content
+news,汽车行业为什么需要重视计时技术,https://www.sitime.com/company/newsroom/blog/why-should-automotive-industry-care-about-timing,#read/news/8e00012fb10f09,on-site original editorial content
+news,推动 5G、物联网与汽车电子的计时创新,https://www.sitime.com/company/newsroom/blog/accelerating-innovation-timing-5g-iot-and-automotive-electronics,#read/news/d5098728f83a2d,on-site original editorial content
+news,SiTime 与 Bosch 合作推进 5G 和物联网 MEMS 计时,https://www.sitime.com/company/newsroom/press-release/sitime-and-bosch-accelerate-innovation-mems-timing-5g-and-iot,#read/news/3fae5ec5a5da3c,on-site original editorial content
+news,何时需要重新评估计时产品合作伙伴,https://www.sitime.com/company/newsroom/blog/three-signs-you-need-new-timing-partner,#read/news/35939c51b0c6b8,on-site original editorial content
+news,Elite Super-TCXO 系列扩展至 +105°C 温度范围,https://www.sitime.com/company/newsroom/blog/elite-super-tcxo-family-extends-temperature-support-105degc,#read/news/d592bdff7bfad1,on-site original editorial content
+news,RFMW 宣布与 SiTime 建立分销合作,https://www.sitime.com/company/newsroom/press-release/partner-news-rfmw-ltd-announces-distribution-agreement-sitime,#read/news/888e776655c05f,on-site original editorial content
+news,SiTime 与 Intel 宣布开展 5G MEMS 计时合作,https://www.sitime.com/company/newsroom/press-release/sitime-and-intel-announce-collaboration-mems-timing-5g,#read/news/94bea697206093,on-site original editorial content
+news,电容短缺背景下，考虑使用无需外部负载电容的振荡器,https://www.sitime.com/company/newsroom/blog/capacitor-shortage-use-oscillators-they-dont-need-caps,#read/news/ff96071cf122f9,on-site original editorial content
+news,SiTime 在 IMS2018 的 5G 展区展示计时与同步方案,https://www.sitime.com/company/newsroom/press-release/media-alert-sitime-demonstrates-innovative-mems-based-timing-and,#read/news/55c10282883c75,on-site original editorial content
+news,振荡器选型的八项基础参数,https://www.sitime.com/company/newsroom/blog/8-most-important-and-fundamental-oscillator-parameters,#read/news/1e5cc113a24e94,on-site original editorial content
+news,SiTime 在密歇根设立技术中心,https://www.sitime.com/company/newsroom/press-release/sitime-expands-global-presence-new-center-excellence-michigan,#read/news/7e1b21bc52e235,on-site original editorial content
+news,环境智能背后的精准节拍,https://www.sitime.com/company/newsroom/blog/heartbeat-ambient-intelligence,#read/news/cff388d6eefcb9,on-site original editorial content
+news,SiTime 累计十亿颗器件服务汽车、手机等应用,https://www.sitime.com/company/newsroom/press-release/billion-devices-sitime-empower-self-driving-cars-mobile-phones-and,#read/news/befb72ee1ab370,on-site original editorial content
+news,高速系统中的相位噪声与抖动基础,https://www.sitime.com/company/newsroom/blog/what-you-need-know-about-phase-noise-and-jitter-high-speed-systems,#read/news/d89ecb27aee988,on-site original editorial content
+news,如何选择车载网络的计时器件,https://www.sitime.com/company/newsroom/blog/choosing-right-timing-component-vehicle-networking,#read/news/c6a444876cc46e,on-site original editorial content
+news,计时技术在人工智能发展中的关键作用,https://www.sitime.com/company/newsroom/blog/timings-critical-role-ai-revolution,#read/news/5ec989ba1a8ade,on-site original editorial content
+news,访谈：SiT9386/7 差分晶振如何服务 ADAS,https://www.sitime.com/company/newsroom/blog/qa-piyush-sevalia-discusses-sit93867-differential-oscillators-adas,#read/news/860b1c8b201b96,on-site original editorial content
+news,SiTime 推进自动驾驶系统的计时方案,https://www.sitime.com/company/news/press-release/sitime-takes-driverless-cars-one-step-closer-to-reality,#read/news/c396e436465b25,on-site original editorial content
+news,SiTime Elite 平台的精密计时技术,https://www.sitime.com/company/newsroom/blog/sitime-among-elite,#read/news/ca06db5154268a,on-site original editorial content
+news,通过降低 EMI 解决设计难题,https://www.sitime.com/company/newsroom/blog/how-solve-costly-design-problems-emi-reduction,#read/news/0be19225de23d5,on-site original editorial content
+news,SiTime 晶振提供停产 Murata 谐振器的替代与升级思路,https://www.sitime.com/company/newsroom/blog/sitime-oscillators-replace-discontinued-murata-resonators-while-upgrading,#read/news/d835d30e61e744,on-site original editorial content
+news,面向未来的以太网计时方案,https://www.sitime.com/company/newsroom/blog/future-focused-ethernet-solutions,#read/news/8dece359055296,on-site original editorial content
+news,SiTime 扩频晶振帮助设计满足辐射发射要求,https://www.sitime.com/company/newsroom/press-release/sitimes-spread-spectrum-oscillators-accelerate-time-revenue-ensuring,#read/news/4b20077c9943f0,on-site original editorial content
+news,雷达传感器的发展推动低功耗与小型化需求,https://www.sitime.com/company/newsroom/blog/growing-scope-radar-sensors-elevates-need-lower-power-and-smaller-size,#read/news/889bea84a259de,on-site original editorial content
+news,用于工业应用的低频微功耗振荡器,https://www.sitime.com/company/newsroom/blog/low-frequency-mpower-oscillators-industrial-applications,#read/news/312cb79df68209,on-site original editorial content
+news,面向便携医疗的微功耗晶振：1.2 mm² 封装与定制频率,https://www.sitime.com/company/newsroom/blog/mpower-oscillator-delivers-unique-frequencies-12-mm2-footprint-portable,#read/news/f7b80fad285927,on-site original editorial content
+news,SiTime 设立荷兰办公室，扩大全球布局,https://www.sitime.com/company/newsroom/press-release/sitime-expands-global-presence-opening-netherlands-office,#read/news/217bfefc6305aa,on-site original editorial content
+news,SiTime 以低功耗精密 MEMS 参考时钟支持工业物联网,https://www.sitime.com/company/newsroom/press-release/sitime-enables-industrial-iot-applications-smallest-lowest-power,#read/news/5b9cc49e9b8939,on-site original editorial content
+news,SE Spezial-Electronic 在欧洲推出 SiTime 晶振 24 小时编程服务,https://www.sitime.com/company/newsroom/press-release/se-spezial-electronic-starts-europe-wide-24-hour-programming-service,#read/news/31a3855c1bfeb4,on-site original editorial content
+news,SiTime 发布强调抗环境能力的汽车级 MEMS 振荡器,https://www.sitime.com/company/newsroom/press-release/sitimes-automotive-mems-oscillators-deliver-30-times-better,#read/news/3b233456163c00,on-site original editorial content
+news,SiTime Elite MEMS Super-TCXO 获年度产品奖,https://www.sitime.com/company/newsroom/press-release/sitimes-elite-platform-mems-super-tcxos-named-product-year,#read/news/87f1d6e83f247a,on-site original editorial content
+news,SiTime 迁移总部，扩大办公与研发空间,https://www.sitime.com/company/newsroom/press-release/sitime-moves-headquarters-doubles-office-and-rd-space-support-rapid,#read/news/f474d49996462f,on-site original editorial content
+news,Avnet 将 SiTime 计时产品纳入美洲与亚洲产品线,https://www.sitime.com/company/newsroom/press-release/avnet-adds-sitimes-mems-timing-solutions-line-cards-americas-and,#read/news/6d266d68b659a0,on-site original editorial content
+news,Acal BFi 与 SiTime 签署泛欧洲合作协议,https://www.sitime.com/company/newsroom/press-release/acal-bfi-signs-pan-european-agreement-worlds-leading-mems-timing,#read/news/27966a3136561e,on-site original editorial content
+news,SiTime 推出支持系统内自动校准的 32 kHz Super-TCXO,https://www.sitime.com/company/newsroom/press-release/sitime-introduces-smallest-most-stable-32-khz-super-tcxo-system-auto,#read/news/e2677b7b6fa876,on-site original editorial content
+news,SiTime 微功耗 MEMS 振荡器获 Electronic Products 年度产品奖,https://www.sitime.com/company/newsroom/press-release/sitimes-mpower-mems-oscillator-named-product-year-electronic,#read/news/6058bc3388a9c9,on-site original editorial content
+news,Ineltro Halmer Electronics 开始供应 SiTime MEMS 计时产品,https://www.sitime.com/company/newsroom/press-release/sitimes-mems-based-timing-solutions-available-ineltro-halmer,#read/news/8bd7455cf5f904,on-site original editorial content
+news,大真空 KDS 与 SiTime 签署战略合作协议,https://www.sitime.com/company/newsroom/press-release/daishinku-kds-and-sitime-sign-strategic-partnership-agreement,#read/news/c516c7100e8ac2,on-site original editorial content
+news,SiTime 与 Abracon 合作扩大 MEMS 晶振供应,https://www.sitime.com/company/newsroom/press-release/sitime-and-abracon-sign-partnership-agreement-expand-availability,#read/news/848292ddfbc7e4,on-site original editorial content
+news,Chip One Stop 提供 SiTime 定制 MEMS 晶振编程及分销服务,https://www.sitime.com/company/newsroom/press-release/chip-one-stop-signs-agreement-sitime-program-and-distribute,#read/news/e8f1983b4ee4d7,on-site original editorial content
+news,Time Machine II 编程器支持即时定制晶振样品,https://www.sitime.com/company/newsroom/press-release/sitimes-time-machine-ii-programmer-delivers-instant-customized,#read/news/cc4706345e3145,on-site original editorial content
+news,SiTime 高性能振荡器用于 Lattice FPGA 开发板,https://www.sitime.com/company/newsroom/press-release/sitimes-high-performance-oscillators-provide-timing-lattice,#read/news/eedbe6ad69d911,on-site original editorial content
+news,延长电池续航，需要从系统整体着眼,https://www.sitime.com/company/newsroom/blog/extend-battery-life-look-big-picture,#read/news/2c53f02de89aea,on-site original editorial content
+news,Digi-Key 提供 SiTime 定制编程晶振的 24 小时交付服务,https://www.sitime.com/company/newsroom/press-release/sitimes-customizable-programmed-mems-oscillators-available-digi-key,#read/news/965ec7bbd37641,on-site original editorial content
+news,突破功耗、尺寸与重量的限制,https://www.sitime.com/company/newsroom/blog/shattering-limits-power-size-and-weight,#read/news/d4a7b4b3f217ce,on-site original editorial content
+news,SiTime 在晶振功耗、尺寸与重量方面推出新方案,https://www.sitime.com/company/newsroom/press-release/sitime-sets-new-benchmarks-oscillator-power-size-and-weight,#read/news/bb305a2f9e5416,on-site original editorial content
+news,SiTime 成为 MegaChips 全资子公司,https://www.sitime.com/company/newsroom/press-release/sitime-now-wholly-owned-subsidiary-megachips,#read/news/48be7e8b4cf3fc,on-site original editorial content
+news,SiT1552 TCXO 入选 EDN 2014 年度百大产品,https://www.sitime.com/company/newsroom/press-release/sitimes-sit1552-tcxo-recognized-edns-hot-100-products-2014,#read/news/6737570625a248,on-site original editorial content
+news,MegaChips 拟以 2 亿美元收购 SiTime,https://www.sitime.com/company/newsroom/press-release/sitime-be-acquired-megachips-200m,#read/news/0b1a32d0b0cb44,on-site original editorial content
+news,"SiTime 完成 2,500 万美元融资",https://www.sitime.com/company/newsroom/press-release/sitime-raises-25-million,#read/news/79b81089d0b82f,on-site original editorial content
+news,SiTime 以 32 kHz MEMS 产品拓展可穿戴与物联网市场,https://www.sitime.com/company/newsroom/press-release/sitime-enters-wearables-iot-markets-32-khz-mems,#read/news/28f9785e31595d,on-site original editorial content
+news,Digi-Key 供应 SiTime MEMS 计时产品，提供石英替代方案,https://www.sitime.com/company/newsroom/press-release/sitimes-mems-based-timing-solutions-replace-legacy-quartz-available,#read/news/f126261d2d8555,on-site original editorial content
+news,SiTime 32 kHz 晶振获 EE Times 与 EDN ACE 奖项认可,https://www.sitime.com/company/newsroom/press-release/sitimes-32-khz-oscillators-recognized-prestigious-ee-times-and-edn,#read/news/26752fb7459b85,on-site original editorial content
+news,SiTime 为 MEMS 计时产品提供终身保修政策,https://www.sitime.com/company/newsroom/press-release/sitime-offers-lifetime-warranty-mems-timing-solutions,#read/news/c9265313569271,on-site original editorial content
+news,SiTime CSP 晶振与 Telit 微型 GPS 接收器支持小型追踪及导航设备,https://www.sitime.com/company/newsroom/press-release/worlds-smallest-csp-mems-oscillator-sitime-paired-mini-gps-receiver,#read/news/0d9386532104a1,on-site original editorial content
+news,NEC Capital Solutions 与 SMBC 旗下基金领投 SiTime,https://www.sitime.com/company/newsroom/press-release/innovative-venture-fund-nec-capital-solutions-and-smbc-group-leads,#read/news/61863607f696bf,on-site original editorial content
+news,SiTime 探讨 MEMS 谐振器与石英的性能比较,https://www.sitime.com/company/newsroom/press-release/sitimes-mems-resonators-outperform-quartz,#read/news/f4be398efd3262,on-site original editorial content
+news,SiTime 以 MEMS 振荡器进入智能手机市场,https://www.sitime.com/company/newsroom/press-release/sitime-enters-smartphone-market-first-mems-oscillator,#read/news/1877fb1b9062c2,on-site original editorial content
+news,SiTime 管理团队新增行业资深人士,https://www.sitime.com/company/newsroom/press-release/sitime-adds-industry-veterans-executive-team,#read/news/9089ff9c1ff645,on-site original editorial content
+news,SiTime 扩充支持 +125°C 的工业及高可靠 MEMS 晶振,https://www.sitime.com/company/newsroom/press-release/sitime-expands-portfolio-125c-mems-oscillators-industrial-and-high,#read/news/5b8fe4f457c7c8,on-site original editorial content
+news,SiTime 入选北美高速成长半导体企业,https://www.sitime.com/company/newsroom/press-release/sitime-fastest-growing-semiconductor-company-north-america,#read/news/a97120525ae12c,on-site original editorial content
+news,SiTime 数控晶振面向通信与嵌入式应用替代石英 VCXO,https://www.sitime.com/company/newsroom/press-release/sitimes-unique-digitally-controlled-oscillators-dcxos-replace-quartz,#read/news/ecbb33d5f75ff6,on-site original editorial content
+news,Vectron、Knowles 与 SiTime 建立合作,https://www.sitime.com/company/newsroom/press-release/vectron-international-knowles-electronics-partners-sitime,#read/news/20cc254c6f9f17,on-site original editorial content
+news,SiTime 可编程 MEMS 晶振为 Xilinx 7 系列评估板提供参考时钟,https://www.sitime.com/company/newsroom/press-release/sitimes-programmable-mems-oscillators-provide-reference-timing,#read/news/d5cbb0379951d1,on-site original editorial content
+news,SiTime MEMS 计时产品累计出货达到一亿颗,https://www.sitime.com/company/newsroom/press-release/sitime-ships-100-million-units-its-mems-timing-solutions,#read/news/323f0b10b017a0,on-site original editorial content
+news,SiTime 差分振荡器入围 UBM Electronics ACE 奖项,https://www.sitime.com/company/newsroom/press-release/sitime-differential-oscillators-recognized-prestigious-ubm,#read/news/8e81158777d617,on-site original editorial content
+news,SiTime 提升计时器件的频率稳定性,https://www.sitime.com/company/newsroom/press-release/sitime-raises-bar-frequency-stability-timing-components,#read/news/d98adb9b9f23e9,on-site original editorial content
+news,Arrow 与 SiTime 签署 MEMS 计时产品全球分销协议,https://www.sitime.com/company/newsroom/press-release/arrow-electronics-signs-global-distribution-agreement-sitime-mems,#read/news/60f6adc8270f21,on-site original editorial content
+news,SiTime 发布高性能硅基 MEMS 计时平台,https://www.sitime.com/company/newsroom/press-release/sitime-extends-leadership-highest-performance-silicon-mems-timing,#read/news/15dbde2f2339b1,on-site original editorial content
+news,SiTime 推出支持 LVCMOS 与差分输出的 MEMS 可编程时钟发生器,https://www.sitime.com/company/newsroom/press-release/sitime-introduces-first-mems-based-programmable-clock-generator,#read/news/2a9692ca1cfcea,on-site original editorial content
+product-source,SiT1602,https://sitimechina.com/products/mhz-oscillators/SIT1602,#read/product/SiT1602,on-site specifications
+product-manufacturer,SiT1602,https://www.sitime.com/products/mhz-oscillators/lvcmos-oscillators/sit1602,#read/product/SiT1602,on-site specifications
+datasheet,SiT1602,https://www.sitime.com/datasheet/SiT1602,assets/datasheets/SiT1602.pdf,local PDF
+product-source,SiT8008,https://sitimechina.com/products/mhz-oscillators/SIT8008,#read/product/SiT8008,on-site specifications
+product-manufacturer,SiT8008,https://www.sitime.com/products/mhz-oscillators/lvcmos-oscillators/sit8008,#read/product/SiT8008,on-site specifications
+datasheet,SiT8008,https://www.sitime.com/datasheet/SiT8008,assets/datasheets/SiT8008.pdf,local PDF
+product-source,SiT8009,https://sitimechina.com/products/mhz-oscillators/SIT8009,#read/product/SiT8009,on-site specifications
+product-manufacturer,SiT8009,https://www.sitime.com/products/mhz-oscillators/lvcmos-oscillators/sit8009,#read/product/SiT8009,on-site specifications
+datasheet,SiT8009,https://www.sitime.com/datasheet/SiT8009,assets/datasheets/SiT8009.pdf,local PDF
+product-source,SiT2001,https://sitimechina.com/products/mhz-oscillators/SIT2001,#read/product/SiT2001,on-site specifications
+product-manufacturer,SiT2001,https://www.sitime.com/products/mhz-oscillators/lvcmos-oscillators/sit2001,#read/product/SiT2001,on-site specifications
+datasheet,SiT2001,https://www.sitime.com/datasheet/SiT2001,assets/datasheets/SiT2001.pdf,local PDF
+product-source,SiT2002,https://sitimechina.com/products/mhz-oscillators/SIT2002,#read/product/SiT2002,on-site specifications
+product-manufacturer,SiT2002,https://www.sitime.com/products/mhz-oscillators/lvcmos-oscillators/sit2002,#read/product/SiT2002,on-site specifications
+datasheet,SiT2002,https://www.sitime.com/datasheet/SiT2002,assets/datasheets/SiT2002.pdf,local PDF
+product-source,SiT8021,https://sitimechina.com/products/mhz-oscillators/SIT8021,#read/product/SiT8021,on-site specifications
+product-manufacturer,SiT8021,https://www.sitime.com/products/32-khz-mpower-oscillators/1-26-mhz-oscillators/sit8021,#read/product/SiT8021,on-site specifications
+datasheet,SiT8021,https://www.sitime.com/datasheet/SiT8021,assets/datasheets/SiT8021.pdf,local PDF
+product-source,SiT1605,https://sitimechina.com/products/mhz-oscillators/SIT1605,#read/product/SiT1605,on-site specifications
+product-manufacturer,SiT1605,https://www.sitime.com/products/mhz-oscillators/lvcmos-oscillators/sit1605,#read/product/SiT1605,on-site specifications
+datasheet,SiT1605,https://www.sitime.com/datasheet/SiT1605,assets/datasheets/SiT1605.pdf,local PDF
+product-source,SiT8208,https://sitimechina.com/products/mhz-oscillators/SIT8208,#read/product/SiT8208,on-site specifications
+product-manufacturer,SiT8208,https://www.sitime.com/products/mhz-oscillators/lvcmos-oscillators/sit8208,#read/product/SiT8208,on-site specifications
+datasheet,SiT8208,https://www.sitime.com/datasheet/SiT8208,assets/datasheets/SiT8208.pdf,local PDF
+product-source,SiT8209,https://sitimechina.com/products/mhz-oscillators/SIT8209,#read/product/SiT8209,on-site specifications
+product-manufacturer,SiT8209,https://www.sitime.com/products/mhz-oscillators/lvcmos-oscillators/sit8209,#read/product/SiT8209,on-site specifications
+datasheet,SiT8209,https://www.sitime.com/datasheet/SiT8209,assets/datasheets/SiT8209.pdf,local PDF
+product-source,SiT9365,https://sitimechina.com/products/lvpecl-lvds-hcsl-oscillators/SIT9365,#read/product/SiT9365,on-site specifications
+product-manufacturer,SiT9365,https://www.sitime.com/products/mhz-oscillators/differential-oscillators/sit9365,#read/product/SiT9365,on-site specifications
+datasheet,SiT9365,https://www.sitime.com/datasheet/SiT9365,assets/datasheets/SiT9365.pdf,local PDF
+product-source,SiT9366,https://sitimechina.com/products/lvpecl-lvds-hcsl-oscillators/SIT9366,#read/product/SiT9366,on-site specifications
+product-manufacturer,SiT9366,https://www.sitime.com/products/mhz-oscillators/differential-oscillators/sit9366,#read/product/SiT9366,on-site specifications
+datasheet,SiT9366,https://www.sitime.com/datasheet/SiT9366,assets/datasheets/SiT9366.pdf,local PDF
+product-source,SiT9367,https://sitimechina.com/products/lvpecl-lvds-hcsl-oscillators/SIT9367,#read/product/SiT9367,on-site specifications
+product-manufacturer,SiT9367,https://www.sitime.com/products/mhz-oscillators/differential-oscillators/sit9367,#read/product/SiT9367,on-site specifications
+datasheet,SiT9367,https://www.sitime.com/datasheet/SiT9367,assets/datasheets/SiT9367.pdf,local PDF
+product-source,SiT9120,https://sitimechina.com/products/lvpecl-lvds-hcsl-oscillators/SIT9120,#read/product/SiT9120,on-site specifications
+product-manufacturer,SiT9120,https://www.sitime.com/products/mhz-oscillators/differential-oscillators/sit9120,#read/product/SiT9120,on-site specifications
+datasheet,SiT9120,https://www.sitime.com/datasheet/SiT9120,assets/datasheets/SiT9120.pdf,local PDF
+product-source,SiT9121,https://sitimechina.com/products/lvpecl-lvds-hcsl-oscillators/SIT9121,#read/product/SiT9121,on-site specifications
+product-manufacturer,SiT9121,https://www.sitime.com/products/mhz-oscillators/differential-oscillators/sit9121,#read/product/SiT9121,on-site specifications
+datasheet,SiT9121,https://www.sitime.com/datasheet/SiT9121,assets/datasheets/SiT9121.pdf,local PDF
+product-source,SiT9122,https://sitimechina.com/products/lvpecl-lvds-hcsl-oscillators/SIT9122,#read/product/SiT9122,on-site specifications
+product-manufacturer,SiT9122,https://www.sitime.com/products/mhz-oscillators/differential-oscillators/sit9122,#read/product/SiT9122,on-site specifications
+datasheet,SiT9122,https://www.sitime.com/datasheet/SiT9122,assets/datasheets/SiT9122.pdf,local PDF
+product-source,SiT9102,https://sitimechina.com/products/lvpecl-lvds-hcsl-oscillators/SIT9102,#read/product/SiT9102,on-site specifications
+product-manufacturer,SiT9102,https://www.sitime.com/products/mhz-oscillators/differential-oscillators/sit9102,#read/product/SiT9102,on-site specifications
+datasheet,SiT9102,https://www.sitime.com/sites/default/files/mature-datasheets/SiT9102-datasheet_0.pdf,assets/datasheets/SiT9102.pdf,local PDF
+product-source,SiT9375,https://sitimechina.com/products/lvpecl-lvds-hcsl-oscillators/SIT9375,#read/product/SiT9375,on-site specifications
+product-manufacturer,SiT9375,https://www.sitime.com/products/mhz-oscillators/differential-oscillators/sit9375,#read/product/SiT9375,on-site specifications
+datasheet,SiT9375,https://www.sitime.com/datasheet/SiT9375,assets/datasheets/SiT9375.pdf,local PDF
+product-source,SiT9377,https://sitimechina.com/products/lvpecl-lvds-hcsl-oscillators/SIT9377,#read/product/SiT9377,on-site specifications
+product-manufacturer,SiT9377,https://www.sitime.com/products/mhz-oscillators/differential-oscillators/sit9377,#read/product/SiT9377,on-site specifications
+datasheet,SiT9377,https://www.sitime.com/datasheet/SiT9377,assets/datasheets/SiT9377.pdf,local PDF
+product-source,SiT9376,https://sitimechina.com/products/lvpecl-lvds-hcsl-oscillators/SIT9376,#read/product/SiT9376,on-site specifications
+product-manufacturer,SiT9376,https://www.sitime.com/products/mhz-oscillators/differential-oscillators/sit9376,#read/product/SiT9376,on-site specifications
+datasheet,SiT9376,https://www.sitime.com/datasheet/SiT9376,assets/datasheets/SiT9376.pdf,local PDF
+product-source,SiT9371,https://sitimechina.com/products/lvpecl-lvds-hcsl-oscillators/SIT9371,#read/product/SiT9371,on-site specifications
+product-manufacturer,SiT9371,https://www.sitime.com/products/mhz-oscillators/differential-oscillators/sit9371,#read/product/SiT9371,on-site specifications
+datasheet,SiT9371,https://www.sitime.com/datasheet/SiT9371,assets/datasheets/SiT9371.pdf,local PDF
+product-source,SiT9505,https://sitimechina.com/products/lvpecl-lvds-hcsl-oscillators/SIT9505,#read/product/SiT9505,on-site specifications
+product-manufacturer,SiT9505,https://www.sitime.com/products/mhz-oscillators/differential-oscillators/sit9505,#read/product/SiT9505,on-site specifications
+datasheet,SiT9505,https://www.sitime.com/datasheet/SiT9505,assets/datasheets/SiT9505.pdf,local PDF
+product-source,SiT9501,https://sitimechina.com/products/lvpecl-lvds-hcsl-oscillators/SIT9501,#read/product/SiT9501,on-site specifications
+product-manufacturer,SiT9501,https://www.sitime.com/products/mhz-oscillators/differential-oscillators/sit9501,#read/product/SiT9501,on-site specifications
+datasheet,SiT9501,https://www.sitime.com/datasheet/SiT9501,assets/datasheets/SiT9501.pdf,local PDF
+product-source,SiT9507,https://sitimechina.com/products/lvpecl-lvds-hcsl-oscillators/SIT9507,#read/product/SiT9507,on-site specifications
+product-manufacturer,SiT9507,https://www.sitime.com/products/differential-lvpecl-lvds-hcsl-oscillators/sit9507,#read/product/SiT9507,on-site specifications
+datasheet,SiT9507,https://www.sitime.com/request-datasheet?product=44063,#contact,pending manufacturer PDF; local inquiry
+product-source,SiT8924,https://sitimechina.com/products/automotive-oscillators/SIT8924,#read/product/SiT8924,on-site specifications
+product-manufacturer,SiT8924,https://www.sitime.com/products/auto-aec-q100-timing/mhz-oscillators/sit8924,#read/product/SiT8924,on-site specifications
+datasheet,SiT8924,https://www.sitime.com/datasheet/SiT8924,assets/datasheets/SiT8924.pdf,local PDF
+product-source,SiT8925,https://sitimechina.com/products/automotive-oscillators/SIT8925,#read/product/SiT8925,on-site specifications
+product-manufacturer,SiT8925,https://www.sitime.com/products/auto-aec-q100-timing/mhz-oscillators/sit8925,#read/product/SiT8925,on-site specifications
+datasheet,SiT8925,https://www.sitime.com/datasheet/SiT8925,assets/datasheets/SiT8925.pdf,local PDF
+product-source,SiT2024,https://sitimechina.com/products/automotive-oscillators/SIT2024,#read/product/SiT2024,on-site specifications
+product-manufacturer,SiT2024,https://www.sitime.com/products/auto-aec-q100-timing/mhz-oscillators/sit2024,#read/product/SiT2024,on-site specifications
+datasheet,SiT2024,https://www.sitime.com/datasheet/SiT2024,assets/datasheets/SiT2024.pdf,local PDF
+product-source,SiT2025,https://sitimechina.com/products/automotive-oscillators/SIT2025,#read/product/SiT2025,on-site specifications
+product-manufacturer,SiT2025,https://www.sitime.com/products/auto-aec-q100-timing/mhz-oscillators/sit2025,#read/product/SiT2025,on-site specifications
+datasheet,SiT2025,https://www.sitime.com/datasheet/SiT2025,assets/datasheets/SiT2025.pdf,local PDF
+product-source,SiT1625,https://sitimechina.com/products/automotive-oscillators/SIT1625,#read/product/SiT1625,on-site specifications
+product-manufacturer,SiT1625,https://www.sitime.com/products/auto-aec-q100-timing/mhz-oscillators/sit1625,#read/product/SiT1625,on-site specifications
+datasheet,SiT1625,https://www.sitime.com/datasheet/SiT1625,assets/datasheets/SiT1625.pdf,local PDF
+product-source,SiT9386,https://sitimechina.com/products/automotive-oscillators/SIT9386,#read/product/SiT9386,on-site specifications
+product-manufacturer,SiT9386,https://www.sitime.com/products/auto-aec-q100-timing/mhz-oscillators/sit9386,#read/product/SiT9386,on-site specifications
+datasheet,SiT9386,https://www.sitime.com/datasheet/SiT9386,assets/datasheets/SiT9386.pdf,local PDF
+product-source,SiT9387,https://sitimechina.com/products/automotive-oscillators/SIT9387,#read/product/SiT9387,on-site specifications
+product-manufacturer,SiT9387,https://www.sitime.com/products/auto-aec-q100-timing/mhz-oscillators/sit9387,#read/product/SiT9387,on-site specifications
+datasheet,SiT9387,https://www.sitime.com/datasheet/SiT9387,assets/datasheets/SiT9387.pdf,local PDF
+product-source,SiT9396,https://sitimechina.com/products/automotive-oscillators/SIT9396,#read/product/SiT9396,on-site specifications
+product-manufacturer,SiT9396,https://www.sitime.com/products/auto-aec-q100-timing/mhz-oscillators/sit9396,#read/product/SiT9396,on-site specifications
+datasheet,SiT9396,https://www.sitime.com/datasheet/SiT9396,assets/datasheets/SiT9396.pdf,local PDF
+product-source,SiT9397,https://sitimechina.com/products/automotive-oscillators/SIT9397,#read/product/SiT9397,on-site specifications
+product-manufacturer,SiT9397,https://www.sitime.com/products/auto-aec-q100-timing/mhz-oscillators/sit9397,#read/product/SiT9397,on-site specifications
+datasheet,SiT9397,https://www.sitime.com/datasheet/SiT9397,assets/datasheets/SiT9397.pdf,local PDF
+product-source,SiT8920,https://sitimechina.com/products/high-temp-oscillators/SIT8920,#read/product/SiT8920,on-site specifications
+product-manufacturer,SiT8920,https://www.sitime.com/products/ruggedized-timing/lvcmos-oscillators/sit8920,#read/product/SiT8920,on-site specifications
+datasheet,SiT8920,https://www.sitime.com/datasheet/SiT8920,assets/datasheets/SiT8920.pdf,local PDF
+product-source,SiT8921,https://sitimechina.com/products/high-temp-oscillators/SIT8921,#read/product/SiT8921,on-site specifications
+product-manufacturer,SiT8921,https://www.sitime.com/products/ruggedized-timing/lvcmos-oscillators/sit8921,#read/product/SiT8921,on-site specifications
+datasheet,SiT8921,https://www.sitime.com/datasheet/SiT8921,assets/datasheets/SiT8921.pdf,local PDF
+product-source,SiT2020,https://sitimechina.com/products/high-temp-oscillators/SIT2020,#read/product/SiT2020,on-site specifications
+product-manufacturer,SiT2020,https://www.sitime.com/products/ruggedized-timing/lvcmos-oscillators/sit2020,#read/product/SiT2020,on-site specifications
+datasheet,SiT2020,https://www.sitime.com/datasheet/SiT2020,assets/datasheets/SiT2020.pdf,local PDF
+product-source,SiT2021,https://sitimechina.com/products/high-temp-oscillators/SIT2021,#read/product/SiT2021,on-site specifications
+product-manufacturer,SiT2021,https://www.sitime.com/products/ruggedized-timing/lvcmos-oscillators/sit2021,#read/product/SiT2021,on-site specifications
+datasheet,SiT2021,https://www.sitime.com/datasheet/SiT2021,assets/datasheets/SiT2021.pdf,local PDF
+product-source,SiT8918,https://sitimechina.com/products/high-temp-oscillators/SIT8918,#read/product/SiT8918,on-site specifications
+product-manufacturer,SiT8918,https://www.sitime.com/products/auto-aec-q100-timing/mhz-oscillators/sit8918,#read/product/SiT8918,on-site specifications
+datasheet,SiT8918,https://www.sitime.com/datasheet/SiT8918,assets/datasheets/SiT8918.pdf,local PDF
+product-source,SiT8919,https://sitimechina.com/products/high-temp-oscillators/SIT8919,#read/product/SiT8919,on-site specifications
+product-manufacturer,SiT8919,https://www.sitime.com/products/auto-aec-q100-timing/mhz-oscillators/sit8919,#read/product/SiT8919,on-site specifications
+datasheet,SiT8919,https://www.sitime.com/datasheet/SiT8919,assets/datasheets/SiT8919.pdf,local PDF
+product-source,SiT2018,https://sitimechina.com/products/high-temp-oscillators/SIT2018,#read/product/SiT2018,on-site specifications
+product-manufacturer,SiT2018,https://www.sitime.com/products/auto-aec-q100-timing/mhz-oscillators/sit2018,#read/product/SiT2018,on-site specifications
+datasheet,SiT2018,https://www.sitime.com/datasheet/SiT2018,assets/datasheets/SiT2018.pdf,local PDF
+product-source,SiT2019,https://sitimechina.com/products/high-temp-oscillators/SIT2019,#read/product/SiT2019,on-site specifications
+product-manufacturer,SiT2019,https://www.sitime.com/products/auto-aec-q100-timing/mhz-oscillators/sit2019,#read/product/SiT2019,on-site specifications
+datasheet,SiT2019,https://www.sitime.com/datasheet/SiT2019,assets/datasheets/SiT2019.pdf,local PDF
+product-source,SiT1618,https://sitimechina.com/products/high-temp-oscillators/SIT1618,#read/product/SiT1618,on-site specifications
+product-manufacturer,SiT1618,https://www.sitime.com/products/auto-aec-q100-timing/mhz-oscillators/sit1618,#read/product/SiT1618,on-site specifications
+datasheet,SiT1618,https://www.sitime.com/datasheet/SiT1618,assets/datasheets/SiT1618.pdf,local PDF
+product-source,SiT3807,https://sitimechina.com/products/vcxo/SIT3807,#read/product/SiT3807,on-site specifications
+product-manufacturer,SiT3807,https://www.sitime.com/products/mhz-oscillators/voltage-controlled-oscillators/sit3807,#read/product/SiT3807,on-site specifications
+datasheet,SiT3807,https://www.sitime.com/datasheet/SiT3807,assets/datasheets/SiT3807.pdf,local PDF
+product-source,SiT3808,https://sitimechina.com/products/vcxo/SIT3808,#read/product/SiT3808,on-site specifications
+product-manufacturer,SiT3808,https://www.sitime.com/products/mhz-oscillators/voltage-controlled-oscillators/sit3808,#read/product/SiT3808,on-site specifications
+datasheet,SiT3808,https://www.sitime.com/datasheet/SiT3808,assets/datasheets/SiT3808.pdf,local PDF
+product-source,SiT3809,https://sitimechina.com/products/vcxo/SIT3809,#read/product/SiT3809,on-site specifications
+product-manufacturer,SiT3809,https://www.sitime.com/products/mhz-oscillators/voltage-controlled-oscillators/sit3809,#read/product/SiT3809,on-site specifications
+datasheet,SiT3809,https://www.sitime.com/datasheet/SiT3809,assets/datasheets/SiT3809.pdf,local PDF
+product-source,SiT3372,https://sitimechina.com/products/vcxo/SIT3372,#read/product/SiT3372,on-site specifications
+product-manufacturer,SiT3372,https://www.sitime.com/products/mhz-oscillators/voltage-controlled-oscillators/sit3372,#read/product/SiT3372,on-site specifications
+datasheet,SiT3372,https://www.sitime.com/datasheet/SiT3372,assets/datasheets/SiT3372.pdf,local PDF
+product-source,SiT3373,https://sitimechina.com/products/vcxo/SIT3373,#read/product/SiT3373,on-site specifications
+product-manufacturer,SiT3373,https://www.sitime.com/products/mhz-oscillators/voltage-controlled-oscillators/sit3373,#read/product/SiT3373,on-site specifications
+datasheet,SiT3373,https://www.sitime.com/datasheet/SiT3373,assets/datasheets/SiT3373.pdf,local PDF
+product-source,SiT5155,https://sitimechina.com/products/vc-tcxo/SIT5155,#read/product/SiT5155,on-site specifications
+product-manufacturer,SiT5155,https://www.sitime.com/products/ultrastable-mhz-super-tcxos/super-tcxos/sit5155,#read/product/SiT5155,on-site specifications
+datasheet,SiT5155,https://www.sitime.com/datasheet/SiT5155,assets/datasheets/SiT5155.pdf,local PDF
+product-source,SiT5156,https://sitimechina.com/products/vc-tcxo/SIT5156,#read/product/SiT5156,on-site specifications
+product-manufacturer,SiT5156,https://www.sitime.com/products/ultrastable-mhz-super-tcxos/super-tcxos/sit5156,#read/product/SiT5156,on-site specifications
+datasheet,SiT5156,https://www.sitime.com/datasheet/SiT5156,assets/datasheets/SiT5156.pdf,local PDF
+product-source,SiT5157,https://sitimechina.com/products/vc-tcxo/SIT5157,#read/product/SiT5157,on-site specifications
+product-manufacturer,SiT5157,https://www.sitime.com/products/ultrastable-mhz-super-tcxos/super-tcxos/sit5157,#read/product/SiT5157,on-site specifications
+datasheet,SiT5157,https://www.sitime.com/datasheet/SiT5157,assets/datasheets/SiT5157.pdf,local PDF
+product-source,SiT5186,https://sitimechina.com/products/vc-tcxo/SIT5186,#read/product/SiT5186,on-site specifications
+product-manufacturer,SiT5186,https://www.sitime.com/products/auto-aec-q100-timing/ultra-stable-mhz-super-tcxos/sit5186,#read/product/SiT5186,on-site specifications
+datasheet,SiT5186,https://www.sitime.com/datasheet/SiT5186,assets/datasheets/SiT5186.pdf,local PDF
+product-source,SiT5187,https://sitimechina.com/products/vc-tcxo/SIT5187,#read/product/SiT5187,on-site specifications
+product-manufacturer,SiT5187,https://www.sitime.com/products/auto-aec-q100-timing/ultra-stable-mhz-super-tcxos/sit5187,#read/product/SiT5187,on-site specifications
+datasheet,SiT5187,https://www.sitime.com/datasheet/SiT5187,assets/datasheets/SiT5187.pdf,local PDF
+product-source,SiT5234,https://sitimechina.com/products/vc-tcxo/SIT5234,#read/product/SiT5234,on-site specifications
+product-manufacturer,SiT5234,https://www.sitime.com/products/ultrastable-mhz-super-tcxos/super-tcxos/sit5234,#read/product/SiT5234,on-site specifications
+datasheet,SiT5234,https://www.sitime.com/request-datasheet?product=44549,#contact,pending manufacturer PDF; local inquiry
+product-source,SiT5235,https://sitimechina.com/products/vc-tcxo/SIT5235,#read/product/SiT5235,on-site specifications
+product-manufacturer,SiT5235,https://www.sitime.com/products/ultrastable-mhz-super-tcxos/super-tcxos/sit5235,#read/product/SiT5235,on-site specifications
+datasheet,SiT5235,https://www.sitime.com/request-datasheet?product=44548,#contact,pending manufacturer PDF; local inquiry
+product-source,SiT5435,https://sitimechina.com/products/vc-tcxo/SIT5435,#read/product/SiT5435,on-site specifications
+product-manufacturer,SiT5435,https://www.sitime.com/products/ultrastable-mhz-super-tcxos/super-tcxos/sit5435,#read/product/SiT5435,on-site specifications
+datasheet,SiT5435,https://www.sitime.com/request-datasheet?product=44546,#contact,pending manufacturer PDF; local inquiry
+product-source,SiT5434,https://sitimechina.com/products/vc-tcxo/SIT5434,#read/product/SiT5434,on-site specifications
+product-manufacturer,SiT5434,https://www.sitime.com/products/ultrastable-mhz-super-tcxos/super-tcxos/sit5434,#read/product/SiT5434,on-site specifications
+datasheet,SiT5434,https://www.sitime.com/request-datasheet?product=44547,#contact,pending manufacturer PDF; local inquiry
+product-source,SiT5358,https://sitimechina.com/products/vc-tcxo/SIT5358,#read/product/SiT5358,on-site specifications
+product-manufacturer,SiT5358,https://www.sitime.com/products/ultrastable-mhz-super-tcxos/super-tcxos/sit5358,#read/product/SiT5358,on-site specifications
+datasheet,SiT5358,https://www.sitime.com/datasheet/SiT5358,assets/datasheets/SiT5358.pdf,local PDF
+product-source,SiT5359,https://sitimechina.com/products/vc-tcxo/SIT5359,#read/product/SiT5359,on-site specifications
+product-manufacturer,SiT5359,https://www.sitime.com/products/ultrastable-mhz-super-tcxos/super-tcxos/sit5359,#read/product/SiT5359,on-site specifications
+datasheet,SiT5359,https://www.sitime.com/datasheet/SiT5359,assets/datasheets/SiT5359.pdf,local PDF
+product-source,SiT5021,https://sitimechina.com/products/vc-tcxo/SIT5021,#read/product/SiT5021,on-site specifications
+product-manufacturer,SiT5021,https://www.sitime.com/products/ultrastable-mhz-super-tcxos/vc-super-tcxos/sit5021,#read/product/SiT5021,on-site specifications
+datasheet,SiT5021,https://www.sitime.com/datasheet/SiT5021,assets/datasheets/SiT5021.pdf,local PDF
+product-source,SiT5022,https://sitimechina.com/products/vc-tcxo/SIT5022,#read/product/SiT5022,on-site specifications
+product-manufacturer,SiT5022,https://www.sitime.com/products/ultrastable-mhz-super-tcxos/vc-super-tcxos/sit5022,#read/product/SiT5022,on-site specifications
+datasheet,SiT5022,https://www.sitime.com/datasheet/SiT5022,assets/datasheets/SiT5022.pdf,local PDF
+product-source,SiT5000,https://sitimechina.com/products/vc-tcxo/SIT5000,#read/product/SiT5000,on-site specifications
+product-manufacturer,SiT5000,https://www.sitime.com/products/ultrastable-mhz-super-tcxos/vc-super-tcxos/sit5000,#read/product/SiT5000,on-site specifications
+datasheet,SiT5000,https://www.sitime.com/datasheet/SiT5000,assets/datasheets/SiT5000.pdf,local PDF
+product-source,SiT5001,https://sitimechina.com/products/vc-tcxo/SIT5001,#read/product/SiT5001,on-site specifications
+product-manufacturer,SiT5001,https://www.sitime.com/products/ultrastable-mhz-super-tcxos/vc-super-tcxos/sit5001,#read/product/SiT5001,on-site specifications
+datasheet,SiT5001,https://www.sitime.com/datasheet/SiT5001,assets/datasheets/SiT5001.pdf,local PDF
+product-source,SiT5356,https://sitimechina.com/products/vc-tcxo/SIT5356,#read/product/SiT5356,on-site specifications
+product-manufacturer,SiT5356,https://www.sitime.com/products/ultrastable-mhz-super-tcxos/super-tcxos/sit5356,#read/product/SiT5356,on-site specifications
+datasheet,SiT5356,https://www.sitime.com/datasheet/SiT5356,assets/datasheets/SiT5356.pdf,local PDF
+product-source,SiT5357,https://sitimechina.com/products/vc-tcxo/SIT5357,#read/product/SiT5357,on-site specifications
+product-manufacturer,SiT5357,https://www.sitime.com/products/ultrastable-mhz-super-tcxos/super-tcxos/sit5357,#read/product/SiT5357,on-site specifications
+datasheet,SiT5357,https://www.sitime.com/datasheet/SiT5357,assets/datasheets/SiT5357.pdf,local PDF
+product-source,SiT5386,https://sitimechina.com/products/vc-tcxo/SIT5386,#read/product/SiT5386,on-site specifications
+product-manufacturer,SiT5386,https://www.sitime.com/products/auto-aec-q100-timing/ultra-stable-mhz-super-tcxos/sit5386,#read/product/SiT5386,on-site specifications
+datasheet,SiT5386,https://www.sitime.com/datasheet/SiT5386,assets/datasheets/SiT5386.pdf,local PDF
+product-source,SiT5387,https://sitimechina.com/products/vc-tcxo/SIT5387,#read/product/SiT5387,on-site specifications
+product-manufacturer,SiT5387,https://www.sitime.com/products/auto-aec-q100-timing/ultra-stable-mhz-super-tcxos/sit5387,#read/product/SiT5387,on-site specifications
+datasheet,SiT5387,https://www.sitime.com/datasheet/SiT5387,assets/datasheets/SiT5387.pdf,local PDF
+product-source,SiT5376,https://sitimechina.com/products/vc-tcxo/SIT5376,#read/product/SiT5376,on-site specifications
+product-manufacturer,SiT5376,https://www.sitime.com/products/ultrastable-mhz-super-tcxos/super-tcxos/sit5376,#read/product/SiT5376,on-site specifications
+datasheet,SiT5376,https://www.sitime.com/request-datasheet?product=40969,#contact,pending manufacturer PDF; local inquiry
+product-source,SiT5377,https://sitimechina.com/products/vc-tcxo/SIT5377,#read/product/SiT5377,on-site specifications
+product-manufacturer,SiT5377,https://www.sitime.com/products/ultrastable-mhz-super-tcxos/super-tcxos/sit5377,#read/product/SiT5377,on-site specifications
+datasheet,SiT5377,https://www.sitime.com/request-datasheet?product=40970,#contact,pending manufacturer PDF; local inquiry
+product-source,SiT5977,https://sitimechina.com/products/vc-tcxo/SIT5977,#read/product/SiT5977,on-site specifications
+product-manufacturer,SiT5977,https://www.sitime.com/products/ultrastable-mhz-super-tcxos/super-tcxos/sit5977,#read/product/SiT5977,on-site specifications
+datasheet,SiT5977,https://www.sitime.com/request-datasheet?product=43960,#contact,pending manufacturer PDF; local inquiry
+product-source,SiT5501,https://sitimechina.com/products/vc-tcxo/SIT5501,#read/product/SiT5501,on-site specifications
+product-manufacturer,SiT5501,https://www.sitime.com/products/ultrastable-mhz-super-tcxos/super-tcxos/sit5501,#read/product/SiT5501,on-site specifications
+datasheet,SiT5501,https://www.sitime.com/datasheet/SiT5501,assets/datasheets/SiT5501.pdf,local PDF
+product-source,SiT5503,https://sitimechina.com/products/vc-tcxo/SIT5503,#read/product/SiT5503,on-site specifications
+product-manufacturer,SiT5503,https://www.sitime.com/products/ultrastable-mhz-super-tcxos/super-tcxos/sit5503,#read/product/SiT5503,on-site specifications
+datasheet,SiT5503,https://www.sitime.com/datasheet/SiT5503,assets/datasheets/SiT5503.pdf,local PDF
+product-source,SiT5711,https://sitimechina.com/products/ocxo/SIT5711,#read/product/SiT5711,on-site specifications
+datasheet,SiT5711,https://www.sitime.com,#contact,pending manufacturer PDF; local inquiry
+product-source,SiT5721,https://sitimechina.com/products/ocxo/SIT5721,#read/product/SiT5721,on-site specifications
+datasheet,SiT5721,https://www.sitime.com/datasheet/SiT5721,assets/datasheets/SiT5721.pdf,local PDF
+product-source,SiT5801,https://sitimechina.com/products/ocxo/SIT5801,#read/product/SiT5801,on-site specifications
+product-manufacturer,SiT5801,https://www.sitime.com/products/programmable-ocxos/holdover-ocxos/sit5801,#read/product/SiT5801,on-site specifications
+datasheet,SiT5801,https://www.sitime.com/request-datasheet?product=41190,#contact,pending manufacturer PDF; local inquiry
+product-source,SiT5802,https://sitimechina.com/products/ocxo/SIT5802,#read/product/SiT5802,on-site specifications
+product-manufacturer,SiT5802,https://www.sitime.com/products/programmable-ocxos/holdover-ocxos/sit5802,#read/product/SiT5802,on-site specifications
+datasheet,SiT5802,https://www.sitime.com/request-datasheet?product=41191,#contact,pending manufacturer PDF; local inquiry
+product-source,SiT5811,https://sitimechina.com/products/ocxo/SIT5811,#read/product/SiT5811,on-site specifications
+product-manufacturer,SiT5811,https://www.sitime.com/products/programmable-ocxos/holdover-ocxos/sit5811,#read/product/SiT5811,on-site specifications
+datasheet,SiT5811,https://www.sitime.com/request-datasheet?product=41192,#contact,pending manufacturer PDF; local inquiry
+product-source,SiT5812,https://sitimechina.com/products/ocxo/SIT5812,#read/product/SiT5812,on-site specifications
+product-manufacturer,SiT5812,https://www.sitime.com/products/programmable-ocxos/holdover-ocxos/sit5812,#read/product/SiT5812,on-site specifications
+datasheet,SiT5812,https://www.sitime.com/request-datasheet?product=41193,#contact,pending manufacturer PDF; local inquiry
+product-source,SiT1533,https://sitimechina.com/products/khz-oscillators/SIT1533,#read/product/SiT1533,on-site specifications
+product-manufacturer,SiT1533,https://www.sitime.com/products/32-khz-mpower-oscillators/32-khz-oscillators/sit1533,#read/product/SiT1533,on-site specifications
+datasheet,SiT1533,https://www.sitime.com/datasheet/SiT1533,assets/datasheets/SiT1533.pdf,local PDF
+product-source,SiT1532,https://sitimechina.com/products/khz-oscillators/SIT1532,#read/product/SiT1532,on-site specifications
+product-manufacturer,SiT1532,https://www.sitime.com/products/32-khz-mpower-oscillators/32-khz-oscillators/sit1532,#read/product/SiT1532,on-site specifications
+datasheet,SiT1532,https://www.sitime.com/datasheet/SiT1532,assets/datasheets/SiT1532.pdf,local PDF
+product-source,SiT1630,https://sitimechina.com/products/khz-oscillators/SIT1630,#read/product/SiT1630,on-site specifications
+product-manufacturer,SiT1630,https://www.sitime.com/products/32-khz-mpower-oscillators/32-khz-oscillators/sit1630,#read/product/SiT1630,on-site specifications
+datasheet,SiT1630,https://www.sitime.com/datasheet/SiT1630,assets/datasheets/SiT1630.pdf,local PDF
+product-source,SiT1572,https://sitimechina.com/products/khz-oscillators/SIT1572,#read/product/SiT1572,on-site specifications
+product-manufacturer,SiT1572,https://www.sitime.com/products/32-khz-mpower-oscillators/32-khz-oscillators/sit1572,#read/product/SiT1572,on-site specifications
+datasheet,SiT1572,https://www.sitime.com/datasheet/SiT1572,assets/datasheets/SiT1572.pdf,local PDF
+product-source,SiT1573,https://sitimechina.com/products/khz-oscillators/SIT1573,#read/product/SiT1573,on-site specifications
+product-manufacturer,SiT1573,https://www.sitime.com/products/32-khz-mpower-oscillators/32-khz-oscillators/sit1573,#read/product/SiT1573,on-site specifications
+datasheet,SiT1573,https://www.sitime.com/datasheet/SiT1573,assets/datasheets/SiT1573.pdf,local PDF
+product-source,SiT1552,https://sitimechina.com/products/khz-oscillators/SIT1552,#read/product/SiT1552,on-site specifications
+product-manufacturer,SiT1552,https://www.sitime.com/products/32-khz-mpower-oscillators/32-khz-tcxos/sit1552,#read/product/SiT1552,on-site specifications
+datasheet,SiT1552,https://www.sitime.com/datasheet/SiT1552,assets/datasheets/SiT1552.pdf,local PDF
+product-source,SiT1568,https://sitimechina.com/products/khz-oscillators/SIT1568,#read/product/SiT1568,on-site specifications
+product-manufacturer,SiT1568,https://www.sitime.com/products/32-khz-mpower-oscillators/32-khz-tcxos/sit1568,#read/product/SiT1568,on-site specifications
+datasheet,SiT1568,https://www.sitime.com/datasheet/SiT1568,assets/datasheets/SiT1568.pdf,local PDF
+product-source,SiT1566,https://sitimechina.com/products/khz-oscillators/SIT1566,#read/product/SiT1566,on-site specifications
+product-manufacturer,SiT1566,https://www.sitime.com/products/32-khz-mpower-oscillators/32-khz-tcxos/sit1566,#read/product/SiT1566,on-site specifications
+datasheet,SiT1566,https://www.sitime.com/datasheet/SiT1566,assets/datasheets/SiT1566.pdf,local PDF
+product-source,SiT1580,https://sitimechina.com/products/khz-oscillators/SIT1580,#read/product/SiT1580,on-site specifications
+product-manufacturer,SiT1580,https://www.sitime.com/products/32-khz-mpower-oscillators/32-khz-tcxos/sit1580,#read/product/SiT1580,on-site specifications
+datasheet,SiT1580,https://www.sitime.com/datasheet/SiT1580,assets/datasheets/SiT1580.pdf,local PDF
+product-source,SiT1576,https://sitimechina.com/products/khz-oscillators/SIT1576,#read/product/SiT1576,on-site specifications
+product-manufacturer,SiT1576,https://www.sitime.com/products/32-khz-mpower-oscillators/1-hz-25-mhz-oscillators-tcxo/sit1576,#read/product/SiT1576,on-site specifications
+datasheet,SiT1576,https://www.sitime.com/datasheet/SiT1576,assets/datasheets/SiT1576.pdf,local PDF
+product-source,SiT1811,https://sitimechina.com/products/khz-oscillators/SIT1811,#read/product/SiT1811,on-site specifications
+product-manufacturer,SiT1811,https://www.sitime.com/products/32-khz-mpower-oscillators/32-khz-oscillators/sit1811,#read/product/SiT1811,on-site specifications
+datasheet,SiT1811,https://www.sitime.com/datasheet/SiT1811,assets/datasheets/SiT1811.pdf,local PDF
+product-source,SiT1581,https://sitimechina.com/products/khz-oscillators/SIT1581,#read/product/SiT1581,on-site specifications
+product-manufacturer,SiT1581,https://www.sitime.com/products/32-khz-mpower-oscillators/1-hz-25-mhz-oscillators-tcxo/sit1581,#read/product/SiT1581,on-site specifications
+datasheet,SiT1581,https://www.sitime.com/datasheet/SiT1581,assets/datasheets/SiT1581.pdf,local PDF
+product-source,SiT1579,https://sitimechina.com/products/khz-oscillators/SIT1579,#read/product/SiT1579,on-site specifications
+product-manufacturer,SiT1579,https://www.sitime.com/products/32-khz-mpower-oscillators/1-hz-25-mhz-oscillators-tcxo/sit1579,#read/product/SiT1579,on-site specifications
+datasheet,SiT1579,https://www.sitime.com/datasheet/SiT1579,assets/datasheets/SiT1579.pdf,local PDF
+product-source,SiT1569,https://sitimechina.com/products/khz-oscillators/SIT1569,#read/product/SiT1569,on-site specifications
+product-manufacturer,SiT1569,https://www.sitime.com/products/32-khz-mpower-oscillators/1-hz-4625-khz-oscillators/sit1569,#read/product/SiT1569,on-site specifications
+datasheet,SiT1569,https://www.sitime.com/datasheet/SiT1569,assets/datasheets/SiT1569.pdf,local PDF
+product-source,SiT1534,https://sitimechina.com/products/khz-oscillators/SIT1534,#read/product/SiT1534,on-site specifications
+product-manufacturer,SiT1534,https://www.sitime.com/products/32-khz-mpower-oscillators/1-hz-4625-khz-oscillators/sit1534,#read/product/SiT1534,on-site specifications
+datasheet,SiT1534,https://www.sitime.com/datasheet/SiT1534,assets/datasheets/SiT1534.pdf,local PDF
+product-source,SiT9003,https://sitimechina.com/products/ssxo/SIT9003,#read/product/SiT9003,on-site specifications
+product-manufacturer,SiT9003,https://www.sitime.com/products/mhz-oscillators/spread-spectrum-oscillators/sit9003,#read/product/SiT9003,on-site specifications
+datasheet,SiT9003,https://www.sitime.com/sites/default/files/gated/SiT9003-datasheet.pdf,assets/datasheets/SiT9003.pdf,local PDF
+product-source,SiT9005,https://sitimechina.com/products/ssxo/SIT9005,#read/product/SiT9005,on-site specifications
+product-manufacturer,SiT9005,https://www.sitime.com/products/mhz-oscillators/spread-spectrum-oscillators/sit9005,#read/product/SiT9005,on-site specifications
+datasheet,SiT9005,https://www.sitime.com/datasheet/SiT9005,assets/datasheets/SiT9005.pdf,local PDF
+product-source,SiT9002,https://sitimechina.com/products/ssxo/SIT9002,#read/product/SiT9002,on-site specifications
+product-manufacturer,SiT9002,https://www.sitime.com/products/mhz-oscillators/spread-spectrum-oscillators/sit9002,#read/product/SiT9002,on-site specifications
+datasheet,SiT9002,https://www.sitime.com/api/gated/SiT9002-datasheet.pdf,assets/datasheets/SiT9002.pdf,local PDF
+product-source,SiT9025,https://sitimechina.com/products/ssxo/SIT9025,#read/product/SiT9025,on-site specifications
+product-manufacturer,SiT9025,https://www.sitime.com/products/auto-aec-q100-timing/mhz-oscillators/sit9025,#read/product/SiT9025,on-site specifications
+datasheet,SiT9025,https://www.sitime.com/datasheet/SiT9025,assets/datasheets/SiT9025.pdf,local PDF
+product-source,SiT3901,https://www.sitime.com/products/mhz-oscillators/digitally-controlled-oscillators/sit3901,#read/product/SiT3901,on-site specifications
+product-manufacturer,SiT3901,https://www.sitime.com/products/mhz-oscillators/digitally-controlled-oscillators/sit3901,#read/product/SiT3901,on-site specifications
+datasheet,SiT3901,https://www.sitime.com/datasheet/SiT3901,assets/datasheets/SiT3901.pdf,local PDF
+product-source,SiT3907,https://www.sitime.com/products/mhz-oscillators/digitally-controlled-oscillators/sit3907,#read/product/SiT3907,on-site specifications
+product-manufacturer,SiT3907,https://www.sitime.com/products/mhz-oscillators/digitally-controlled-oscillators/sit3907,#read/product/SiT3907,on-site specifications
+datasheet,SiT3907,https://www.sitime.com/datasheet/SiT3907,assets/datasheets/SiT3907.pdf,local PDF
+product-source,SiT3921,https://www.sitime.com/products/mhz-oscillators/digitally-controlled-oscillators/sit3921,#read/product/SiT3921,on-site specifications
+product-manufacturer,SiT3921,https://www.sitime.com/products/mhz-oscillators/digitally-controlled-oscillators/sit3921,#read/product/SiT3921,on-site specifications
+datasheet,SiT3921,https://www.sitime.com/datasheet/SiT3921,assets/datasheets/SiT3921.pdf,local PDF
+product-source,SiT3922,https://www.sitime.com/products/mhz-oscillators/digitally-controlled-oscillators/sit3922,#read/product/SiT3922,on-site specifications
+product-manufacturer,SiT3922,https://www.sitime.com/products/mhz-oscillators/digitally-controlled-oscillators/sit3922,#read/product/SiT3922,on-site specifications
+datasheet,SiT3922,https://www.sitime.com/datasheet/SiT3922,assets/datasheets/SiT3922.pdf,local PDF
+product-source,SiT3521,https://www.sitime.com/products/mhz-oscillators/digitally-controlled-oscillators/sit3521,#read/product/SiT3521,on-site specifications
+product-manufacturer,SiT3521,https://www.sitime.com/products/mhz-oscillators/digitally-controlled-oscillators/sit3521,#read/product/SiT3521,on-site specifications
+datasheet,SiT3521,https://www.sitime.com/datasheet/SiT3521,assets/datasheets/SiT3521.pdf,local PDF
+product-source,SiT3522,https://www.sitime.com/products/mhz-oscillators/digitally-controlled-oscillators/sit3522,#read/product/SiT3522,on-site specifications
+product-manufacturer,SiT3522,https://www.sitime.com/products/mhz-oscillators/digitally-controlled-oscillators/sit3522,#read/product/SiT3522,on-site specifications
+datasheet,SiT3522,https://www.sitime.com/datasheet/SiT3522,assets/datasheets/SiT3522.pdf,local PDF
+product-source,SiT95145,https://www.sitime.com/products/jitter-cleaners-network-synchronizers/mems-jitter-cleaners/sit95145,#read/product/SiT95145,on-site specifications
+product-manufacturer,SiT95145,https://www.sitime.com/products/jitter-cleaners-network-synchronizers/mems-jitter-cleaners/sit95145,#read/product/SiT95145,on-site specifications
+datasheet,SiT95145,https://www.sitime.com/datasheet/SiT95145,assets/datasheets/SiT95145.pdf,local PDF
+product-source,SiT95147,https://www.sitime.com/products/jitter-cleaners-network-synchronizers/mems-network-synchronizers/sit95147,#read/product/SiT95147,on-site specifications
+product-manufacturer,SiT95147,https://www.sitime.com/products/jitter-cleaners-network-synchronizers/mems-network-synchronizers/sit95147,#read/product/SiT95147,on-site specifications
+datasheet,SiT95147,https://www.sitime.com/datasheet/SiT95147,assets/datasheets/SiT95147.pdf,local PDF
+product-source,SiT95148,https://www.sitime.com/products/jitter-cleaners-network-synchronizers/mems-network-synchronizers/sit95148,#read/product/SiT95148,on-site specifications
+product-manufacturer,SiT95148,https://www.sitime.com/products/jitter-cleaners-network-synchronizers/mems-network-synchronizers/sit95148,#read/product/SiT95148,on-site specifications
+datasheet,SiT95148,https://www.sitime.com/datasheet/SiT95148,assets/datasheets/SiT95148.pdf,local PDF
+product-source,SiT95312,https://www.sitime.com/products/jitter-cleaners-network-synchronizers/jitter-cleaners/sit95312,#read/product/SiT95312,on-site specifications
+product-manufacturer,SiT95312,https://www.sitime.com/products/jitter-cleaners-network-synchronizers/jitter-cleaners/sit95312,#read/product/SiT95312,on-site specifications
+datasheet,SiT95312,https://www.sitime.com/datasheet/SiT95312,assets/datasheets/SiT95312.pdf,local PDF
+product-source,SiT95314,https://www.sitime.com/products/jitter-cleaners-network-synchronizers/jitter-cleaners/sit95314,#read/product/SiT95314,on-site specifications
+product-manufacturer,SiT95314,https://www.sitime.com/products/jitter-cleaners-network-synchronizers/jitter-cleaners/sit95314,#read/product/SiT95314,on-site specifications
+datasheet,SiT95314,https://www.sitime.com/datasheet/SiT95314,assets/datasheets/SiT95314.pdf,local PDF
+product-source,SiT95315,https://www.sitime.com/products/jitter-cleaners-network-synchronizers/jitter-cleaners/sit95315,#read/product/SiT95315,on-site specifications
+product-manufacturer,SiT95315,https://www.sitime.com/products/jitter-cleaners-network-synchronizers/jitter-cleaners/sit95315,#read/product/SiT95315,on-site specifications
+datasheet,SiT95315,https://www.sitime.com/datasheet/SiT95315,assets/datasheets/SiT95315.pdf,local PDF
+product-source,SiT95316,https://www.sitime.com/products/jitter-cleaners-network-synchronizers/network-synchronizers/sit95316,#read/product/SiT95316,on-site specifications
+product-manufacturer,SiT95316,https://www.sitime.com/products/jitter-cleaners-network-synchronizers/network-synchronizers/sit95316,#read/product/SiT95316,on-site specifications
+datasheet,SiT95316,https://www.sitime.com/datasheet/SiT95316,assets/datasheets/SiT95316.pdf,local PDF
+product-source,SiT95317,https://www.sitime.com/products/jitter-cleaners-network-synchronizers/network-synchronizers/sit95317,#read/product/SiT95317,on-site specifications
+product-manufacturer,SiT95317,https://www.sitime.com/products/jitter-cleaners-network-synchronizers/network-synchronizers/sit95317,#read/product/SiT95317,on-site specifications
+datasheet,SiT95317,https://www.sitime.com/datasheet/SiT95317,assets/datasheets/SiT95317.pdf,local PDF
+product-source,SiT95141,https://www.sitime.com/products/clock-generators/mems-clock-generators/sit95141,#read/product/SiT95141,on-site specifications
+product-manufacturer,SiT95141,https://www.sitime.com/products/clock-generators/mems-clock-generators/sit95141,#read/product/SiT95141,on-site specifications
+datasheet,SiT95141,https://www.sitime.com/datasheet/SiT95141,assets/datasheets/SiT95141.pdf,local PDF
+product-source,SiT91211,https://www.sitime.com/products/clock-generators/mems-clock-generators/sit91211,#read/product/SiT91211,on-site specifications
+product-manufacturer,SiT91211,https://www.sitime.com/products/clock-generators/mems-clock-generators/sit91211,#read/product/SiT91211,on-site specifications
+datasheet,SiT91211,https://www.sitime.com/datasheet/SiT91211,assets/datasheets/SiT91211.pdf,local PDF
+product-source,SiT91213,https://www.sitime.com/products/clock-generators/mems-clock-generators/sit91213,#read/product/SiT91213,on-site specifications
+product-manufacturer,SiT91213,https://www.sitime.com/products/clock-generators/mems-clock-generators/sit91213,#read/product/SiT91213,on-site specifications
+datasheet,SiT91213,https://www.sitime.com/datasheet/SiT91213,assets/datasheets/SiT91213.pdf,local PDF
+product-source,SiT95210,https://www.sitime.com/products/clock-generators/clock-generators/sit95210,#read/product/SiT95210,on-site specifications
+product-manufacturer,SiT95210,https://www.sitime.com/products/clock-generators/clock-generators/sit95210,#read/product/SiT95210,on-site specifications
+datasheet,SiT95210,https://www.sitime.com/datasheet/SiT95210,assets/datasheets/SiT95210.pdf,local PDF
+product-source,SiT95211,https://www.sitime.com/products/clock-generators/clock-generators/sit95211,#read/product/SiT95211,on-site specifications
+product-manufacturer,SiT95211,https://www.sitime.com/products/clock-generators/clock-generators/sit95211,#read/product/SiT95211,on-site specifications
+datasheet,SiT95211,https://www.sitime.com/datasheet/SiT95211,assets/datasheets/SiT95211.pdf,local PDF
+product-source,SiT30100,https://www.sitime.com/products/clock-generators/clock-generators/sit30100,#read/product/SiT30100,on-site specifications
+product-manufacturer,SiT30100,https://www.sitime.com/products/clock-generators/clock-generators/sit30100,#read/product/SiT30100,on-site specifications
+datasheet,SiT30100,https://www.sitime.com/request-datasheet?product=44064,#contact,pending manufacturer PDF; local inquiry
+product-source,SiT95901,https://www.sitime.com/products/clock-generators/real-time-clock/sit95901,#read/product/SiT95901,on-site specifications
+product-manufacturer,SiT95901,https://www.sitime.com/products/clock-generators/real-time-clock/sit95901,#read/product/SiT95901,on-site specifications
+datasheet,SiT95901,https://www.sitime.com/datasheet/SiT95901,assets/datasheets/SiT95901.pdf,local PDF
+product-source,SiT91288,https://www.sitime.com/products/auto-aec-q100-timing/mems-clock-generators/sit91288,#read/product/SiT91288,on-site specifications
+product-manufacturer,SiT91288,https://www.sitime.com/products/auto-aec-q100-timing/mems-clock-generators/sit91288,#read/product/SiT91288,on-site specifications
+datasheet,SiT91288,https://www.sitime.com/request-datasheet?product=42990,#contact,pending manufacturer PDF; local inquiry
+product-source,SiT91285,https://www.sitime.com/products/auto-aec-q100-timing/mems-clock-generators/sit91285,#read/product/SiT91285,on-site specifications
+product-manufacturer,SiT91285,https://www.sitime.com/products/auto-aec-q100-timing/mems-clock-generators/sit91285,#read/product/SiT91285,on-site specifications
+datasheet,SiT91285,https://www.sitime.com/request-datasheet?product=42989,#contact,pending manufacturer PDF; local inquiry
+product-source,SiT91283,https://www.sitime.com/products/auto-aec-q100-timing/mems-clock-generators/sit91283,#read/product/SiT91283,on-site specifications
+product-manufacturer,SiT91283,https://www.sitime.com/products/auto-aec-q100-timing/mems-clock-generators/sit91283,#read/product/SiT91283,on-site specifications
+datasheet,SiT91283,https://www.sitime.com/request-datasheet?product=42988,#contact,pending manufacturer PDF; local inquiry
+product-source,SiT91281,https://www.sitime.com/products/auto-aec-q100-timing/mems-clock-generators/sit91281,#read/product/SiT91281,on-site specifications
+product-manufacturer,SiT91281,https://www.sitime.com/products/auto-aec-q100-timing/mems-clock-generators/sit91281,#read/product/SiT91281,on-site specifications
+datasheet,SiT91281,https://www.sitime.com/request-datasheet?product=42987,#contact,pending manufacturer PDF; local inquiry
+product-source,SiT92110,https://www.sitime.com/products/clock-buffers/high-performance-buffers/sit92110,#read/product/SiT92110,on-site specifications
+product-manufacturer,SiT92110,https://www.sitime.com/products/clock-buffers/high-performance-buffers/sit92110,#read/product/SiT92110,on-site specifications
+datasheet,SiT92110,https://www.sitime.com/datasheet/SiT92110,assets/datasheets/SiT92110.pdf,local PDF
+product-source,SiT92112,https://www.sitime.com/products/clock-buffers/high-performance-buffers/sit92112,#read/product/SiT92112,on-site specifications
+product-manufacturer,SiT92112,https://www.sitime.com/products/clock-buffers/high-performance-buffers/sit92112,#read/product/SiT92112,on-site specifications
+datasheet,SiT92112,https://www.sitime.com/datasheet/SiT92112,assets/datasheets/SiT92112.pdf,local PDF
+product-source,SiT92113,https://www.sitime.com/products/clock-buffers/high-performance-buffers/sit92113,#read/product/SiT92113,on-site specifications
+product-manufacturer,SiT92113,https://www.sitime.com/products/clock-buffers/high-performance-buffers/sit92113,#read/product/SiT92113,on-site specifications
+datasheet,SiT92113,https://www.sitime.com/datasheet/SiT92113,assets/datasheets/SiT92113.pdf,local PDF
+product-source,SiT92114,https://www.sitime.com/products/clock-buffers/high-performance-buffers/sit92114,#read/product/SiT92114,on-site specifications
+product-manufacturer,SiT92114,https://www.sitime.com/products/clock-buffers/high-performance-buffers/sit92114,#read/product/SiT92114,on-site specifications
+datasheet,SiT92114,https://www.sitime.com/datasheet/SiT92114,assets/datasheets/SiT92114.pdf,local PDF
+product-source,SiT92206,https://www.sitime.com/products/clock-buffers/high-performance-buffers/sit92206,#read/product/SiT92206,on-site specifications
+product-manufacturer,SiT92206,https://www.sitime.com/products/clock-buffers/high-performance-buffers/sit92206,#read/product/SiT92206,on-site specifications
+datasheet,SiT92206,https://www.sitime.com/datasheet/SiT92206,assets/datasheets/SiT92206.pdf,local PDF
+product-source,SiT92208,https://www.sitime.com/products/clock-buffers/high-performance-buffers/sit92208,#read/product/SiT92208,on-site specifications
+product-manufacturer,SiT92208,https://www.sitime.com/products/clock-buffers/high-performance-buffers/sit92208,#read/product/SiT92208,on-site specifications
+datasheet,SiT92208,https://www.sitime.com/datasheet/SiT92208,assets/datasheets/SiT92208.pdf,local PDF
+product-source,SiT92211,https://www.sitime.com/products/clock-buffers/high-performance-buffers/sit92211,#read/product/SiT92211,on-site specifications
+product-manufacturer,SiT92211,https://www.sitime.com/products/clock-buffers/high-performance-buffers/sit92211,#read/product/SiT92211,on-site specifications
+datasheet,SiT92211,https://www.sitime.com/datasheet/SiT92211,assets/datasheets/SiT92211.pdf,local PDF
+product-source,SiT92216,https://www.sitime.com/products/clock-buffers/high-performance-buffers/sit92216,#read/product/SiT92216,on-site specifications
+product-manufacturer,SiT92216,https://www.sitime.com/products/clock-buffers/high-performance-buffers/sit92216,#read/product/SiT92216,on-site specifications
+datasheet,SiT92216,https://www.sitime.com/datasheet/SiT92216,assets/datasheets/SiT92216.pdf,local PDF
+product-source,SiT92310,https://sitimechina.com/products/clock-buffers/SIT92310,#read/product/SiT92310,on-site specifications
+product-manufacturer,SiT92310,https://www.sitime.com/products/clock-buffers/pcie-buffers/sit92310,#read/product/SiT92310,on-site specifications
+datasheet,SiT92310,https://www.sitime.com/products/clock-buffers/pcie-buffers/sit92310,#contact,pending manufacturer PDF; local inquiry
+product-source,SiT92313,https://www.sitime.com/products/clock-buffers/pcie-buffers/sit92313,#read/product/SiT92313,on-site specifications
+product-manufacturer,SiT92313,https://www.sitime.com/products/clock-buffers/pcie-buffers/sit92313,#read/product/SiT92313,on-site specifications
+datasheet,SiT92313,https://www.sitime.com/datasheet/SiT92313,assets/datasheets/SiT92313.pdf,local PDF
+product-source,SiT92314,https://www.sitime.com/products/clock-buffers/pcie-buffers/sit92314,#read/product/SiT92314,on-site specifications
+product-manufacturer,SiT92314,https://www.sitime.com/products/clock-buffers/pcie-buffers/sit92314,#read/product/SiT92314,on-site specifications
+datasheet,SiT92314,https://www.sitime.com/datasheet/SiT92314,assets/datasheets/SiT92314.pdf,local PDF
+product-source,SiT92315,https://www.sitime.com/products/clock-buffers/pcie-buffers/sit92315,#read/product/SiT92315,on-site specifications
+product-manufacturer,SiT92315,https://www.sitime.com/products/clock-buffers/pcie-buffers/sit92315,#read/product/SiT92315,on-site specifications
+datasheet,SiT92315,https://www.sitime.com/datasheet/SiT92315,assets/datasheets/SiT92315.pdf,local PDF
+product-source,SiT92316,https://sitimechina.com/products/clock-buffers/SIT92316,#read/product/SiT92316,on-site specifications
+product-manufacturer,SiT92316,https://www.sitime.com/products/clock-buffers/pcie-buffers/sit92316,#read/product/SiT92316,on-site specifications
+datasheet,SiT92316,https://www.sitime.com/products/clock-buffers/pcie-buffers/sit92316,#contact,pending manufacturer PDF; local inquiry
+product-source,SiT92317,https://www.sitime.com/products/clock-buffers/pcie-buffers/sit92317,#read/product/SiT92317,on-site specifications
+product-manufacturer,SiT92317,https://www.sitime.com/products/clock-buffers/pcie-buffers/sit92317,#read/product/SiT92317,on-site specifications
+datasheet,SiT92317,https://www.sitime.com/datasheet/SiT92317,assets/datasheets/SiT92317.pdf,local PDF
+product-source,SiT92318,https://www.sitime.com/products/clock-buffers/pcie-buffers/sit92318,#read/product/SiT92318,on-site specifications
+product-manufacturer,SiT92318,https://www.sitime.com/products/clock-buffers/pcie-buffers/sit92318,#read/product/SiT92318,on-site specifications
+datasheet,SiT92318,https://www.sitime.com/datasheet/SiT92318,assets/datasheets/SiT92318.pdf,local PDF
+product-source,SiT92182,https://www.sitime.com/products/auto-aec-q100-timing/clock-buffers/sit92182,#read/product/SiT92182,on-site specifications
+product-manufacturer,SiT92182,https://www.sitime.com/products/auto-aec-q100-timing/clock-buffers/sit92182,#read/product/SiT92182,on-site specifications
+datasheet,SiT92182,https://www.sitime.com/datasheet/SiT92182,assets/datasheets/SiT92182.pdf,local PDF
+product-source,SiT92184,https://www.sitime.com/products/auto-aec-q100-timing/clock-buffers/sit92184,#read/product/SiT92184,on-site specifications
+product-manufacturer,SiT92184,https://www.sitime.com/products/auto-aec-q100-timing/clock-buffers/sit92184,#read/product/SiT92184,on-site specifications
+datasheet,SiT92184,https://www.sitime.com/datasheet/SiT92184,assets/datasheets/SiT92184.pdf,local PDF
+image,e26354cd4ea45e6cf5ba.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071416145826233.png,assets/site-images/e26354cd4ea45e6cf5ba.png,localized
+image,6b29096c06ff487516ef.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511200989168.png,assets/site-images/6b29096c06ff487516ef.png,localized
+image,1a4a7e2a60e9f06ea2b1.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511201814236.png,assets/site-images/1a4a7e2a60e9f06ea2b1.png,localized
+image,88bd16edff81e7f554bb.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511210881908.png,assets/site-images/88bd16edff81e7f554bb.png,localized
+image,74b40e6bebb7b11dff1d.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511213864419.png,assets/site-images/74b40e6bebb7b11dff1d.png,localized
+image,68ac294613bd71180f61.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511215033875.png,assets/site-images/68ac294613bd71180f61.png,localized
+image,cd9ac82258f596713ab6.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511220326983.png,assets/site-images/cd9ac82258f596713ab6.png,localized
+image,8076123124994783e3c3.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511221833342.png,assets/site-images/8076123124994783e3c3.png,localized
+image,48d863a4f37b131ecc30.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511223789092.png,assets/site-images/48d863a4f37b131ecc30.png,localized
+image,e254ed4105a487037e38.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511224897402.png,assets/site-images/e254ed4105a487037e38.png,localized
+image,8e6eba1c1b4c97a761e8.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511231219306.png,assets/site-images/8e6eba1c1b4c97a761e8.png,localized
+image,d812e32213ce35dd384e.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511232849141.png,assets/site-images/d812e32213ce35dd384e.png,localized
+image,19841cc644dd7fa06215.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511233628929.png,assets/site-images/19841cc644dd7fa06215.png,localized
+image,1156b897a33ebff45072.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511235132986.png,assets/site-images/1156b897a33ebff45072.png,localized
+image,fe49cc7af81aee575c7f.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511291766538.png,assets/site-images/fe49cc7af81aee575c7f.png,localized
+image,591b456e603f39b9d711.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511292532987.png,assets/site-images/591b456e603f39b9d711.png,localized
+image,415ee4d1ead7744214c9.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511293335338.png,assets/site-images/415ee4d1ead7744214c9.png,localized
+image,90c17ab54551b753f89b.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511294427656.png,assets/site-images/90c17ab54551b753f89b.png,localized
+image,f1ad71117f5d0ee00bfe.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511304258794.png,assets/site-images/f1ad71117f5d0ee00bfe.png,localized
+image,d2aff1908da281e90348.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511304998566.png,assets/site-images/d2aff1908da281e90348.png,localized
+image,df86c3ea3d68664bad88.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511310628763.png,assets/site-images/df86c3ea3d68664bad88.png,localized
+image,a26d9405b6bf16cb1f28.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511312119974.png,assets/site-images/a26d9405b6bf16cb1f28.png,localized
+image,4d4554e97ce87c9bb2df.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511321635289.png,assets/site-images/4d4554e97ce87c9bb2df.png,localized
+image,474f8b6dfbdf11c0f8d3.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511322437712.png,assets/site-images/474f8b6dfbdf11c0f8d3.png,localized
+image,bba73f7d8dfd46668e3f.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511323248460.png,assets/site-images/bba73f7d8dfd46668e3f.png,localized
+image,f3bf172eb4c2344534c3.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511324195880.png,assets/site-images/f3bf172eb4c2344534c3.png,localized
+image,c637c738fd186a2f538e.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511330626786.png,assets/site-images/c637c738fd186a2f538e.png,localized
+image,681394090cdf9a985b32.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511355355333.png,assets/site-images/681394090cdf9a985b32.png,localized
+image,4f5128f18eb16279c2ee.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511360193431.png,assets/site-images/4f5128f18eb16279c2ee.png,localized
+image,3eaaa4efd78c7447e54e.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511360837223.png,assets/site-images/3eaaa4efd78c7447e54e.png,localized
+image,70e551487040200eb8ea.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511370474261.png,assets/site-images/70e551487040200eb8ea.png,localized
+image,a00a08ff79187a17b50d.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511373349113.png,assets/site-images/a00a08ff79187a17b50d.png,localized
+image,47819c8218d8d0876d67.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511374070786.png,assets/site-images/47819c8218d8d0876d67.png,localized
+image,7155030c67f4e8001a2a.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511375876160.png,assets/site-images/7155030c67f4e8001a2a.png,localized
+image,2dc7f6471b74bd3a750d.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511391858131.png,assets/site-images/2dc7f6471b74bd3a750d.png,localized
+image,d934e0aba36052e5e25d.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071511392499492.png,assets/site-images/d934e0aba36052e5e25d.png,localized
+image,3a5233a8b74725ffa1e6.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071516551271461.png,assets/site-images/3a5233a8b74725ffa1e6.png,localized
+image,b0155b357a18fc2debc1.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071516552050343.png,assets/site-images/b0155b357a18fc2debc1.png,localized
+image,fb9bd868125da1f0f0d6.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071516553045909.png,assets/site-images/fb9bd868125da1f0f0d6.png,localized
+image,543bec665dcf1c951ff9.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071516565359572.png,assets/site-images/543bec665dcf1c951ff9.png,localized
+image,e9d5fe4318c264b9beae.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071516573720467.png,assets/site-images/e9d5fe4318c264b9beae.png,localized
+image,22cf25e3a7b0e115cd7a.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071516582081279.png,assets/site-images/22cf25e3a7b0e115cd7a.png,localized
+image,fc5d305476eb23124e9b.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071516583341690.png,assets/site-images/fc5d305476eb23124e9b.png,localized
+image,606b4453138063a7ad0b.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071516584479233.png,assets/site-images/606b4453138063a7ad0b.png,localized
+image,34f7a41fea86b2804c7b.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071517025679456.png,assets/site-images/34f7a41fea86b2804c7b.png,localized
+image,0d459ecd81dc9b5b8fbb.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071518085053718.png,assets/site-images/0d459ecd81dc9b5b8fbb.png,localized
+image,3112297e41709b1d802c.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202107/2021071518090338615.png,assets/site-images/3112297e41709b1d802c.png,localized
+image,5c2aa005c2d1ae027681.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202108/2021082616310117590.png,assets/site-images/5c2aa005c2d1ae027681.png,localized
+image,edcc5cfac8a0ee27b04e.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202108/2021082616310926059.png,assets/site-images/edcc5cfac8a0ee27b04e.png,localized
+image,90fd92b05c97ced252df.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202203/2022031611003778295.png,assets/site-images/90fd92b05c97ced252df.png,localized
+image,3e66d13e11ec1a55efee.jpg,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202206/2022061417323582076.jpg,assets/site-images/3e66d13e11ec1a55efee.jpg,localized
+image,4f45fc3159648668425b.jpg,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202206/2022061417350226215.jpg,assets/site-images/4f45fc3159648668425b.jpg,localized
+image,814df8c36df332b7aea9.jpg,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202206/2022061417355048362.jpg,assets/site-images/814df8c36df332b7aea9.jpg,localized
+image,a937b932c226469a73c4.jpg,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202206/2022061417372821877.jpg,assets/site-images/a937b932c226469a73c4.jpg,localized
+image,a7fdbfc13fa099050f2c.webp,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202405/2024053014114767833.png,assets/site-images/a7fdbfc13fa099050f2c.webp,localized
+image,d044855484dabea0af7b.webp,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202405/2024053114344610716.png,assets/site-images/d044855484dabea0af7b.webp,localized
+image,3ac4d06f1918437afde2.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202405/2024053115022517371.png,assets/site-images/3ac4d06f1918437afde2.png,localized
+image,1e29e48dd4a8f16b1f28.webp,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024060310452547169.png,assets/site-images/1e29e48dd4a8f16b1f28.webp,localized
+image,f46b1f4bf79c98a18018.webp,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024060311423190003.png,assets/site-images/f46b1f4bf79c98a18018.webp,localized
+image,91e8405089d2decf6611.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024060314441561349.png,assets/site-images/91e8405089d2decf6611.png,localized
+image,dcc7147a9c826a72fce1.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024060315042949094.png,assets/site-images/dcc7147a9c826a72fce1.png,localized
+image,d8c1884e7de4cbf76e5c.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024060315544462610.png,assets/site-images/d8c1884e7de4cbf76e5c.png,localized
+image,bd5d1caa8bd1c5f78dda.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024060317375778533.png,assets/site-images/bd5d1caa8bd1c5f78dda.png,localized
+image,d06a19b1935233411559.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024060317445359566.png,assets/site-images/d06a19b1935233411559.png,localized
+image,8ba3bd924a651635940d.webp,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024060411043410407.png,assets/site-images/8ba3bd924a651635940d.webp,localized
+image,49d1b4d2a84023849360.webp,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024060413471452446.png,assets/site-images/49d1b4d2a84023849360.webp,localized
+image,f5737acecd8ff3e22406.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024060414490988095.png,assets/site-images/f5737acecd8ff3e22406.png,localized
+image,983dadd1128e38df7f84.webp,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024060417051261619.png,assets/site-images/983dadd1128e38df7f84.webp,localized
+image,0028655e71efb7e0053e.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024060511314015849.png,assets/site-images/0028655e71efb7e0053e.png,localized
+image,65907b6c5cf6d374f454.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024060515313618833.png,assets/site-images/65907b6c5cf6d374f454.png,localized
+image,773958d81bc94b90145a.webp,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024060515314959667.png,assets/site-images/773958d81bc94b90145a.webp,localized
+image,a191114a3f9ed687fd2a.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024060515324618504.png,assets/site-images/a191114a3f9ed687fd2a.png,localized
+image,b03428e4f29478f13c10.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024060615510450786.png,assets/site-images/b03428e4f29478f13c10.png,localized
+image,72f85c8f24ea6ed359f8.webp,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024060616284050403.png,assets/site-images/72f85c8f24ea6ed359f8.webp,localized
+image,843539f0678b5a661f53.webp,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024061114094635292.png,assets/site-images/843539f0678b5a661f53.webp,localized
+image,3b719739b1e117c0e18f.webp,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024061115555323432.png,assets/site-images/3b719739b1e117c0e18f.webp,localized
+image,46d599954365ad0ae31a.webp,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024061210331169871.png,assets/site-images/46d599954365ad0ae31a.webp,localized
+image,ee125930c3d0acad0476.webp,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024061210591359681.png,assets/site-images/ee125930c3d0acad0476.webp,localized
+image,a66603f980f4c7f29272.webp,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024061214143764365.png,assets/site-images/a66603f980f4c7f29272.webp,localized
+image,bc75e3f235d6bfda7e61.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024061214310668731.png,assets/site-images/bc75e3f235d6bfda7e61.png,localized
+image,2fbde4e3e8085cbaf854.webp,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024061215055788500.png,assets/site-images/2fbde4e3e8085cbaf854.webp,localized
+image,5e1622cddf7034c1afc9.webp,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024061311590818253.png,assets/site-images/5e1622cddf7034c1afc9.webp,localized
+image,16c5237ad3af8b729b75.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024061314585881051.png,assets/site-images/16c5237ad3af8b729b75.png,localized
+image,a0028b1ababa529a9dd4.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024061315554376825.png,assets/site-images/a0028b1ababa529a9dd4.png,localized
+image,735dded0c4b92b2fe18c.webp,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024061316262922276.png,assets/site-images/735dded0c4b92b2fe18c.webp,localized
+image,024def9b97b8f8009fa9.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024061316265530032.png,assets/site-images/024def9b97b8f8009fa9.png,localized
+image,cbbaa1880cc66ed2a9dc.webp,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202406/2024061318204754589.png,assets/site-images/cbbaa1880cc66ed2a9dc.webp,localized
+image,f39832c4fbceb456ad32.webp,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202504/2025041418025532583.png,assets/site-images/f39832c4fbceb456ad32.webp,localized
+image,ea9f20fcc345dd3f1385.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202605/2026052917152474519.png,assets/site-images/ea9f20fcc345dd3f1385.png,localized
+image,8dd05cdc17259be3481b.png,https://sitime.oss-cn-beijing.aliyuncs.com/sitime/images/202606/2026060411170527740.png,assets/site-images/8dd05cdc17259be3481b.png,localized
+image,4fd43273dd8ae3d1687f.jpg,https://www.sitime.com/images/stories/presskit/PR-IoT-Low-28KB.jpg,assets/site-images/4fd43273dd8ae3d1687f.jpg,localized
+image,4cadca43bd21a61dd46c.jpg,https://www.sitime.com/images/stories/presskit/super-tcxo-page-graphic.jpg,assets/site-images/4cadca43bd21a61dd46c.jpg,localized
+image,e20b3b7624413738139c.png,https://www.sitime.com/images/stories/pressreleases/2016_EPPOYseal.png,assets/site-images/e20b3b7624413738139c.png,localized
+image,f41ccd7e1244bcc5164b.jpg,https://www.sitime.com/images/stories/pressreleases/SiT3907_Thumbnail.jpg,assets/site-images/f41ccd7e1244bcc5164b.jpg,localized
+image,cf01cb88d8cd5e163886.jpg,https://www.sitime.com/images/stories/pressreleases/SiTime-Lifetime-Warranty-lores.jpg,assets/site-images/cf01cb88d8cd5e163886.jpg,localized
+image,77fa4b4d3ebd8e64f05e.jpg,https://www.sitime.com/sites/default/files/applications/applications-mosa-open-architectures.jpg,assets/site-images/77fa4b4d3ebd8e64f05e.jpg,localized
+image,644179a93f00399c18a5.jpg,https://www.sitime.com/sites/default/files/applications/applications-satellite%20dish.jpg,assets/site-images/644179a93f00399c18a5.jpg,localized
+image,b94351fe03e40f9bf0e6.jpg,https://www.sitime.com/sites/default/files/heros/Automotive-Infotainment-Cluster-image.jpg,assets/site-images/b94351fe03e40f9bf0e6.jpg,localized
+image,cadb19452eba8a857c5d.jpg,https://www.sitime.com/sites/default/files/heros/Home-Banner-Industrial-Equipment.jpg,assets/site-images/cadb19452eba8a857c5d.jpg,localized
+image,88cc248549145e9a9626.jpg,https://www.sitime.com/sites/default/files/heros/Home-Banner-TimeFabric-Software-Suite.jpg,assets/site-images/88cc248549145e9a9626.jpg,localized
+image,205106d7cf31199661d1.png,https://www.sitime.com/sites/default/files/heros/Ruggedized_GNSS_Applications.png,assets/site-images/205106d7cf31199661d1.png,localized
+image,0a1aeed4866d8cc72b0c.jpg,https://www.sitime.com/sites/default/files/heros/Solutions-Aerospace-and-Defense-2.jpg,assets/site-images/0a1aeed4866d8cc72b0c.jpg,localized
+image,a9a40cd5ccc37199d2a7.jpg,https://www.sitime.com/sites/default/files/heros/Solutions-IoT.jpg,assets/site-images/a9a40cd5ccc37199d2a7.jpg,localized
+image,890128a6ca3a95a2995a.jpg,https://www.sitime.com/sites/default/files/heros/Solutions-Mobile-and-IoT.jpg,assets/site-images/890128a6ca3a95a2995a.jpg,localized
+image,3d83d328b84658d044e3.jpg,https://www.sitime.com/sites/default/files/heros/Timing-transforms-world-hero2.jpg,assets/site-images/3d83d328b84658d044e3.jpg,localized
+image,9ea7fe9870a1693b9893.jpg,https://www.sitime.com/sites/default/files/images/2024-happy-thanksgiving-3.jpg,assets/site-images/9ea7fe9870a1693b9893.jpg,localized
+image,c633b739fd067c91c762.jpg,https://www.sitime.com/sites/default/files/images/5g-tower-temperature-extremes.jpg,assets/site-images/c633b739fd067c91c762.jpg,localized
+image,5c43102777f1bec7834b.jpg,https://www.sitime.com/sites/default/files/images/AI-Precision-Timing.jpg,assets/site-images/5c43102777f1bec7834b.jpg,localized
+image,991922592ef9b5f191ae.jpg,https://www.sitime.com/sites/default/files/images/AI-datacenters-image.jpg,assets/site-images/991922592ef9b5f191ae.jpg,localized
+image,517ec9294ce1d926124a.jpg,https://www.sitime.com/sites/default/files/images/AI.jpg,assets/site-images/517ec9294ce1d926124a.jpg,localized
+image,95e9df0035cef770b62d.png,https://www.sitime.com/sites/default/files/images/Aaron-Partridge-blog.png,assets/site-images/95e9df0035cef770b62d.png,localized
+image,8a68ca45f63b53594daa.jpg,https://www.sitime.com/sites/default/files/images/Chorus%20Automotive.jpeg,assets/site-images/8a68ca45f63b53594daa.jpg,localized
+image,dc156b7d75c9f62141e0.jpg,https://www.sitime.com/sites/default/files/images/Chorus%20clock%20generator%20by%20ruler.jpg,assets/site-images/dc156b7d75c9f62141e0.jpg,localized
+image,05e51966ddb627d94574.jpg,https://www.sitime.com/sites/default/files/images/Chorus-2-EVB-Board.jpg,assets/site-images/05e51966ddb627d94574.jpg,localized
+image,857c9d6c295e11fbe60b.jpg,https://www.sitime.com/sites/default/files/images/Clock-packages.jpg,assets/site-images/857c9d6c295e11fbe60b.jpg,localized
+image,5d2aa4fbe39269e8f45d.jpg,https://www.sitime.com/sites/default/files/images/Electronic-Products-POY-2023-Winner.jpg,assets/site-images/5d2aa4fbe39269e8f45d.jpg,localized
+image,866bfe7e5375536e6c3d.jpg,https://www.sitime.com/sites/default/files/images/Epoch-OCXO-on-wafer-blue.jpg,assets/site-images/866bfe7e5375536e6c3d.jpg,localized
+image,8f48f970a9bae95e200c.png,https://www.sitime.com/sites/default/files/images/Fast%20500%20award.png,assets/site-images/8f48f970a9bae95e200c.png,localized
+image,a1600921d72a0c74cb52.jpg,https://www.sitime.com/sites/default/files/images/GNSS-Clocking-Architectures_option_1.jpg,assets/site-images/a1600921d72a0c74cb52.jpg,localized
+image,bf0f9e3db2b98c840200.jpg,https://www.sitime.com/sites/default/files/images/Idea%20awards.jpg,assets/site-images/bf0f9e3db2b98c840200.jpg,localized
+image,2573aeb7a882aefbfbee.jpg,https://www.sitime.com/sites/default/files/images/Military-telemetry.jpg,assets/site-images/2573aeb7a882aefbfbee.jpg,localized
+image,b777a7c07c031ed5030f.jpg,https://www.sitime.com/sites/default/files/images/NYE-Fireworks-Sydney-Harbour-Bridge.jpg,assets/site-images/b777a7c07c031ed5030f.jpg,localized
+image,0895a9b69c9176b662ce.jpg,https://www.sitime.com/sites/default/files/images/Programming-abstract-background.jpg,assets/site-images/0895a9b69c9176b662ce.jpg,localized
+image,90540524c05e023d8a2c.jpg,https://www.sitime.com/sites/default/files/images/Santa-Clara-women-group-IWD-2025-16x9.jpg,assets/site-images/90540524c05e023d8a2c.jpg,localized
+image,ca007abc85254e9259b6.jpg,https://www.sitime.com/sites/default/files/images/SiT1811-package-by-ruler-and-coin-battery.jpg,assets/site-images/ca007abc85254e9259b6.jpg,localized
+image,3743e65d755f0787cdd0.jpg,https://www.sitime.com/sites/default/files/images/SiT5543-Applications.jpg,assets/site-images/3743e65d755f0787cdd0.jpg,localized
+image,3bf812f50d80e370e676.png,https://www.sitime.com/sites/default/files/images/SiT9365-block-diagram2.png,assets/site-images/3bf812f50d80e370e676.png,localized
+image,e32b268d60fc037bdbb8.jpg,https://www.sitime.com/sites/default/files/images/SiT938X-Press-Image-sm.jpg,assets/site-images/e32b268d60fc037bdbb8.jpg,localized
+image,fcbe1c25c9cc2c3515e2.jpg,https://www.sitime.com/sites/default/files/images/SiTime%20jitter%20cleaners.jpg,assets/site-images/fcbe1c25c9cc2c3515e2.jpg,localized
+image,015e3ef62a7c761af54e.jpg,https://www.sitime.com/sites/default/files/images/SiTime-uPower-MHz-Oscillator.jpg,assets/site-images/015e3ef62a7c761af54e.jpg,localized
+image,598c47f471f63139a360.png,https://www.sitime.com/sites/default/files/images/X%20vx%20XO.png,assets/site-images/598c47f471f63139a360.png,localized
+image,726b0dd94c256d02565b.jpg,https://www.sitime.com/sites/default/files/images/abstract-digital-tech.jpg,assets/site-images/726b0dd94c256d02565b.jpg,localized
+image,7d2e64faaa20b844b0c4.jpg,https://www.sitime.com/sites/default/files/images/abstract-technology-and-people.jpg,assets/site-images/7d2e64faaa20b844b0c4.jpg,localized
+image,827708f917a20be9de30.jpg,https://www.sitime.com/sites/default/files/images/abstract-technology-illustration.jpg,assets/site-images/827708f917a20be9de30.jpg,localized
+image,2542e688561b2b45cd65.jpg,https://www.sitime.com/sites/default/files/images/ai-chip-precision-timing.jpg,assets/site-images/2542e688561b2b45cd65.jpg,localized
+image,3c6173d54834c218e134.jpg,https://www.sitime.com/sites/default/files/images/ai-global-data-analytics.jpg,assets/site-images/3c6173d54834c218e134.jpg,localized
+image,56b96d973ea60de14119.jpg,https://www.sitime.com/sites/default/files/images/ai-humanoid-robot.jpg,assets/site-images/56b96d973ea60de14119.jpg,localized
+image,afcac25f780e542158e5.jpg,https://www.sitime.com/sites/default/files/images/aircraft-cockpit.jpg,assets/site-images/afcac25f780e542158e5.jpg,localized
+image,a574b0925de6a4daaaad.jpg,https://www.sitime.com/sites/default/files/images/ancient-sundial.jpg,assets/site-images/a574b0925de6a4daaaad.jpg,localized
+image,1aaa7a476ca389ce5604.jpg,https://www.sitime.com/sites/default/files/images/automated-smart-warehouse.jpg,assets/site-images/1aaa7a476ca389ce5604.jpg,localized
+image,d6ffe42221be2d3f0659.jpg,https://www.sitime.com/sites/default/files/images/automotive%20-%201.jpg,assets/site-images/d6ffe42221be2d3f0659.jpg,localized
+image,896b40c5f03d486f019a.jpg,https://www.sitime.com/sites/default/files/images/automotive%20-%205.jpg,assets/site-images/896b40c5f03d486f019a.jpg,localized
+image,d7d5872b438d1edd7a5c.jpg,https://www.sitime.com/sites/default/files/images/aviation-cockpit.jpg,assets/site-images/d7d5872b438d1edd7a5c.jpg,localized
+image,88d1732f621ce989cae5.jpg,https://www.sitime.com/sites/default/files/images/binary-data-streams-flowing-abstract.jpg,assets/site-images/88d1732f621ce989cae5.jpg,localized
+image,820a56825cdab60ad06e.jpg,https://www.sitime.com/sites/default/files/images/broadcasting-video-camera.jpg,assets/site-images/820a56825cdab60ad06e.jpg,localized
+image,9c1649161f61b0b07067.jpg,https://www.sitime.com/sites/default/files/images/cargo-ship.jpg,assets/site-images/9c1649161f61b0b07067.jpg,localized
+image,3a1b661d98f7841a48a0.jpg,https://www.sitime.com/sites/default/files/images/circuit-board-abstract.jpg,assets/site-images/3a1b661d98f7841a48a0.jpg,localized
+image,7473a0928d08a238e5c3.jpg,https://www.sitime.com/sites/default/files/images/clean-energy.jpg,assets/site-images/7473a0928d08a238e5c3.jpg,localized
+image,2b3682a50ca03f3e96de.jpg,https://www.sitime.com/sites/default/files/images/communication-network-visualization.jpg,assets/site-images/2b3682a50ca03f3e96de.jpg,localized
+image,e4a890e07f5cfa50eb25.jpg,https://www.sitime.com/sites/default/files/images/cost%20and%20efficiency.jpg,assets/site-images/e4a890e07f5cfa50eb25.jpg,localized
+image,69ece0e882ed98eab4fe.jpg,https://www.sitime.com/sites/default/files/images/data-center-visualization-lines.jpg,assets/site-images/69ece0e882ed98eab4fe.jpg,localized
+image,5e2601c78f7a3b26f612.jpg,https://www.sitime.com/sites/default/files/images/datacenter-2.jpg,assets/site-images/5e2601c78f7a3b26f612.jpg,localized
+image,926a59ae3d0e57bd9290.jpg,https://www.sitime.com/sites/default/files/images/datacenter-3.jpg,assets/site-images/926a59ae3d0e57bd9290.jpg,localized
+image,d2199a3a8e0eced6e1f4.jpg,https://www.sitime.com/sites/default/files/images/datacenter.jpg,assets/site-images/d2199a3a8e0eced6e1f4.jpg,localized
+image,69cf7390e8b6da6d09f2.jpg,https://www.sitime.com/sites/default/files/images/defense-radio-station.jpg,assets/site-images/69cf7390e8b6da6d09f2.jpg,localized
+image,4eeb2294ac6dc4aa6795.jpg,https://www.sitime.com/sites/default/files/images/digital-data-flow-abstract.jpg,assets/site-images/4eeb2294ac6dc4aa6795.jpg,localized
+image,fa2c026b7360f8617b29.jpg,https://www.sitime.com/sites/default/files/images/distributed%20architecture.jpg,assets/site-images/fa2c026b7360f8617b29.jpg,localized
+image,a54c714ddd4bf583e7bb.jpg,https://www.sitime.com/sites/default/files/images/drone-flying.jpg,assets/site-images/a54c714ddd4bf583e7bb.jpg,localized
+image,d2b12175a99690e50017.jpg,https://www.sitime.com/sites/default/files/images/fig1%204-min%20clinic%20on%20phase%20jitter.jpg,assets/site-images/d2b12175a99690e50017.jpg,localized
+image,e9e1f6f00748c530ed70.jpg,https://www.sitime.com/sites/default/files/images/global-technology-illustration.jpg,assets/site-images/e9e1f6f00748c530ed70.jpg,localized
+image,70738dfd3b1b31ea584d.jpg,https://www.sitime.com/sites/default/files/images/graphs_Drive-Multiple-Loads.jpg,assets/site-images/70738dfd3b1b31ea584d.jpg,localized
+image,fe55ca82b015bbbf7628.jpg,https://www.sitime.com/sites/default/files/images/happy-thanksgiving.jpg,assets/site-images/fe55ca82b015bbbf7628.jpg,localized
+image,e5f3a901b684f12c90df.jpg,https://www.sitime.com/sites/default/files/images/hiker-connected-mobile-iot-device.jpg,assets/site-images/e5f3a901b684f12c90df.jpg,localized
+image,fc6fad65f8c22b9021e7.jpg,https://www.sitime.com/sites/default/files/images/hiker-heart-nature-SiTime.jpg,assets/site-images/fc6fad65f8c22b9021e7.jpg,localized
+image,2b54dc6042456200d352.jpg,https://www.sitime.com/sites/default/files/images/iStock-1175059391.jpg,assets/site-images/2b54dc6042456200d352.jpg,localized
+image,00335994b10374e27a88.jpg,https://www.sitime.com/sites/default/files/images/iStock-888677832.jpg,assets/site-images/00335994b10374e27a88.jpg,localized
+image,9a7e5f84ea5649a0c7f2.jpg,https://www.sitime.com/sites/default/files/images/iStock-91057840.jpg,assets/site-images/9a7e5f84ea5649a0c7f2.jpg,localized
+image,6f0bf32c2a153acc2474.jpg,https://www.sitime.com/sites/default/files/images/iStock-963459052-GNSS-1200x675px.jpg,assets/site-images/6f0bf32c2a153acc2474.jpg,localized
+image,ed1911d773ca83c3100f.jpg,https://www.sitime.com/sites/default/files/images/industrial-factory-robotic-arms.jpg,assets/site-images/ed1911d773ca83c3100f.jpg,localized
+image,dea6390e82bab4eb0ff8.jpg,https://www.sitime.com/sites/default/files/images/interactive-data-gui-technology.jpg,assets/site-images/dea6390e82bab4eb0ff8.jpg,localized
+image,c98e2b3f68b356fb88db.jpg,https://www.sitime.com/sites/default/files/images/jigsaw-technology-digital-code.jpg,assets/site-images/c98e2b3f68b356fb88db.jpg,localized
+image,a42dfaccd5850dba44a9.jpg,https://www.sitime.com/sites/default/files/images/jitter-concept-cpu.jpg,assets/site-images/a42dfaccd5850dba44a9.jpg,localized
+image,87a2e14d3a9bff344fcc.png,https://www.sitime.com/sites/default/files/images/metrics-epoch.png,assets/site-images/87a2e14d3a9bff344fcc.png,localized
+image,24da5954622b2cd4a51b.jpg,https://www.sitime.com/sites/default/files/images/microchip-glowing-circuit-lines-image_0.jpg,assets/site-images/24da5954622b2cd4a51b.jpg,localized
+image,41d1ba7c1706e6c899dc.jpg,https://www.sitime.com/sites/default/files/images/military-surveillance.jpg,assets/site-images/41d1ba7c1706e6c899dc.jpg,localized
+image,af2b15aed58096cecbbf.jpg,https://www.sitime.com/sites/default/files/images/military-vehicle-radio.jpg,assets/site-images/af2b15aed58096cecbbf.jpg,localized
+image,07eca7d1513ef4ee54e2.jpg,https://www.sitime.com/sites/default/files/images/navy-aircraft-carrier.jpg,assets/site-images/07eca7d1513ef4ee54e2.jpg,localized
+image,533bbdccb4e8deb97719.jpg,https://www.sitime.com/sites/default/files/images/network%20edge.jpg,assets/site-images/533bbdccb4e8deb97719.jpg,localized
+image,d543fe11e10b3bfde619.jpg,https://www.sitime.com/sites/default/files/images/nikkei-rajesh-vashist.jpg,assets/site-images/d543fe11e10b3bfde619.jpg,localized
+image,5ebeb278d0fbea3207bf.png,https://www.sitime.com/sites/default/files/images/oscillator-for-industrial-sensors.png,assets/site-images/5ebeb278d0fbea3207bf.png,localized
+image,8f93ccafac09ea65a97b.png,https://www.sitime.com/sites/default/files/images/oscillator-for-portable-medical.png,assets/site-images/8f93ccafac09ea65a97b.png,localized
+image,661ddd3ac6a1e6ba8851.jpg,https://www.sitime.com/sites/default/files/images/patient-monitor.jpg,assets/site-images/661ddd3ac6a1e6ba8851.jpg,localized
+image,d32edb3cf80297ea24ed.jpg,https://www.sitime.com/sites/default/files/images/phase-noise-harmonic-oscillations.jpg,assets/site-images/d32edb3cf80297ea24ed.jpg,localized
+image,d0f42c89706a1136d6c3.jpg,https://www.sitime.com/sites/default/files/images/plant-on-circuit-board.jpg,assets/site-images/d0f42c89706a1136d6c3.jpg,localized
+image,9306fb7ed4604ab7b986.jpg,https://www.sitime.com/sites/default/files/images/pnt.jpg,assets/site-images/9306fb7ed4604ab7b986.jpg,localized
+image,9570d50f0a685aa14061.jpg,https://www.sitime.com/sites/default/files/images/power-transmission-lines.jpg,assets/site-images/9570d50f0a685aa14061.jpg,localized
+image,c62329523027cc72ad66.jpg,https://www.sitime.com/sites/default/files/images/powerline-towers-blizzard.jpg,assets/site-images/c62329523027cc72ad66.jpg,localized
+image,ddc9b41fc610a063f6c4.jpg,https://www.sitime.com/sites/default/files/images/prague-astronomical-clock.jpg,assets/site-images/ddc9b41fc610a063f6c4.jpg,localized
+image,12851332b2c7fec14019.jpg,https://www.sitime.com/sites/default/files/images/programming-code-abstract.jpg,assets/site-images/12851332b2c7fec14019.jpg,localized
+image,d0260bcc96a45953cb79.jpg,https://www.sitime.com/sites/default/files/images/quartz%20resonator%20aging-.jpg,assets/site-images/d0260bcc96a45953cb79.jpg,localized
+image,1921450d20e5526eb50e.jpg,https://www.sitime.com/sites/default/files/images/robot-hand-keyboard.jpg,assets/site-images/1921450d20e5526eb50e.jpg,localized
+image,b5c86171047a42bcabb8.jpg,https://www.sitime.com/sites/default/files/images/robotic-lesson-science-classroom.jpg,assets/site-images/b5c86171047a42bcabb8.jpg,localized
+image,e582b831fde1a2f3fa91.jpg,https://www.sitime.com/sites/default/files/images/shutterstock_1278960091-AI-Brain-Microchip-1200x675px.jpg,assets/site-images/e582b831fde1a2f3fa91.jpg,localized
+image,d898a98dc8022fddb1d3.jpg,https://www.sitime.com/sites/default/files/images/smart-meters.jpg,assets/site-images/d898a98dc8022fddb1d3.jpg,localized
+image,72f5539fc3922eb5d343.jpg,https://www.sitime.com/sites/default/files/images/smart-ring.jpg,assets/site-images/72f5539fc3922eb5d343.jpg,localized
+image,dac30e2e0e2a1a6d3617.jpg,https://www.sitime.com/sites/default/files/images/smart-transportation-digital-data.jpg,assets/site-images/dac30e2e0e2a1a6d3617.jpg,localized
+image,4615218cea66ca1e581f.jpg,https://www.sitime.com/sites/default/files/images/solar-panels-in-forest.jpg,assets/site-images/4615218cea66ca1e581f.jpg,localized
+image,a5260a90e3e15c50d8fe.jpg,https://www.sitime.com/sites/default/files/images/spot-digital-data-network.jpg,assets/site-images/a5260a90e3e15c50d8fe.jpg,localized
+image,85979c7101dcde8c9c13.png,https://www.sitime.com/sites/default/files/images/staff-spotlight-Debra-Severin-circle.png,assets/site-images/85979c7101dcde8c9c13.png,localized
+image,1afc6cfa79bd4e1072c5.png,https://www.sitime.com/sites/default/files/images/staff-spotlight-Fang-Tuurnala-circle.png,assets/site-images/1afc6cfa79bd4e1072c5.png,localized
+image,5b5ad497efb02020d108.jpg,https://www.sitime.com/sites/default/files/images/titan-on-a-wafer.jpg,assets/site-images/5b5ad497efb02020d108.jpg,localized
+image,1a37e81e1c78746abd98.jpg,https://www.sitime.com/sites/default/files/images/ultrasonic-water-flow-meters.jpg,assets/site-images/1a37e81e1c78746abd98.jpg,localized
+image,7383f7a09f323ef6be12.jpg,https://www.sitime.com/sites/default/files/images/vibration-waves.jpg,assets/site-images/7383f7a09f323ef6be12.jpg,localized
+image,36383cdeab7de02347a7.jpg,https://www.sitime.com/sites/default/files/images/vintage-pendulum-clock.jpg,assets/site-images/36383cdeab7de02347a7.jpg,localized
+image,8ca3e82eb1b6e4636c17.jpg,https://www.sitime.com/sites/default/files/images/watch-leap-year.jpg,assets/site-images/8ca3e82eb1b6e4636c17.jpg,localized
+image,fafe7dae221cd843b9d1.jpg,https://www.sitime.com/sites/default/files/images/woman-with-phone-hiking-mountains.jpg,assets/site-images/fafe7dae221cd843b9d1.jpg,localized
+image,895e159bf953fc590b65.png,https://www.sitime.com/sites/default/files/inline-images/Clock%20parameters_0.png,assets/site-images/895e159bf953fc590b65.png,localized
+image,66b1409f5eb8d55684c4.jpg,https://www.sitime.com/sites/default/files/inline-images/Heartbeat-small.jpg,assets/site-images/66b1409f5eb8d55684c4.jpg,localized
+image,a4026c53ba9220f61467.png,https://www.sitime.com/sites/default/files/inline-images/MEMS%20vs.%20Quartz%20-%20lo%20res.png,assets/site-images/a4026c53ba9220f61467.png,localized
+image,fc8ce70c2b9dd461ee33.png,https://www.sitime.com/sites/default/files/inline-images/MEMS-spread-spectum-oscillator_0.png,assets/site-images/fc8ce70c2b9dd461ee33.png,localized
+image,e9cce9288cdd45a9f4ea.png,https://www.sitime.com/sites/default/files/inline-images/RiceSiTime-MEMS-final-small-cropped.png,assets/site-images/e9cce9288cdd45a9f4ea.png,localized
+image,927369857367df677051.png,https://www.sitime.com/sites/default/files/inline-images/fig1_top.png,assets/site-images/927369857367df677051.png,localized
+image,9346e0bca76595ffe920.png,https://www.sitime.com/sites/default/files/inline-images/iStock-1168365115%20%281%29%20copy.png,assets/site-images/9346e0bca76595ffe920.png,localized
+image,3f6544ce6d48d79caccc.jpg,https://www.sitime.com/sites/default/files/inline-images/image2_0.jpg,assets/site-images/3f6544ce6d48d79caccc.jpg,localized
+image,90a85865d2158d7b4e98.jpg,https://www.sitime.com/sites/default/files/inline-images/wafer-engineers-in-lab-872950290%20%281%29%20%281%29.jpg,assets/site-images/90a85865d2158d7b4e98.jpg,localized
+image,040d0896ff6266034e87.jpg,https://www.sitime.com/sites/default/files/primages/Chorus-Clock-Generator-2.jpg,assets/site-images/040d0896ff6266034e87.jpg,localized
+image,4a93a40b82c3b138cc29.png,https://www.sitime.com/sites/default/files/products/1508-MEMS-Oscillator-%28Angled%29-2017-small.png,assets/site-images/4a93a40b82c3b138cc29.png,localized
+image,e983a52c9bef4c7b3288.jpg,https://www.sitime.com/sites/default/files/resize/inline-images/105C-Elite-5G-PR-image-W1200-611x344.jpg,assets/site-images/e983a52c9bef4c7b3288.jpg,localized
+image,75418b2e065911e7441d.jpg,https://www.sitime.com/sites/default/files/resize/inline-images/ADAS-ethernet_0-575x364.jpg,assets/site-images/75418b2e065911e7441d.jpg,localized
+image,447044169821e9dbfe96.png,https://www.sitime.com/sites/default/files/resize/inline-images/Ceramic-resonator-table-284x223.png,assets/site-images/447044169821e9dbfe96.png,localized
+image,1924ee2399d7bafa53d3.png,https://www.sitime.com/sites/default/files/resize/inline-images/ECU-Ethernet-Sensors-01-527x328.png,assets/site-images/1924ee2399d7bafa53d3.png,localized
+image,37cc33acfcab6d8520af.png,https://www.sitime.com/sites/default/files/resize/inline-images/Elite%20freq%20stability%20med-405x254.png,assets/site-images/37cc33acfcab6d8520af.png,localized
+image,97f5359eb0c346b82662.png,https://www.sitime.com/sites/default/files/resize/inline-images/Elite-trophy-EP-PoY-563x344.png,assets/site-images/97f5359eb0c346b82662.png,localized
+image,875494528d2dfccf0cfd.jpg,https://www.sitime.com/sites/default/files/resize/inline-images/Emerald-PR-graphic-anywhere-low-res-461x288.jpg,assets/site-images/875494528d2dfccf0cfd.jpg,localized
+image,75c6b96b74ac4f0fbad5.jpg,https://www.sitime.com/sites/default/files/resize/inline-images/Emerald-hot-cold-windy-594x371.jpg,assets/site-images/75c6b96b74ac4f0fbad5.jpg,localized
+image,beff35db3c2a0db1887c.png,https://www.sitime.com/sites/default/files/resize/inline-images/Endura-PR-image-med-lowres-572x322.png,assets/site-images/beff35db3c2a0db1887c.png,localized
+image,b8f556dc75927582e2c8.png,https://www.sitime.com/sites/default/files/resize/inline-images/Fig%201-673x430.png,assets/site-images/b8f556dc75927582e2c8.png,localized
+image,6f5b977480414ac99aa6.png,https://www.sitime.com/sites/default/files/resize/inline-images/Options-table-nar_2-557x462.png,assets/site-images/6f5b977480414ac99aa6.png,localized
+image,42b5621089225b580ec6.png,https://www.sitime.com/sites/default/files/resize/inline-images/Options-table-nar_2_0-562x466.png,assets/site-images/42b5621089225b580ec6.png,localized
+image,8a600de3b710f3c3850b.jpg,https://www.sitime.com/sites/default/files/resize/inline-images/PR-1-billion-units-gray-414x414.jpg,assets/site-images/8a600de3b710f3c3850b.jpg,localized
+image,9847a56d96e5a6615712.jpg,https://www.sitime.com/sites/default/files/resize/inline-images/Ralf%20Higgle%20%26%20Rajesh%20Vashist_0-482x271.jpg,assets/site-images/9847a56d96e5a6615712.jpg,localized
+image,98ef6068a5999a90e36c.png,https://www.sitime.com/sites/default/files/resize/inline-images/RiceSiTime-MEMS-final-med-571x345.png,assets/site-images/98ef6068a5999a90e36c.png,localized
+image,e4081a9d5b59d1cfd8bb.jpg,https://www.sitime.com/sites/default/files/resize/inline-images/Self-Driving-Autonomous-Car-304x203.jpg,assets/site-images/e4081a9d5b59d1cfd8bb.jpg,localized
+image,89e8abaef37b8c6ae438.png,https://www.sitime.com/sites/default/files/resize/inline-images/Serial-IO-Protocol-Jitter-745x577.png,assets/site-images/89e8abaef37b8c6ae438.png,localized
+image,4c1ca1e383a572062b93.jpg,https://www.sitime.com/sites/default/files/resize/inline-images/SiT938X-Press-Image-305x263.jpg,assets/site-images/4c1ca1e383a572062b93.jpg,localized
+image,f12a0a25dab9598d1238.png,https://www.sitime.com/sites/default/files/resize/inline-images/SiT9501%20wins%20best%20in%20show-569x321.png,assets/site-images/f12a0a25dab9598d1238.png,localized
+image,9419c80262f0a672d134.png,https://www.sitime.com/sites/default/files/resize/inline-images/SiTime-part-on-finger-med_1-388x283.png,assets/site-images/9419c80262f0a672d134.png,localized
+image,5df2ba91560097746200.png,https://www.sitime.com/sites/default/files/resize/inline-images/csp-small-401x201.png,assets/site-images/5df2ba91560097746200.png,localized
+image,641ead0b55e2eecb4fa0.jpg,https://www.sitime.com/sites/default/files/resize/inline-images/fig%201%20sesmic%20sensors-sm-698x195.png,assets/site-images/641ead0b55e2eecb4fa0.jpg,localized
+image,ae611c126de448062212.png,https://www.sitime.com/sites/default/files/resize/inline-images/fig%201%20sm-685x173.png,assets/site-images/ae611c126de448062212.png,localized
+image,f013365f8086f7dbf1c3.png,https://www.sitime.com/sites/default/files/resize/inline-images/no%20caps%20-%20INCAPACITATED-132x139.png,assets/site-images/f013365f8086f7dbf1c3.png,localized
+image,c0ae024be7c22a79b015.png,https://www.sitime.com/sites/default/files/resize/inline-images/plot1-sm-504x315.png,assets/site-images/c0ae024be7c22a79b015.png,localized
+image,9ca6efac46a161beddf9.jpg,https://www.sitime.com/sites/default/files/resize/inline-images/servers-288x195.jpg,assets/site-images/9ca6efac46a161beddf9.jpg,localized
+image,6c7ec55b8e272dca0bdd.png,https://www.sitime.com/sites/default/files/resize/inline-images/stability%20improvement%20-%20sm_0-623x337.png,assets/site-images/6c7ec55b8e272dca0bdd.png,localized
+image,b14eb9d92c54b8795ef2.png,https://www.sitime.com/sites/default/files/resize/inline-images/table-3-607x305.png,assets/site-images/b14eb9d92c54b8795ef2.png,localized
+image,a64c2cc3a5ee30ff4804.png,https://www.sitime.com/sites/default/files/resize/inline-images/time%20to%20production-sm-557x355.png,assets/site-images/a64c2cc3a5ee30ff4804.png,localized
+image,c8cbc98d3bb9c8c67368.jpg,https://www.sitime.com/sites/default/files/resize/themes/custom/sitime/images/media-kit/product-photos/SIT892X-SiT202X-High-Temp-AEC-Q100-Oscillators-400x269.jpg,assets/site-images/c8cbc98d3bb9c8c67368.jpg,localized
+image,97156aa9df15907db00f.jpg,https://www.sitime.com/sites/default/files/solutions/hero%20optical%20module%20for%20solutions%20page.jpg,assets/site-images/97156aa9df15907db00f.jpg,localized
+image,b0d37a371460a72fd11e.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/A-D-Open-Architectures-image.jpg.webp?itok=IstveNF1,assets/site-images/b0d37a371460a72fd11e.webp,localized
+image,2fb7b67bc0226ec50adf.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/A2L-Based-HVAC-R-image.jpg.webp?itok=THouCa36,assets/site-images/2fb7b67bc0226ec50adf.webp,localized
+image,55746d54ebd8f359835e.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/AI-ML-Offload-Engines-image.jpg.webp?itok=9UUFdVKv,assets/site-images/55746d54ebd8f359835e.webp,localized
+image,ba3a62e968f561adf840.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Audio-Video-Broadcast-Equipment-image.jpg.webp?itok=HkIbXNpl,assets/site-images/ba3a62e968f561adf840.webp,localized
+image,34b0452a72b1aa303a84.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Automotive-ADAS-Computer-image.jpg.webp?itok=ROrd45uT,assets/site-images/34b0452a72b1aa303a84.webp,localized
+image,f3dfbeee539bec441117.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Automotive-Cameras-image.jpg.webp?itok=WAwZ687G,assets/site-images/f3dfbeee539bec441117.webp,localized
+image,b39b6b028bafdfc0250b.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Automotive-ECU-image.jpg.webp?itok=4A4xEQuR,assets/site-images/b39b6b028bafdfc0250b.webp,localized
+image,beaae472e31053bebff9.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Automotive-Infotainment-Cluster-image.jpg.webp?itok=risRtuXC,assets/site-images/beaae472e31053bebff9.webp,localized
+image,a0c8235717924f103978.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Autonomous-Ground-Vehicles-%28AGVs%29-image.jpg.webp?itok=sJpYZqh-,assets/site-images/a0c8235717924f103978.webp,localized
+image,c6722d5e8900935a4464.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Battery-Management-System-image.jpg.webp?itok=B_VXi1pW,assets/site-images/c6722d5e8900935a4464.webp,localized
+image,85d27a31a5c472ed6949.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Blood_Pressure_Monitor_image_2_2.jpg.webp?itok=fm1p7uc8,assets/site-images/85d27a31a5c472ed6949.webp,localized
+image,2a59526fd2278c06176b.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Computer-Numerical-Control-image.jpg.webp?itok=KZTdsmRa,assets/site-images/2a59526fd2278c06176b.webp,localized
+image,a99ce879d675decaed5e.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/DU-hero-2.jpg.webp?itok=PUONR_LZ,assets/site-images/a99ce879d675decaed5e.webp,localized
+image,6d6ad8e19397620c61a8.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Downhole-Instrumentation-image.jpg.webp?itok=pgHgbvFq,assets/site-images/6d6ad8e19397620c61a8.webp,localized
+image,6bc6c869d9f2ca452b3f.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Driver-Monitoring-System-image.jpg.webp?itok=WiWOUY_q,assets/site-images/6bc6c869d9f2ca452b3f.webp,localized
+image,05596f55c2e4abf817fe.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/EV-Charging-image.jpg.webp?itok=OqGqW1D3,assets/site-images/05596f55c2e4abf817fe.webp,localized
+image,875f4d0882167578de83.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Electronic-Detonators-image.jpg.webp?itok=Y-H8s0Pg,assets/site-images/875f4d0882167578de83.webp,localized
+image,6a84474e04589181a03f.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Endoscopes-image.jpg.webp?itok=_7alT0Ze,assets/site-images/6a84474e04589181a03f.webp,localized
+image,63633494b3ff262f02e0.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Energy-Storage-Systems-image.jpg.webp?itok=-3TkikDE,assets/site-images/63633494b3ff262f02e0.webp,localized
+image,19aaaf1f9ff997e81c6f.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/FPD-Link-image.jpg.webp?itok=GUmUun1a,assets/site-images/19aaaf1f9ff997e81c6f.webp,localized
+image,700ff8e259c1d74918b3.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/FPGA-Clocking-image.jpg.webp?itok=7bfJDddL,assets/site-images/700ff8e259c1d74918b3.webp,localized
+image,737ba4d9a7fe12b4394e.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Fitness-Trackers-image.jpg.webp?itok=zMDc8Spy,assets/site-images/737ba4d9a7fe12b4394e.webp,localized
+image,a09fa7d6db32978e21d3.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Fixed-Wireless-Access-image.jpg.webp?itok=jFFhvWfj,assets/site-images/a09fa7d6db32978e21d3.webp,localized
+image,bc65f99212a4860970c3.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Host-Bus-Adapters-image.jpg.webp?itok=ffbJY9Ln,assets/site-images/bc65f99212a4860970c3.webp,localized
+image,f0899412f06766471463.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Industial-Robotics-image.jpg.webp?itok=emCRxFpB,assets/site-images/f0899412f06766471463.webp,localized
+image,f90ca4016221ae440c7a.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Industrial-Autonomous-Ground-Vehicles-%28AGVs%29-image.jpg.webp?itok=E9WpqKeT,assets/site-images/f90ca4016221ae440c7a.webp,localized
+image,ca0d19a2cb690a7c59b9.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Industrial-Cameras-image.jpg.webp?itok=noj0pA8g,assets/site-images/ca0d19a2cb690a7c59b9.webp,localized
+image,ae61f5ad02b799d101b6.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Industrial-Factory-Automation-hero.jpg.webp?itok=WQ2yQgN5,assets/site-images/ae61f5ad02b799d101b6.webp,localized
+image,cf52e86ffcf168d1acf4.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Industrial-GNSS-Disciplined-Systems-hero.jpg.webp?itok=b49m1AtD,assets/site-images/cf52e86ffcf168d1acf4.webp,localized
+image,165fb781719a6d0e28cb.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Industrial-Test-and-Measurement-hero1.jpg.webp?itok=yyAXm06R,assets/site-images/165fb781719a6d0e28cb.webp,localized
+image,e37829274265790f8f62.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Land-Defense-Vehicle-Communications-image.jpg.webp?itok=cBMRhk3U,assets/site-images/e37829274265790f8f62.webp,localized
+image,8115d0b9799578853347.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Microwave-Outdoor-Units-image.jpg.webp?itok=CgzbUMT_,assets/site-images/8115d0b9799578853347.webp,localized
+image,de26b4ec97bf13ec5b24.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Military-UAVs-and-Drones-image.jpg.webp?itok=POhe-bOE,assets/site-images/de26b4ec97bf13ec5b24.webp,localized
+image,863f31514661ba32aaf7.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Mining-and-Construction-Equipment-image.jpg.webp?itok=be62drDp,assets/site-images/863f31514661ba32aaf7.webp,localized
+image,02aeaff138e7cc69264e.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Mobile-Wearables-Smart-Meters.jpg.webp?itok=wYnOn1YH,assets/site-images/02aeaff138e7cc69264e.webp,localized
+image,82242394d03bc05f15c5.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Mobile-Wearables-Smart-Watches-and-Fitness-Trackers-hero.jpg.webp?itok=WCRZpzL1,assets/site-images/82242394d03bc05f15c5.webp,localized
+image,4a9725dc33631cf6c1c1.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/PCI-Express-in-Automotive-Applications-image.jpg.webp?itok=2d20vApg,assets/site-images/4a9725dc33631cf6c1c1.webp,localized
+image,4e86bcf595d745f266e5.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Patient-Monitors-image.jpg.webp?itok=GD1vO5_V,assets/site-images/4e86bcf595d745f266e5.webp,localized
+image,cca5a3f44d2796e523b0.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Radar_and_Lidar_image_4.jpg.webp?itok=s2_PMgeo,assets/site-images/cca5a3f44d2796e523b0.webp,localized
+image,66505ebb592fddda2ee9.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Radiosondes-image.jpg.webp?itok=Vr5Euq_A,assets/site-images/66505ebb592fddda2ee9.webp,localized
+image,95aaff53918f4a914c37.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Ruggedized-GNSS-Applications-image.jpg.webp?itok=hWhW4X9k,assets/site-images/95aaff53918f4a914c37.webp,localized
+image,17044221a9291fdd2f59.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Seismic-Sensors-image.jpg.webp?itok=wzE6Z4bj,assets/site-images/17044221a9291fdd2f59.webp,localized
+image,fae7b48b31d4a93e2df4.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Servo-Drives-image.jpg.webp?itok=gJWEP2h4,assets/site-images/fae7b48b31d4a93e2df4.webp,localized
+image,8cd7418019dc5edbe631.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Smart-Mirrors-image.jpg.webp?itok=yTiaIUKY,assets/site-images/8cd7418019dc5edbe631.webp,localized
+image,02b59148484aad41db2d.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Smart_NIC_and_IEEE1588_hero.jpg.webp?itok=wXLg3hJb,assets/site-images/02b59148484aad41db2d.webp,localized
+image,8c416cfe232639aef215.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Solutions-Aerospace-and-Defense-3.jpg.webp?itok=laSBEmnn,assets/site-images/8c416cfe232639aef215.webp,localized
+image,55d740dea2783102bc95.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Solutions-Automotive.jpg.webp?itok=vw1Q_z84,assets/site-images/55d740dea2783102bc95.webp,localized
+image,8a08f7081be642bdeaf2.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Solutions-Comms-and-Enterprise-2.jpg.webp?itok=XKxwTVbU,assets/site-images/8a08f7081be642bdeaf2.webp,localized
+image,dd39f3dfcfbfb1751a48.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Solutions-Consumer.jpg.webp?itok=4dPVXSdV,assets/site-images/dd39f3dfcfbfb1751a48.webp,localized
+image,5d98562eb133110e6bf3.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Solutions-Industrial.jpg.webp?itok=Su5opjUD,assets/site-images/5d98562eb133110e6bf3.webp,localized
+image,89e228195a24fbe84d4f.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Solutions-IoT.jpg.webp?itok=AxYVm8er,assets/site-images/89e228195a24fbe84d4f.webp,localized
+image,36276bc8540016a8ba63.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Solutions-Medical.jpg.webp?itok=_rFcNNiU,assets/site-images/36276bc8540016a8ba63.webp,localized
+image,5293cfc7b15cbb61dc23.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Solutions-Mobile.jpg.webp?itok=E6u60lhl,assets/site-images/5293cfc7b15cbb61dc23.webp,localized
+image,29681ee14603825c34b7.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Tactical-Communications-image.jpg.webp?itok=puAVxzoS,assets/site-images/29681ee14603825c34b7.webp,localized
+image,0ba1f9d93afdaca58f6c.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Tactical-Manpack-Radios-image.jpg.webp?itok=dcKofWvh,assets/site-images/0ba1f9d93afdaca58f6c.webp,localized
+image,9ffd4168a62237286f94.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/Ultrasonic-Lens-Cleaning-image.jpg.webp?itok=uDh56qtC,assets/site-images/9ffd4168a62237286f94.webp,localized
+image,4456a7c98183a735b37d.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/VTOL-and-Commercial-UAVs-image.jpg.webp?itok=h8yiZmGG,assets/site-images/4456a7c98183a735b37d.webp,localized
+image,eca845a31c2d21e24211.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/comms-5G.jpg.webp?itok=HL6Y7sen,assets/site-images/eca845a31c2d21e24211.webp,localized
+image,e5eab2af5368f2ec2f34.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/fronthaul-switch-hero.jpg.webp?itok=rAxD7but,assets/site-images/e5eab2af5368f2ec2f34.webp,localized
+image,774073bb9187b4cbe6ed.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/heros/top-rack-switch-leaf-hero1.jpg.webp?itok=lDVW_JxZ,assets/site-images/774073bb9187b4cbe6ed.webp,localized
+image,1a52824e96d5e5f93a69.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/images/applications-industrial-robotics.jpg.webp?itok=RS9jQFr5,assets/site-images/1a52824e96d5e5f93a69.webp,localized
+image,43958a38aa11c6e06196.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/images/autonomous%20vehicle-600p.jpg.webp?itok=SpK-_wrw,assets/site-images/43958a38aa11c6e06196.webp,localized
+image,06b34d3c4ef2f7ce511e.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/images/spot-Webinar-AI-Data-Centers.jpg.webp?itok=uBs7WRkl,assets/site-images/06b34d3c4ef2f7ce511e.webp,localized
+image,39e4abd84361b9ff11a2.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/solutions/hero%20optical%20module%20for%20solutions%20page.jpg.webp?itok=TfD0rWNc,assets/site-images/39e4abd84361b9ff11a2.webp,localized
+image,2ead49ff1ed8f83daccf.webp,https://www.sitime.com/sites/default/files/styles/image_480_auto/public/solutions/hero-aero-def_3.jpg.webp?itok=pOorYt_I,assets/site-images/2ead49ff1ed8f83daccf.webp,localized
+image,de678eef1346051d04cd.webp,https://www.sitime.com/sites/default/files/styles/news_teaser/public/images/microchip-glowing-circuit-lines-image_0.jpg.webp?h=c74750f6&itok=KI2wfnIa,assets/site-images/de678eef1346051d04cd.webp,localized
+image,3eb9674300ec58a17999.webp,https://www.sitime.com/sites/default/files/styles/original_image/public/products/10-pin-Mobile-Clock-Generator-CSP-%28Angled%29.png.webp?itok=R0z4s1u9,assets/site-images/3eb9674300ec58a17999.webp,localized
