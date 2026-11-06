@@ -1,0 +1,56 @@
+name: Collect SiTime news for review
+on:
+  schedule:
+    - cron: '0 1 * * *' # 09:00 Asia/Shanghai; GitHub scheduling may be delayed.
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: sitime-news-review
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Continue the existing review branch
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if git ls-remote --exit-code --heads origin automation/sitime-news-review; then
+            git fetch origin automation/sitime-news-review
+            git switch -c automation/sitime-news-review FETCH_HEAD
+            git merge "origin/$DEFAULT_BRANCH" --no-edit
+          else
+            git switch -c automation/sitime-news-review
+          fi
+      - name: Collect metadata only
+        run: python scripts/news_sync.py
+      - name: Save pending items and open review PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git add data/news-review
+          if ! git diff --cached --quiet; then
+            git commit -m 'Add SiTime news to editorial review queue'
+            git push origin HEAD:automation/sitime-news-review
+          fi
+          if [ -z "$(git log "origin/$DEFAULT_BRANCH..HEAD" --oneline)" ]; then
+            echo 'No new items to review.'
+            exit 0
+          fi
+          pr_number=$(gh pr list --head automation/sitime-news-review --base "$DEFAULT_BRANCH" --state open --json number --jq '.[0].number // empty')
+          if [ -z "$pr_number" ]; then
+            gh pr create --base "$DEFAULT_BRANCH" --head automation/sitime-news-review --title '审核 SiTime 官网新增新闻' --body-file .github/news-review-pr.md
+          fi
