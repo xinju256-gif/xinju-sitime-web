@@ -39,8 +39,22 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         run: |
-          if [ -z "$NETLIFY_AUTH_TOKEN" ] || [ -z "$NETLIFY_SITE_ID" ]; then
-            echo '::notice::Website artifact is ready. Netlify deployment is not enabled: configure NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID repository secrets.'
-            exit 0
+          missing_config=0
+          if [ -z "$NETLIFY_AUTH_TOKEN" ]; then
+            echo '::error::NETLIFY_AUTH_TOKEN is unavailable to this workflow. Add it under this repository Settings > Secrets and variables > Actions > Repository secrets.'
+            echo '- NETLIFY_AUTH_TOKEN: unavailable' >> "$GITHUB_STEP_SUMMARY"
+            missing_config=1
+          else
+            echo '- NETLIFY_AUTH_TOKEN: available (value not shown)' >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if [ -z "$NETLIFY_SITE_ID" ]; then
+            echo '::error::NETLIFY_SITE_ID is unavailable to this workflow. Add it under this repository Settings > Secrets and variables > Actions > Repository secrets.'
+            echo '- NETLIFY_SITE_ID: unavailable' >> "$GITHUB_STEP_SUMMARY"
+            missing_config=1
+          else
+            echo '- NETLIFY_SITE_ID: available (value not shown)' >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if [ "$missing_config" -ne 0 ]; then
+            exit 1
           fi
           python scripts/deploy_netlify.py
