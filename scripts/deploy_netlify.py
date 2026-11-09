@@ -177,18 +177,28 @@ def main():
             label = 'HTTP ' + str(error.code) if isinstance(error, urllib.error.HTTPError) else type(error).__name__
             failures.append(label)
             notice('Anonymous website check: ' + candidate + ' returned ' + label + '. Netlify API authentication already succeeded.')
-    if verified is None and info.get('password'):
-        # The requested corporate site is intended to be public. Leave preview-only
-        # protection intact when the production URL already passes verification.
-        request_json('/sites/' + site, token, json.dumps({'password': ''}).encode(), method='PATCH')
-        notice('Removed site password protection for the public production release.')
-        for candidate in candidates:
-            try:
-                verified = verify_public(candidate, origin)
-                public_url = candidate
-                break
-            except Exception:
-                pass
+    if verified is None:
+        visibility_changes = {}
+        if info.get('sso_login') is True:
+            visibility_changes['sso_login'] = False
+        if info.get('has_password') is True or info.get('password'):
+            visibility_changes['password'] = ''
+        notice('Site access flags: site_sso=' + str(info.get('sso_login')) + ', account_sso=' + str(info.get('account_sso_login')) + ', has_password=' + str(info.get('has_password')))
+        if visibility_changes:
+            request_json('/sites/' + site, token, json.dumps(visibility_changes).encode(), method='PATCH')
+            notice('Requested public access for this corporate site; team-level policies are unchanged.')
+            for attempt in range(3):
+                if attempt:
+                    time.sleep(3 * attempt)
+                for candidate in candidates:
+                    try:
+                        verified = verify_public(candidate, origin)
+                        public_url = candidate
+                        break
+                    except Exception:
+                        pass
+                if verified is not None:
+                    break
     if verified is None:
         protection = [key for key in info if any(term in key.lower() for term in ['protect', 'visitor', 'access', 'password', 'sso'])]
         notice('Site protection fields present: ' + ', '.join(protection))
