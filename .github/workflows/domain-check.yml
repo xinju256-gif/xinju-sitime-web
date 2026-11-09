@@ -1,0 +1,45 @@
+name: Check SiTime custom domain
+on:
+  push:
+    branches: [diagnostics/sitime-domain-check]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  domain-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read site settings and verify public DNS and HTTPS
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          python - <<'PY'
+          import json,os,socket,urllib.request,urllib.parse,urllib.error
+          from pathlib import Path
+          def notice(message):
+              print('::notice::'+str(message).replace('%','%25').replace('\r','%0D').replace('\n','%0A'),flush=True)
+          origin=json.loads(Path('data/site-config.json').read_text())['site_url']
+          host=urllib.parse.urlsplit(origin).hostname
+          site=urllib.parse.quote(os.environ['NETLIFY_SITE_ID'].strip(),safe='')
+          req=urllib.request.Request('https://api.netlify.com/api/v1/sites/'+site,headers={'Authorization':'Bearer '+os.environ['NETLIFY_AUTH_TOKEN'].strip()})
+          with urllib.request.urlopen(req,timeout=25) as r:info=json.load(r)
+          custom=info.get('custom_domain')
+          notice('Netlify desired custom domain binding: '+('configured' if custom==host else 'not configured' if not custom else 'another primary domain is configured'))
+          notice('Desired domain present as alias: '+str(host in (info.get('domain_aliases') or [])))
+          notice('Netlify managed DNS: '+str(info.get('managed_dns') is True))
+          try:
+              ips=sorted({entry[4][0] for entry in socket.getaddrinfo(host,443,type=socket.SOCK_STREAM)})
+              notice('Domain DNS addresses: '+', '.join(ips[:6]))
+          except OSError as error:
+              notice('Domain DNS lookup failed: '+str(error))
+          try:
+              with urllib.request.urlopen(origin+'/',timeout=20) as response:
+                  notice('Custom domain HTTPS response: HTTP '+str(response.status)+'; Netlify header='+str(bool(response.headers.get('x-nf-request-id'))))
+          except urllib.error.HTTPError as error:
+              notice('Custom domain HTTPS response: HTTP '+str(error.code)+'; Netlify header='+str(bool(error.headers.get('x-nf-request-id'))))
+          except Exception as error:
+              notice('Custom domain HTTPS failed: '+type(error).__name__+': '+str(error)[:250])
+          PY
