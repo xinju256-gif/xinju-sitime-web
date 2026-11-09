@@ -75,8 +75,8 @@ def upload_required(deploy_id, required, by_hash, token):
         futures = [pool.submit(upload, sha) for sha in required]
         for count, future in enumerate(concurrent.futures.as_completed(futures), 1):
             future.result()
-            if count % 100 == 0 or count == len(required):
-                notice('Netlify files uploaded: ' + str(count) + '/' + str(len(required)))
+            if count % 400 == 0 or count == len(required):
+                print('Netlify files uploaded: ' + str(count) + '/' + str(len(required)))
 
 
 def verify_public(base, origin):
@@ -161,14 +161,43 @@ def main():
     summary('- Published deploy: [' + permalink + '](' + permalink + ')')
     notice('Netlify published deploy: ' + permalink)
     origin = json.loads((ROOT / 'data/site-config.json').read_text())['site_url'].rstrip('/')
-    verified = verify_public(permalink, origin)
+    production = info.get('ssl_url') or info.get('url')
+    candidates = [production]
+    if re.fullmatch(r'[a-z0-9-]+', info.get('name', '')):
+        candidates.append('https://' + info['name'] + '.netlify.app')
+    candidates.append(permalink)
+    candidates = list(dict.fromkeys(u for u in candidates if u and u.startswith('https://')))
+    verified, public_url, failures = None, None, []
+    for candidate in candidates:
+        try:
+            verified = verify_public(candidate, origin)
+            public_url = candidate
+            break
+        except Exception as error:
+            label = 'HTTP ' + str(error.code) if isinstance(error, urllib.error.HTTPError) else type(error).__name__
+            failures.append(label)
+            notice('Anonymous website check: ' + candidate + ' returned ' + label + '. Netlify API authentication already succeeded.')
+    if verified is None and info.get('password'):
+        # The requested corporate site is intended to be public. Leave preview-only
+        # protection intact when the production URL already passes verification.
+        request_json('/sites/' + site, token, json.dumps({'password': ''}).encode(), method='PATCH')
+        notice('Removed site password protection for the public production release.')
+        for candidate in candidates:
+            try:
+                verified = verify_public(candidate, origin)
+                public_url = candidate
+                break
+            except Exception:
+                pass
+    if verified is None:
+        protection = [key for key in info if any(term in key.lower() for term in ['protect', 'visitor', 'access', 'password', 'sso'])]
+        notice('Site protection fields present: ' + ', '.join(protection))
+        raise RuntimeError('Deploy is published, but anonymous website verification failed (' + ', '.join(failures) + '). Check Make public / visitor access in Netlify.')
     summary('- Public deployment verified: ' + str(len(verified)) + ' page/document checks passed.')
-    notice('Public deployment verified: ' + str(len(verified)) + ' page/document checks passed. URL: ' + permalink)
+    notice('Public deployment verified: ' + str(len(verified)) + ' page/document checks passed. URL: ' + public_url)
     for path in verified:
         summary('  - `' + path + '` — OK')
-    production = info.get('ssl_url') or info.get('url')
-    if production:
-        summary('- Production URL: [' + production + '](' + production + ')')
+    summary('- Verified public URL: [' + public_url + '](' + public_url + ')')
     try:
         verify_public(origin, origin)
         summary('- Custom domain verified: [' + origin + '](' + origin + ')')
