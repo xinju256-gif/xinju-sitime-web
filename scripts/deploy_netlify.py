@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Publish the reviewed build, wait for readiness and verify public pages."""
 import hashlib
-import io
+import concurrent.futures
+import threading
 import json
 import os
 from pathlib import Path
@@ -9,7 +10,7 @@ import re
 import time
 import urllib.parse
 import urllib.request
-import zipfile
+import urllib.error
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -22,11 +23,60 @@ def summary(line):
             stream.write(line + '\n')
 
 
-def request_json(path, token, data=None, content_type='application/json'):
-    req = urllib.request.Request('https://api.netlify.com/api/v1' + path, data=data,
+def notice(message, error=False):
+    clean = str(message).replace('%', '%25').replace('\r', '%0D').replace('\n', '%0A')
+    print(('::error::' if error else '::notice::') + clean, flush=True)
+
+
+def request_json(path, token, data=None, content_type='application/json', method=None):
+    req = urllib.request.Request('https://api.netlify.com/api/v1' + path, data=data, method=method,
         headers={'Authorization': 'Bearer ' + token, 'Content-Type': content_type})
-    with urllib.request.urlopen(req, timeout=180 if data is not None else 30) as response:
-        return json.load(response)
+    with urllib.request.urlopen(req, timeout=60 if data is not None else 30) as response:
+        raw = response.read()
+        return json.loads(raw) if raw.strip() else {}
+
+
+def file_manifest(root):
+    files, by_hash = {}, {}
+    for path in sorted(root.rglob('*')):
+        if path.is_file():
+            sha = hashlib.sha1(path.read_bytes()).hexdigest()
+            relative = '/' + path.relative_to(root).as_posix()
+            files[relative] = sha
+            by_hash.setdefault(sha, (relative, path))
+    return files, by_hash
+
+
+def upload_required(deploy_id, required, by_hash, token):
+    lock = threading.Lock()
+    next_upload = [0.0]
+    def upload(sha):
+        relative, path = by_hash[sha]
+        for attempt in range(4):
+            with lock:
+                pause = max(0.0, next_upload[0] - time.monotonic())
+                if pause:
+                    time.sleep(pause)
+                next_upload[0] = time.monotonic() + 0.18
+            try:
+                endpoint = '/deploys/' + deploy_id + '/files/' + urllib.parse.quote(relative.lstrip('/'), safe='/')
+                request_json(endpoint, token, path.read_bytes(), 'application/octet-stream', 'PUT')
+                return
+            except urllib.error.HTTPError as error:
+                if error.code not in [408, 429, 500, 502, 503, 504] or attempt == 3:
+                    raise
+                delay = min(30, int(error.headers.get('Retry-After', 5 * (attempt + 1))))
+                time.sleep(delay)
+            except (urllib.error.URLError, TimeoutError):
+                if attempt == 3:
+                    raise
+                time.sleep(3 * (attempt + 1))
+    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+        futures = [pool.submit(upload, sha) for sha in required]
+        for count, future in enumerate(concurrent.futures.as_completed(futures), 1):
+            future.result()
+            if count % 100 == 0 or count == len(required):
+                notice('Netlify files uploaded: ' + str(count) + '/' + str(len(required)))
 
 
 def verify_public(base, origin):
@@ -64,15 +114,27 @@ def main():
     if not token or not (root / 'index.html').is_file():
         raise SystemExit('A Netlify token and built dist are required')
     info = request_json('/sites/' + site, token)
-    buffer = io.BytesIO()
-    with zipfile.ZipFile(buffer, 'w', zipfile.ZIP_DEFLATED) as archive:
-        for file in sorted(root.rglob('*')):
-            if file.is_file():
-                archive.write(file, file.relative_to(root))
+    files, by_hash = file_manifest(root)
+    notice('Netlify API connected. Preparing ' + str(len(files)) + ' website files.')
     summary('## Netlify deployment')
-    summary('- Uploading the reviewed static website (' + str(round(buffer.tell()/1048576, 1)) + ' MB).')
-    deploy = request_json('/sites/' + site + '/deploys', token, buffer.getvalue(), 'application/zip')
+    payload = json.dumps({'files': files, 'async': True}).encode()
+    deploy = request_json('/sites/' + site + '/deploys', token, payload)
     deploy_id = deploy['id']
+    deadline = time.monotonic() + 180
+    while deploy.get('state') == 'preparing':
+        if time.monotonic() >= deadline:
+            raise TimeoutError('Netlify file manifest preparation timed out')
+        time.sleep(3)
+        deploy = request_json('/deploys/' + deploy_id, token)
+    if deploy.get('state') in ['error', 'failed', 'canceled']:
+        raise RuntimeError('Netlify rejected the file manifest')
+    required = deploy.get('required', [])
+    if not set(required).issubset(by_hash):
+        raise ValueError('Netlify requested an unknown file hash')
+    notice('Netlify needs ' + str(len(required)) + ' file uploads; unchanged files are reused.')
+    if required:
+        upload_required(deploy_id, required, by_hash, token)
+    deploy = request_json('/deploys/' + deploy_id, token)
     summary('- Deploy ID: `' + deploy_id + '`')
     deadline = time.monotonic() + 300
     last_state = None
@@ -97,9 +159,11 @@ def main():
     if not permalink:
         raise RuntimeError('Netlify did not return a secure deployment URL')
     summary('- Published deploy: [' + permalink + '](' + permalink + ')')
+    notice('Netlify published deploy: ' + permalink)
     origin = json.loads((ROOT / 'data/site-config.json').read_text())['site_url'].rstrip('/')
     verified = verify_public(permalink, origin)
     summary('- Public deployment verified: ' + str(len(verified)) + ' page/document checks passed.')
+    notice('Public deployment verified: ' + str(len(verified)) + ' page/document checks passed. URL: ' + permalink)
     for path in verified:
         summary('  - `' + path + '` — OK')
     production = info.get('ssl_url') or info.get('url')
@@ -108,10 +172,16 @@ def main():
     try:
         verify_public(origin, origin)
         summary('- Custom domain verified: [' + origin + '](' + origin + ')')
+        notice('Custom domain verified: ' + origin)
     except Exception as error:
         summary('- Custom domain verification pending: `' + type(error).__name__ + '`. Check domain binding, DNS and HTTPS in Netlify.')
         print('::warning::Deployment is published, but custom domain verification is pending. Check domain binding, DNS and HTTPS.')
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except Exception as error:
+        detail = ('HTTP ' + str(error.code)) if isinstance(error, urllib.error.HTTPError) else type(error).__name__ + ': ' + str(error)[:350]
+        notice('Netlify deployment failed: ' + detail, error=True)
+        raise
