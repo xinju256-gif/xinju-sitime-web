@@ -1,0 +1,21 @@
+name: Inspect Netlify site branding
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/netlify-branding.yml', 'scripts/netlify_branding.py']
+permissions:
+  contents: read
+jobs:
+  branding:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Inspect site branding configuration
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: python scripts/netlify_branding.py
