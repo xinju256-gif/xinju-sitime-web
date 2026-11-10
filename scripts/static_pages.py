@@ -110,8 +110,8 @@ class StaticPages:
     def header(self, lang, alternate):
         en = lang == 'en'
         home = '/'
-        nav = [(route('product', lang=lang), LABELS['product']), (route('solution', lang=lang), LABELS['solution']),
-               ('/#technology', ('技术与创新', 'Technology')), ('/#downloads', ('资料下载', 'Downloads')),
+        nav = [('/', ('首页', 'Home')), (route('product', lang=lang), LABELS['product']), (route('solution', lang=lang), LABELS['solution']),
+               ('/#downloads', ('资料下载', 'Downloads')), ('/#technology', ('技术与创新', 'Technology')),
                (route('news', lang=lang), ('新闻动态', 'News')), ('/#about', ('关于我们', 'About'))]
         links = ''.join(self.link(url, tr(label, lang)) for url, label in nav)
         return f'''<a class="detail-skip" href="#main">{tr(('跳至正文','Skip to content'),lang)}</a>

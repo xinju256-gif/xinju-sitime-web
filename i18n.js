@@ -1,5 +1,6 @@
 (() => {
   const translations = new Map([
+    ['首页', 'Home'], ['产品中心', 'Products'],
     ["资料下载", "Downloads"],
     ["产品询价与技术咨询", "Product inquiries & technical support"],
     ["带 * 的项目为必填项。", "Fields marked * are required."],
