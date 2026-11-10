@@ -58,3 +58,24 @@ jobs:
           except Exception as error:
               notice('Custom domain HTTPS failed: '+type(error).__name__+': '+str(error)[:250])
           PY
+
+      - name: Verify custom-domain pages and www redirect
+        run: |
+          python - <<'PYVERIFY'
+          from pathlib import Path
+          import json,sys,shutil,urllib.request
+          sys.path.insert(0,'scripts')
+          from deploy_netlify import verify_public
+          origin=json.loads(Path('data/site-config.json').read_text())['site_url']
+          target=Path('dist/assets/datasheets')
+          target.mkdir(parents=True,exist_ok=True)
+          shutil.copy2('assets/datasheets/SiT8008.pdf',target/'SiT8008.pdf')
+          verified=verify_public(origin,origin)
+          print('::notice::Formal domain passed '+str(len(verified))+' page/document checks: '+origin)
+          with urllib.request.urlopen('https://www.sitime-cn.com/',timeout=30) as response:
+              assert response.status==200
+              assert response.url.rstrip('/')==origin.rstrip('/'), 'www did not redirect to primary HTTPS domain'
+          print('::notice::www HTTPS certificate and redirect to https://sitime-cn.com verified.')
+          for path in verified:
+              print('::notice::Verified custom-domain path: '+path)
+          PYVERIFY
