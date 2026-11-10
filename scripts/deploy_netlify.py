@@ -31,9 +31,22 @@ def notice(message, error=False):
 def request_json(path, token, data=None, content_type='application/json', method=None):
     req = urllib.request.Request('https://api.netlify.com/api/v1' + path, data=data, method=method,
         headers={'Authorization': 'Bearer ' + token, 'Content-Type': content_type})
-    with urllib.request.urlopen(req, timeout=60 if data is not None else 30) as response:
-        raw = response.read()
-        return json.loads(raw) if raw.strip() else {}
+    try:
+        with urllib.request.urlopen(req, timeout=60 if data is not None else 30) as response:
+            raw = response.read()
+            return json.loads(raw) if raw.strip() else {}
+    except urllib.error.HTTPError as error:
+        try:
+            payload = json.loads(error.read().decode('utf-8'))
+            reason = payload.get('message') or payload.get('error') or 'No error message provided'
+            if not isinstance(reason, str):
+                reason = 'No plain-text error message provided'
+            reason = reason.replace(token, '[redacted]') if token else reason
+            reason = reason[:400]
+        except (ValueError, UnicodeError, AttributeError):
+            reason = 'No JSON error message provided'
+        notice('Netlify API rejected request: HTTP ' + str(error.code) + ' ' + reason, error=True)
+        raise
 
 
 def file_manifest(root):
