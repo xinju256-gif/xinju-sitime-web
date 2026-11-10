@@ -124,7 +124,7 @@ def verify_public(base, origin):
     if not raw.startswith(b'%PDF-') or hashlib.sha256(raw).digest() != hashlib.sha256(local_pdf.read_bytes()).digest():
         raise ValueError('Published PDF checksum mismatch')
     results.append('/assets/datasheets/SiT8008.pdf')
-    for path in ['/assets/brand/sitime-logo.svg', '/assets/brand/sitime-logo-white.svg', '/styles.css']:
+    for path in ['/assets/brand/sitime-logo.svg', '/assets/brand/sitime-logo-white.svg', '/assets/brand/simacity-logo.png', '/styles.css']:
         with urllib.request.urlopen(base.rstrip('/') + path, timeout=30) as response:
             raw = response.read()
         expected = (ROOT / 'dist' / path.lstrip('/')).read_bytes()

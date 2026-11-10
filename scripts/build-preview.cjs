@@ -52,7 +52,7 @@ const config = {
   title: '芯聚电子 SiTime · 产品、询价与资料下载',
   description: '137 个型号、117 份原厂 PDF、集中下载中心及产品询价',
   markup: { language: 'html', content: markup },
-  style: { language: 'css', content: read('styles.css') },
+  style: { language: 'css', content: read('styles.css').replace(/\/assets\/brand\/(simacity-logo\.png|sitime-logo\.svg)/g, (_, name) => 'data:image/' + (name.endsWith('.svg') ? 'svg+xml' : 'png') + ';base64,' + fs.readFileSync(path.join(root, 'assets/brand', name)).toString('base64')) },
   script: { language: 'javascript', content: script },
   mode: 'result', tools: { enabled: [] }, cssPreset: '', autoupdate: true
 };
