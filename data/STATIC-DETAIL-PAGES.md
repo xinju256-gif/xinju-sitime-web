@@ -1,6 +1,6 @@
 # 独立详情页与 SEO 构建
 
-`python scripts/build_site.py --strict` 输出完整静态站到 `dist/`，不需要服务端框架。详情正文、参数、相关型号和 PDF 链接均直接写入 HTML；关闭 JavaScript 也能阅读。首页原有弹窗保留，并增加目录与完整详情链接。
+`python scripts/build_site.py --strict` 输出完整静态站到 `dist/`，不需要服务端框架。详情正文、参数、相关型号和 PDF 链接均直接写入 HTML；关闭 JavaScript 也能阅读。首页保留品牌、技术资源和咨询内容；产品、方案、资料下载和新闻通过独立页面访问。
 
 ## 地址
 
@@ -9,9 +9,10 @@
 - 行业：`/industries/automotive/`
 - 新闻：`/news/<id>/`
 - 英文：在上述路径前添加 `/en`。
+- 资料下载：`/downloads/` 和 `/en/downloads/`，支持型号、参数、类别与资料状态筛选。
 - 对应目录：`/products/`、`/solutions/`、`/industries/`、`/news/`，英文目录同样使用 `/en` 前缀。
 
-当前数据生成 553 个中文详情和 553 个英文详情，共 1,106 个详情页，加上 8 个双语目录页及首页，sitemap 共 1,115 个网址。未来审核通过的新闻在同一次构建中自动生成页面并加入 sitemap。
+当前数据生成 553 个中文详情和 553 个英文详情，共 1,106 个详情页，加上 10 个双语目录页（包括中英文下载中心）及首页，sitemap 共 1,117 个网址。未来审核通过的新闻在同一次构建中自动生成页面并加入 sitemap。
 
 ## 正式域名
 
@@ -40,6 +41,6 @@ python -m http.server 8080 --directory dist
 
 SEO 检查覆盖 sitemap 中全部页面、唯一标题和描述、H1、canonical、JSON-LD、双向语言链接与本地资源路径。GitHub 发布工作流已加入该检查。
 
-Netlify 发布目录必须是 `dist`，不需要把所有路径重写到首页；应直接返回各目录的 `index.html`。手动部署时上传完整 `dist` 文件夹。首页旧的 `#read/...` 链接继续支持弹窗，新的完整详情使用真实路径。
+Netlify 发布目录必须是 `dist`，不需要把所有路径重写到首页；应直接返回各目录的 `index.html`。手动部署时上传完整 `dist` 文件夹。首页旧的 `#read/...`、`#products`、`#applications`、`#downloads` 和 `#news` 链接自动转到对应独立页面；技术资源与邮件咨询弹窗保留。
 
 LiveCodes 单页分享不提供多文件 HTTP 路由，保留原有弹窗预览。独立页面应在静态服务器或 Netlify 部署后检查，不能拿 LiveCodes 的单页网址替代正式独立路径。

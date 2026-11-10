@@ -7,11 +7,12 @@
   };
   function openFromHash() {
     const match = location.hash.match(/^#read\/(product|solution|industry|news)\/([^/]+)$/);
-    if (!match) return;
+    if (!match) { const directory = { '#products': 'product', '#applications': 'solution', '#downloads': 'download', '#news': 'news' }[location.hash]; if (directory && !document.querySelector(location.hash)) location.replace(window.detailPageHref(directory, '')); return; }
     let id;
     try { id = decodeURIComponent(match[2]); } catch { return; }
-    if (match[1] === 'product') window.openCatalogProduct(id);
-    else window.openEditorialItem(match[1], id);
+    const opener = match[1] === 'product' ? window.openCatalogProduct : window.openEditorialItem;
+    if (typeof opener !== 'function') { location.replace(window.detailPageHref(match[1], id)); return; }
+    if (match[1] === 'product') opener(id); else opener(match[1], id);
   }
   window.addEventListener('hashchange', openFromHash);
   dialog.addEventListener('close', () => {

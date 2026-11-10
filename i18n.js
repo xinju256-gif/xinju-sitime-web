@@ -1,5 +1,6 @@
 (() => {
   const translations = new Map([
+    ['查找选型', 'Find a product'], ['下载规格书', 'Find a datasheet'],
     ['首页', 'Home'], ['产品中心', 'Products'],
     ["资料下载", "Downloads"],
     ["产品询价与技术咨询", "Product inquiries & technical support"],

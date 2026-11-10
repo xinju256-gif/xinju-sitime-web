@@ -10,7 +10,7 @@ import xml.etree.ElementTree as ET
 
 from news_sync import ROOT, load_content
 
-GROUPS = {'product': 'products', 'solution': 'solutions', 'industry': 'industries', 'news': 'news'}
+GROUPS = {'product': 'products', 'solution': 'solutions', 'industry': 'industries', 'news': 'news', 'download': 'downloads'}
 LABELS = {'product': ('产品中心', 'Products'), 'solution': ('解决方案', 'Solutions'),
           'industry': ('行业应用', 'Industries'), 'news': ('新闻与技术导读', 'News & insights')}
 PARAMETERS = {'frequency': ('频率', 'Frequency'), 'stability': ('频率稳定性', 'Frequency stability'),
@@ -111,7 +111,7 @@ class StaticPages:
         en = lang == 'en'
         home = '/'
         nav = [('/', ('首页', 'Home')), (route('product', lang=lang), LABELS['product']), (route('solution', lang=lang), LABELS['solution']),
-               ('/#downloads', ('资料下载', 'Downloads')), ('/#technology', ('技术与创新', 'Technology')),
+               (route('download', lang=lang), ('资料下载', 'Downloads')), ('/#technology', ('技术与创新', 'Technology')),
                (route('news', lang=lang), ('新闻动态', 'News')), ('/#about', ('关于我们', 'About'))]
         links = ''.join(self.link(url, tr(label, lang)) for url, label in nav)
         return f'''<a class="detail-skip" href="#main">{tr(('跳至正文','Skip to content'),lang)}</a>
@@ -193,11 +193,71 @@ class StaticPages:
             item_id = item['model'] if kind == 'product' else item['id']
             title = self.title(kind, item, lang)
             text = self.description(kind, item, lang)
-            result += '<article class="detail-card" data-page-card data-search="' + safe((title + ' ' + text).lower()) + '"><h2>' + self.link(route(kind, item_id, lang), title) + '</h2>'
+            result += '<article class="detail-card" data-page-card ' + self.filter_attributes(kind, item) + '><h2>' + self.link(route(kind, item_id, lang), title) + '</h2>'
             if kind == 'news':
                 result += '<time datetime="' + item['date'] + '">' + item['date'] + '</time>'
             result += '<p>' + safe(text) + '</p>' + self.link(route(kind, item_id, lang), tr(('查看详情 →', 'View details →'), lang), 'detail-card-link') + '</article>'
         return result + '</div>'
+
+    def search_terms(self, kind, item):
+        parts = [self.title(kind, item, 'zh'), self.title(kind, item, 'en')]
+        if kind == 'product':
+            parts += [value for pair in item['values'].values() for value in pair.values()]
+            parts += [value for row in item['extra'] for pair in [row['label'], row['value']] for value in pair.values()]
+        else:
+            parts += list(item['summary'].values()) + item.get('models', [])
+        return ' '.join(parts)
+
+    def filter_attributes(self, kind, item):
+        attributes = {'search': self.search_terms(kind, item).lower()}
+        if kind == 'product':
+            attributes.update(category=item['category'], output=item['values']['output']['en'].lower(), availability='pdf' if item['datasheet']['type'] == 'pdf' else 'pending')
+        elif kind == 'solution':
+            attributes['industry'] = '|'.join(item['industries'])
+        elif kind == 'news':
+            attributes.update(type=item['type'], year=item['year'])
+        return ' '.join('data-' + key + '="' + safe(value) + '"' for key, value in attributes.items())
+
+    def filter_controls(self, kind, lang):
+        def select(key, label, choices, all_label):
+            options = [('all', all_label)] + choices
+            return '<div><label for="page-' + key + '">' + safe(label) + '</label><select id="page-' + key + '" data-page-filter="' + key + '">' + ''.join('<option value="' + safe(value) + '">' + safe(title) + '</option>' for value, title in options) + '</select></div>'
+        fields = ''
+        if kind in ['product', 'download']:
+            fields += select('category', tr(('产品类别', 'Product family'), lang), [(c['id'], c['name'][lang]) for c in self.catalog['categories']], tr(('全部类别', 'All families'), lang))
+        if kind == 'product':
+            fields += select('output', tr(('输出接口', 'Output'), lang), [(v, v) for v in ['LVCMOS', 'LVDS', 'LVPECL', 'HCSL', 'CML', 'FlexSwing', 'Sinewave']], tr(('全部接口', 'All outputs'), lang))
+        elif kind == 'download':
+            fields += select('availability', tr(('资料状态', 'Availability'), lang), [('pdf', tr(('可下载 PDF', 'PDF available'), lang)), ('pending', tr(('规格书待补', 'Datasheet pending'), lang))], tr(('全部型号', 'All models'), lang))
+        elif kind == 'solution':
+            fields += select('industry', tr(('行业领域', 'Industry'), lang), [(i['id'], i['title'][lang]) for i in self.content['industries']], tr(('全部行业', 'All industries'), lang))
+        elif kind == 'news':
+            fields += select('type', tr(('资讯类型', 'Update type'), lang), [('release', tr(('新闻稿', 'Press releases'), lang)), ('blog', tr(('博客与洞察', 'Blog & insights'), lang))], tr(('全部类型', 'All types'), lang))
+            fields += select('year', tr(('年份', 'Year'), lang), [(year, year) for year in sorted({n['year'] for n in self.content['news']}, reverse=True)], tr(('全部年份', 'All years'), lang))
+        if not fields:
+            return ''
+        return '<div class="directory-facets">' + fields + '<button type="button" id="page-filter-reset" class="catalog-reset">' + tr(('重置筛选', 'Reset filters'), lang) + '</button></div>'
+
+    def download_page(self, lang):
+        path = route('download', lang=lang)
+        title = tr(('SiTime 原厂规格书下载中心', 'SiTime manufacturer datasheet downloads'), lang)
+        ready = sum(p['datasheet']['type'] == 'pdf' for p in self.catalog['products'])
+        pending = len(self.catalog['products']) - ready
+        description = tr((f'集中查询 {ready} 份 SiTime 原厂 PDF，支持型号、参数、类别及资料状态筛选，{pending} 个待补型号可联系芯聚电子索取。', f'Search {ready} SiTime manufacturer PDFs by model, specifications, family and availability. Request pending documents for {pending} models from SIMACITY.'), lang)
+        body = '<div class="detail-kicker">DATASHEETS / SiTime</div><h1>' + tr(('资料下载', 'Datasheet downloads'), lang) + '</h1><p class="detail-lead">' + safe(description) + '</p>'
+        body += '<div class="downloads-totals"><div><strong>' + str(ready) + '</strong><span>' + tr(('份原厂 PDF', 'manufacturer PDFs'), lang) + '</span></div><div><strong>' + str(pending) + '</strong><span>' + tr(('个型号待补', 'models pending'), lang) + '</span></div></div>'
+        body += '<div class="detail-list-tools"><label for="page-filter">' + tr(('搜索型号或技术参数', 'Search models or specifications'), lang) + '</label><input id="page-filter" type="search" placeholder="SiT8008 / TCXO / LVDS" autocomplete="off">' + self.filter_controls('download', lang) + '<p id="page-filter-status" role="status" aria-live="polite"></p></div><div class="download-list">'
+        for p in self.catalog['products']:
+            doc = p['datasheet']
+            pdf = doc['type'] == 'pdf'
+            label = tr(('下载原厂规格书 PDF ↓', 'Download manufacturer PDF ↓'), lang) if pdf else tr(('联系索取规格书 →', 'Request datasheet →'), lang)
+            href = '/' + doc['local'] if pdf else '/?' + urllib.parse.urlencode({'product': p['model'], 'type': 'datasheet'}) + '#contact'
+            action = '<a class="download-action" href="' + safe(href) + '"' + (' download="' + safe(doc['filename']) + '"' if pdf else '') + '>' + safe(label) + '</a>'
+            meta = f'PDF · {doc["bytes"]/1048576:.2f} MB · {doc["pages"]} ' + tr(('页', 'pages'), lang) if pdf else tr(('原厂规格书待补', 'Manufacturer datasheet pending'), lang)
+            body += '<article class="download-row" data-page-card ' + self.filter_attributes('product', p) + '><span class="download-file-icon' + ('' if pdf else ' is-pending') + '" aria-hidden="true">' + ('PDF' if pdf else '…') + '</span><div class="download-info">' + self.link(route('product', p['model'], lang), p['model'], 'download-model') + '<p>' + safe(self.categories[p['category']]['name'][lang]) + '</p></div><div class="download-meta"><span>' + safe(meta) + '</span></div><div class="download-row-actions">' + action + '</div></article>'
+        body += '</div><p class="detail-note">' + tr(('仅提供已验证的原厂文件。点击下载保存在本站的 PDF，无需返回原厂网站。', 'Only verified manufacturer documents are provided. Download locally hosted PDFs without visiting the manufacturer website.'), lang) + '</p>'
+        entity = {'@type': 'CollectionPage', '@id': self.origin + path, 'name': title, 'url': self.origin + path, 'mainEntity': {'@type': 'ItemList', 'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'name': p['model'], 'url': self.origin + route('product', p['model'], lang)} for i, p in enumerate(self.catalog['products'])]}}
+        self.write(path, title, description, body, lang, route('download', lang='en' if lang == 'zh' else 'zh'), [(tr(('首页', 'Home'), lang), '/'), (tr(('资料下载', 'Downloads'), lang), path)], entity)
 
     def product_page(self, p, lang):
         path = route('product', p['model'], lang)
@@ -235,7 +295,7 @@ class StaticPages:
             body += '<section><h2>' + tr(('本行业应用方案', 'Industry applications'), lang) + '</h2>'
             body += self.cards('solution', related, lang) if related else '<p>' + tr(('该行业暂无独立应用条目，可联系芯聚电子讨论选型。', 'No separate application entries are listed for this industry. Contact SIMACITY for selection assistance.'), lang) + '</p>'
             body += '</section>'
-        body += '<div class="detail-actions">' + self.link('/#downloads', tr(('查找原厂规格书 ↓', 'Find manufacturer datasheets ↓'), lang), 'button') + self.link(self.inquiry(kind, item, lang), tr(('联系芯聚电子 →', 'Contact SIMACITY →'), lang), 'detail-card-link') + '</div><p class="detail-note">' + tr(('依据 SiTime 公开信息整理，本站提供原创概览和阅读提示；具体器件条件以本站原厂 PDF 为准。', 'Prepared from public SiTime information with original overviews and reading notes. Consult the local manufacturer PDFs for device conditions.'), lang) + '</p></article>'
+        body += '<div class="detail-actions">' + self.link(route('download', lang=lang), tr(('查找原厂规格书 ↓', 'Find manufacturer datasheets ↓'), lang), 'button') + self.link(self.inquiry(kind, item, lang), tr(('联系芯聚电子 →', 'Contact SIMACITY →'), lang), 'detail-card-link') + '</div><p class="detail-note">' + tr(('依据 SiTime 公开信息整理，本站提供原创概览和阅读提示；具体器件条件以本站原厂 PDF 为准。', 'Prepared from public SiTime information with original overviews and reading notes. Consult the local manufacturer PDFs for device conditions.'), lang) + '</p></article>'
         entity = {'@type': ('NewsArticle' if item.get('type') == 'release' else 'BlogPosting') if kind == 'news' else 'TechArticle',
                   '@id': self.origin + path + '#article', 'headline': title, 'description': self.description(kind, item, lang),
                   'inLanguage': 'en' if lang == 'en' else 'zh-CN', 'mainEntityOfPage': self.origin + path,
@@ -251,6 +311,7 @@ class StaticPages:
         title = tr(LABELS[kind], lang)
         description = tr((f'{len(items)} 个条目，查看 SiTime {title}及相关本站资料。', f'Browse {len(items)} SiTime {title.lower()} entries and related local resources.'), lang)
         body = '<div class="detail-kicker">SIMACITY / SiTime</div><h1>' + safe(title) + '</h1><p class="detail-lead">' + safe(description) + '</p><div class="detail-list-tools"><label for="page-filter">' + tr(('搜索当前目录', 'Search this directory'), lang) + '</label><input id="page-filter" type="search" placeholder="' + tr(('型号或关键词', 'Model or keyword'), lang) + '" autocomplete="off"><p id="page-filter-status" role="status" aria-live="polite"></p></div>'
+        body = body.replace('<p id="page-filter-status"', self.filter_controls(kind, lang) + '<p id="page-filter-status"')
         if kind == 'solution':
             body += '<p>' + self.link(route('industry', lang=lang), tr(('按行业查看 →', 'Browse industries →'), lang)) + '</p>'
         body += self.cards(kind, items, lang)
@@ -278,7 +339,11 @@ class StaticPages:
                     else:
                         self.editorial_page(kind, item, lang)
             for item in items:
-                self.search.append({'zh': self.title(kind, item, 'zh'), 'en': self.title(kind, item, 'en'), 'zhUrl': route(kind, item.get('model', item.get('id')), 'zh'), 'enUrl': route(kind, item.get('model', item.get('id')), 'en')})
+                self.search.append({'zh': self.title(kind, item, 'zh'), 'en': self.title(kind, item, 'en'), 'terms': self.search_terms(kind, item), 'zhUrl': route(kind, item.get('model', item.get('id')), 'zh'), 'enUrl': route(kind, item.get('model', item.get('id')), 'en')})
+        detail_count = len(self.search) * 2
+        for lang in ['zh', 'en']:
+            self.download_page(lang)
+        self.search.append({'zh': '资料下载', 'en': 'Datasheet downloads', 'zhUrl': '/downloads/', 'enUrl': '/en/downloads/'})
         (self.target / 'detail-search-data.js').write_text('window.SITE_SEARCH = ' + json_script(self.search) + ';\n')
         (self.target / 'site-pages-config.js').write_text('window.SITE_PAGES = true;\n')
         self.home_metadata()
@@ -299,7 +364,7 @@ class StaticPages:
         ET.ElementTree(tree).write(self.target / 'sitemap.xml', encoding='utf-8', xml_declaration=True)
         (self.target / 'robots.txt').write_text('User-agent: *\nAllow: /\nDisallow: /inquiry-received.html\n\nSitemap: ' + self.origin + '/sitemap.xml\n')
         (self.target / '404.html').write_text('<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>页面未找到 | 芯聚电子</title></head><body><h1>页面未找到</h1><p><a href="/">返回首页</a> · <a href="/products/">查找产品</a></p></body></html>')
-        return {'origin': self.origin, 'detail_pages': len(self.search) * 2, 'listing_pages': 8, 'sitemap_urls': len(self.pages) + 1}
+        return {'origin': self.origin, 'detail_pages': detail_count, 'listing_pages': len(self.pages) - detail_count, 'sitemap_urls': len(self.pages) + 1}
 
 
 def generate_pages(target, content):

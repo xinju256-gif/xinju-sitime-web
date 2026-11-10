@@ -46,6 +46,23 @@ class StaticPageTests(unittest.TestCase):
         self.assertNotIn('download=', source)
         self.assertNotIn('sitime.com', source)
 
+    def test_download_directory_contains_all_local_pdfs_and_request_routes(self):
+        self.pages.download_page('zh')
+        source = (self.out / 'downloads/index.html').read_text()
+        ready = sum(p['datasheet']['type'] == 'pdf' for p in self.catalog['products'])
+        self.assertEqual(source.count('class="download-row"'), len(self.catalog['products']))
+        self.assertEqual(source.count(' download="'), ready)
+        self.assertIn('type=datasheet', source)
+        self.assertIn('/assets/datasheets/SiT8008.pdf', source)
+        self.assertNotIn('href="https://www.sitime.com', source)
+
+    def test_english_download_directory_has_its_own_canonical_and_chinese_alternate(self):
+        self.pages.download_page('en')
+        source = (self.out / 'en/downloads/index.html').read_text()
+        self.assertIn('<html lang="en">', source)
+        self.assertIn('rel="canonical" href="https://timing.example.test/en/downloads/"', source)
+        self.assertIn('hreflang="zh-CN" href="https://timing.example.test/downloads/"', source)
+
     def test_repeated_news_headlines_have_date_specific_metadata(self):
         news = copy.deepcopy(self.content['news'][0])
         self.pages.editorial_page('news', news, 'zh')

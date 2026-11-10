@@ -7,9 +7,10 @@ parser.add_argument('--directory',default=str(Path(__file__).resolve().parents[1
 args=parser.parse_args()
 root=Path(args.directory);tree=E.parse(root/'sitemap.xml');urls=[e.text for e in tree.findall('.//{*}loc')];assert len(urls)==len(set(urls)) and len(urls)>1
 class P(HTMLParser):
- def __init__(self):super().__init__();self.title=[];self.descriptions=[];self.canonical=[];self.h1=0;self.links=[];self.alt=[];self.json=[];self.capture=None
+ def __init__(self):super().__init__();self.title=[];self.descriptions=[];self.canonical=[];self.h1=0;self.links=[];self.alt=[];self.json=[];self.capture=None;self.ids=set()
  def handle_starttag(self,t,a):
   d=dict(a)
+  if d.get('id'):self.ids.add(d['id'])
   if t=='title':self.capture='title'
   if t=='h1':self.h1+=1
   if t=='meta' and d.get('name')=='description':self.descriptions.append(d.get('content'))
@@ -42,6 +43,14 @@ for url in urls:
   entity=p.json[0]['@graph'][-1];assert entity['@type'] in ['Product','TechArticle','NewsArticle','BlogPosting','CollectionPage']
  parsers[path]=p
 assert not broken,broken[:10]
+for path,p in parsers.items():
+ for tag,value,attrs in p.links:
+  if tag!='a' or value.startswith(('mailto:','tel:','data:')):continue
+  parsed=urllib.parse.urlsplit(value)
+  if parsed.fragment:
+   target=parsed.path or path
+   if target in parsers:assert urllib.parse.unquote(parsed.fragment) in parsers[target].ids,(path,value)
+
 for path,p in parsers.items():
  for a in p.alt:
   target=urllib.parse.urlsplit(a['href']).path;assert target in parsers,(path,target)

@@ -84,6 +84,8 @@ def verify_public(base, origin):
               ('/products/sit8008/', '<h1>SiT8008</h1>'),
               ('/solutions/microwave-outdoor-units-odu-timing-solutions/', '工程选型说明'),
               ('/en/products/sit8008/', '<html lang="en">'),
+              ('/downloads/', '<h1>资料下载</h1>'),
+              ('/en/downloads/', '<h1>Datasheet downloads</h1>'),
               ('/sitemap.xml', origin + '/products/sit8008/'),
               ('/robots.txt', 'Sitemap: ' + origin + '/sitemap.xml')]
     if urllib.parse.urlsplit(base).scheme != 'https':
@@ -94,6 +96,12 @@ def verify_public(base, origin):
             text = response.read().decode('utf-8')
             if response.status != 200 or marker not in text:
                 raise ValueError('Unexpected page content at ' + path)
+        if path == '/':
+            for old_section in ['products', 'applications', 'downloads', 'news']:
+                if re.search(r'<section\b[^>]*\bid="' + old_section + '"', text):
+                    raise ValueError('Removed homepage section is still published: ' + old_section)
+            if '查找选型' not in text or '下载规格书' not in text or 'href="/downloads/"' not in text:
+                raise ValueError('Homepage search destinations were not published')
         if path.endswith('/') and 'rel="canonical" href="' + origin + path + '"' not in text:
             raise ValueError('Wrong canonical at ' + path)
         results.append(path)

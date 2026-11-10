@@ -39,7 +39,18 @@ searchItems.push(...window.SITIME_CONTENT.news.map((item) => [item.title.zh, ite
 function search() {
   const query = $('#site-search').value.trim().normalize('NFKC').toLowerCase(); const results = $('#search-results'); results.replaceChildren();
   const matches = searchItems.filter((item) => (item[0] + item[1] + window.siteI18n.translate(item[0], 'en')).normalize('NFKC').toLowerCase().includes(query));
-  matches.slice(0, 30).forEach((item) => { const link = document.createElement('a'); link.href = item[2]; link.textContent = `${window.siteI18n.language === 'en' && item[5] ? item[5] : item[0]} ↗`; link.addEventListener('click', () => { $('#search-dialog').close(); if (item[6]) window.openEditorialItem(item[6], item[7]); else if (item[3]) window.openCatalogProduct(item[3]); else if (item[4]) window.catalogSelectCategory(item[4]); else if (item[2] === '#products') window.catalogReset(); }); results.append(link); });
+  const prefix = (window.SITE_ORIGIN || '') + (window.siteI18n.language === 'en' ? '/en' : '');
+  function destination(item) {
+    if (item[6]) return window.detailPageHref(item[6], item[7]);
+    if (item[3]) return window.detailPageHref('product', item[3]);
+    if (item[4]) return prefix + '/products/?category=' + encodeURIComponent(item[4]);
+    return ({ '#products': prefix + '/products/', '#applications': prefix + '/solutions/', '#downloads': prefix + '/downloads/', '#news': prefix + '/news/' })[item[2]] || item[2];
+  }
+  matches.slice(0, 30).forEach((item) => {
+    const link = document.createElement('a'); link.href = destination(item);
+    link.textContent = `${window.siteI18n.language === 'en' && item[5] ? item[5] : item[0]} →`;
+    link.addEventListener('click', () => $('#search-dialog').close()); results.append(link);
+  });
   if (matches.length > 30) { const more = document.createElement('p'); more.textContent = window.siteI18n.language === 'en' ? `${matches.length} matches. Showing the first 30; refine your search or use the dedicated section filters.` : `共 ${matches.length} 条结果，显示前 30 条；可缩小关键词或前往对应栏目筛选。`; results.append(more); }
   if (!matches.length) { const empty = document.createElement('p'); empty.textContent = '暂无匹配结果，请尝试“振荡器”“汽车”或“技术”。'; results.append(empty); }
 }
