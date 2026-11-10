@@ -11,7 +11,7 @@
   });
   const filter = document.getElementById('page-filter');
   const normalized = value => value.normalize('NFKC').toLowerCase();
-  if (filter) {
+  if (filter && !document.querySelector('.product-selector')) {
     const cards = [...document.querySelectorAll('[data-page-card]')];
     const facets = [...document.querySelectorAll('[data-page-filter]')];
     const params = new URLSearchParams(location.search);
@@ -37,6 +37,52 @@
     filter.addEventListener('input', apply);
     document.getElementById('page-filter-reset')?.addEventListener('click', () => { filter.value = ''; for (const control of facets) control.value = 'all'; apply(); });
     apply();
+  }
+
+  if (filter && document.querySelector('.product-selector')) {
+    const rows = [...document.querySelectorAll('.product-selector-table [data-page-card]')];
+    const choices = [...document.querySelectorAll('[data-product-facet]')];
+    const families = [...document.querySelectorAll('[data-product-family]')];
+    const options = new Map(rows.map(row => [row, JSON.parse(row.dataset.productOptions)]));
+    const params = new URLSearchParams(location.search);
+    let family = families.some(button => button.dataset.productFamily === params.get('category')) ? params.get('category') : 'all';
+    filter.value = params.get('q') || '';
+    choices.forEach(choice => { choice.checked = params.getAll(choice.dataset.productFacet).includes(choice.value); });
+    const apply = (updateUrl = true) => {
+      const selected = {};
+      choices.filter(choice => choice.checked).forEach(choice => (selected[choice.dataset.productFacet] ||= []).push(choice.value));
+      let count = 0;
+      const query = normalized(filter.value.trim());
+      for (const row of rows) {
+        const matches = (family === 'all' || row.dataset.category === family) && normalized(row.dataset.search).includes(query)
+          && Object.entries(selected).every(([key, values]) => values.some(value => options.get(row)[key].includes(value)));
+        row.hidden = !matches; if (matches) count++;
+      }
+      families.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.productFamily === family)));
+      document.getElementById('page-filter-status').textContent = en ? `${count} of ${rows.length} models` : `共 ${count} 个型号 / 全部 ${rows.length} 个`;
+      document.getElementById('product-empty').hidden = count !== 0;
+      if (updateUrl) {
+        const next = new URLSearchParams();
+        if (filter.value.trim()) next.set('q', filter.value.trim());
+        if (family !== 'all') next.set('category', family);
+        Object.entries(selected).forEach(([key, values]) => values.forEach(value => next.append(key, value)));
+        history.replaceState(null, '', location.pathname + (next.size ? '?' + next : '') + location.hash);
+      }
+      const language = document.querySelector('a.language');
+      if (language) { const url = new URL(language.href); url.search = location.search; language.href = url.pathname + url.search; }
+    };
+    families.forEach(button => button.addEventListener('click', () => { family = button.dataset.productFamily; apply(); }));
+    choices.forEach(choice => choice.addEventListener('change', () => apply()));
+    filter.addEventListener('input', () => apply());
+    document.getElementById('page-filter-reset').addEventListener('click', () => { filter.value = ''; family = 'all'; choices.forEach(choice => { choice.checked = false; }); apply(); });
+    document.querySelectorAll('.product-facet-more').forEach(button => button.addEventListener('click', () => {
+      const expanded = button.getAttribute('aria-expanded') !== 'true';
+      button.setAttribute('aria-expanded', String(expanded));
+      button.closest('fieldset').querySelectorAll('[data-extra-choice]').forEach(label => { label.hidden = !expanded && !label.querySelector('input').checked; });
+      button.textContent = expanded ? (en ? 'Less −' : '收起 −') : (en ? 'More +' : '更多 +');
+    }));
+    choices.filter(choice => choice.checked).forEach(choice => { choice.closest('label').hidden = false; });
+    apply(false);
   }
 
   const dialog = document.getElementById('detail-search-dialog');

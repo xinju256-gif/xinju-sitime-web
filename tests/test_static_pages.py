@@ -9,7 +9,7 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from news_sync import ROOT, load_content
-from static_pages import StaticPages, route, site_config
+from static_pages import StaticPages, route, site_config, product_facets
 
 
 class StaticPageTests(unittest.TestCase):
@@ -62,6 +62,26 @@ class StaticPageTests(unittest.TestCase):
         self.assertIn('<html lang="en">', source)
         self.assertIn('rel="canonical" href="https://timing.example.test/en/downloads/"', source)
         self.assertIn('hreflang="zh-CN" href="https://timing.example.test/downloads/"', source)
+
+    def test_product_selector_keeps_all_models_and_local_documents(self):
+        self.pages.listing('product', self.catalog['products'], 'zh')
+        source = (self.out / 'products/index.html').read_text()
+        self.assertIn('class="product-selector-table"', source)
+        self.assertEqual(source.count('<tr data-page-card '), len(self.catalog['products']))
+        self.assertEqual(source.count(' download="'), 117)
+        self.assertIn('type=datasheet', source)
+        self.assertIn('data-product-family="ocxo"', source)
+        self.assertNotIn('href="https://www.sitime.com', source)
+
+    def test_facets_do_not_confuse_temperature_with_stability(self):
+        product = copy.deepcopy(self.catalog['products'][0])
+        product['values']['stability']['en'] = '±20 ppm (-40°C to 105°C), ±50 ppm (-40°C to 125°C)'
+        product['values']['supply']['en'] = '1.8, 2.5 to 3.3'
+        values = product_facets(product)
+        self.assertEqual(values['stability'], ['20 ppm', '50 ppm'])
+        self.assertEqual(values['supply'], ['1.8 V', '2.5–3.3 V'])
+        product['values']['stability']['en'] = '±0.001 (±1 ppb)'
+        self.assertEqual(product_facets(product)['stability'], ['1 ppb'])
 
     def test_repeated_news_headlines_have_date_specific_metadata(self):
         news = copy.deepcopy(self.content['news'][0])

@@ -42,6 +42,37 @@ def route(kind, item_id='', lang='zh'):
     return ('/en' if lang == 'en' else '') + '/' + GROUPS[kind] + '/' + (slug + '/' if slug else '')
 
 
+def product_facets(product):
+    """Extract explicitly listed options without inferring unsupported combinations."""
+    values = {key: pair.get('en', '') for key, pair in product['values'].items()}
+    number = r'\d+(?:\.\d+)?'
+    output = re.findall(r'(?<![a-z])(?:LVCMOS|LVPECL|LVDS|HCSL(?:-LP)?|CML|FlexSwing|(?:Clipped )?Sinewave)(?![a-z])', values.get('output', ''), re.I)
+    canonical = {v.lower(): v for v in ['LVCMOS', 'LVPECL', 'LVDS', 'HCSL', 'HCSL-LP', 'CML', 'FlexSwing', 'Sinewave', 'Clipped Sinewave']}
+    stability = values.get('stability', '')
+    # Parentheses may contain temperatures or ppb equivalents; do not treat those numbers as ppm.
+    primary = re.sub(r'\([^)]*\)', '', stability)
+    ppm = re.findall(number, primary) if 'ppm' in primary.lower() else []
+    ppb = re.findall(r'(\d+(?:\.\d+)?)\s*ppb', stability, re.I) if not ppm else []
+    supply = re.sub(r'\s*[Vv]\b', '', values.get('supply', ''))
+    voltage = []
+    pattern = number + r'(?:\s*(?:to|[~–-])\s*' + number + r'|\s*±\s*' + number + r'\s*%)?'
+    for match in re.finditer(pattern, supply):
+        token = re.sub(r'\s*(?:to|[~–-])\s*', '–', match.group())
+        token = re.sub(r'\s*±\s*', ' ±', token).strip()
+        voltage.append(token + ' V')
+    temperature = []
+    for low, high in re.findall(r'(-?\d+)\s*(?:°?[Cc])?\s*(?:to|[~–-])\s*\+?(-?\d+)', values.get('temperature', '')):
+        temperature.append(low + '–' + high + ' °C')
+    package = [a + ' × ' + b + ' mm' for a, b in re.findall(r'(' + number + r')\s*[x×]\s*(' + number + r')', values.get('package', ''), re.I)]
+    voltage = [re.sub(r'\d+(?:\.\d+)?', lambda m: str(float(m.group())).removesuffix('.0'), option) for option in voltage]
+    package = [re.sub(r'\d+(?:\.\d+)?', lambda m: str(float(m.group())).removesuffix('.0'), option) for option in package]
+    return {key: sorted(set(options)) for key, options in {
+        'output': [canonical[v.lower()] for v in output],
+        'stability': [str(float(n)).removesuffix('.0') + ' ppm' for n in ppm] + [str(float(n)).removesuffix('.0') + ' ppb' for n in ppb],
+        'supply': voltage, 'temperature': temperature, 'package': package,
+        'availability': ['pdf' if product['datasheet']['type'] == 'pdf' else 'pending']}.items()}
+
+
 def site_config():
     config = json.loads((ROOT / 'data/site-config.json').read_text())
     configured = os.environ.get('SITE_URL') or config.get('site_url')
@@ -307,15 +338,60 @@ class StaticPages:
         seo_title = title + ' · ' + item['date'] if kind == 'news' else title
         self.write(path, seo_title, self.description(kind, item, lang), body, lang, route(kind, item['id'], 'en' if lang == 'zh' else 'zh'), crumbs, entity)
 
+    def product_directory(self, items, lang):
+        body = '<section class="product-selector" aria-label="' + tr(('产品选型', 'Product selector'), lang) + '">'
+        body += '<nav class="product-family-tabs" aria-label="' + tr(('产品类别', 'Product families'), lang) + '">'
+        for category_id, label in [('all', tr(('全部产品', 'All products'), lang))] + [(c['id'], c['name'][lang]) for c in self.catalog['categories']]:
+            body += '<button type="button" data-product-family="' + safe(category_id) + '" aria-pressed="' + ('true' if category_id == 'all' else 'false') + '">' + safe(label) + '</button>'
+        body += '</nav><div class="product-search-tools"><div><label for="page-filter">' + tr(('查询型号或参数', 'Search models or specifications'), lang) + '</label><input id="page-filter" type="search" placeholder="SiT8008 / TCXO / LVDS" autocomplete="off"></div><button type="button" id="page-filter-reset" class="catalog-reset">' + tr(('重置筛选', 'Reset filters'), lang) + '</button></div>'
+        facets = {p['model']: product_facets(p) for p in items}
+        labels = {'output': ('输出接口', 'Output interface'), 'stability': ('频率稳定性', 'Frequency stability'), 'supply': ('供电电压', 'Supply voltage'), 'temperature': ('工作温度', 'Operating temperature'), 'package': ('封装尺寸', 'Package dimensions'), 'availability': ('规格书', 'Datasheet')}
+        for key, label in labels.items():
+            options = sorted({v for values in facets.values() for v in values[key]}, key=lambda v: (-sum(v in values[key] for values in facets.values()), float(re.search(r'-?\d+(?:\.\d+)?', v).group()) if re.search(r'-?\d+(?:\.\d+)?', v) else 0, v))
+            body += '<fieldset class="product-facet"><legend>' + safe(tr(label, lang)) + '</legend><div class="product-facet-options">'
+            for i, value in enumerate(options):
+                text = tr(('可下载 PDF', 'PDF available'), lang) if value == 'pdf' else tr(('待补规格书', 'Datasheet pending'), lang) if value == 'pending' else value
+                body += '<label' + (' data-extra-choice hidden' if i >= 10 else '') + '><input type="checkbox" data-product-facet="' + key + '" value="' + safe(value) + '"><span>' + safe(text) + '</span></label>'
+            if len(options) > 10:
+                body += '<button type="button" class="product-facet-more" aria-expanded="false">' + tr(('更多', 'More'), lang) + ' +</button>'
+            body += '</div></fieldset>'
+        body += '<div class="product-result-summary"><p id="page-filter-status" role="status" aria-live="polite"></p><span>' + tr(('同项多选为“或”，不同参数之间为“且”', 'Match any option within a group and all selected groups'), lang) + '</span></div>'
+        body += '<div class="product-table-scroll" role="region" tabindex="0" aria-label="' + tr(('产品参数表，可横向滚动', 'Product specifications table, scroll horizontally'), lang) + '"><table class="product-selector-table"><caption class="sr-only">' + tr(('SiTime 产品参数与规格书', 'SiTime product specifications and datasheets'), lang) + '</caption><thead><tr><th scope="col">' + tr(('产品型号', 'Model'), lang) + '</th>'
+        for key in ['frequency', 'temperature', 'stability', 'output', 'supply', 'package']:
+            body += '<th scope="col">' + safe(tr(PARAMETERS[key], lang)) + '</th>'
+        body += '<th scope="col">' + tr(('规格书', 'Datasheet'), lang) + '</th><th scope="col">' + tr(('询价', 'Inquiry'), lang) + '</th></tr></thead><tbody>'
+        for p in items:
+            body += '<tr data-page-card ' + self.filter_attributes('product', p) + ' data-product-options="' + safe(json_script(facets[p['model']])) + '"><th scope="row">' + self.link(route('product', p['model'], lang), p['model']) + '</th>'
+            for key in ['frequency', 'temperature', 'stability', 'output', 'supply', 'package']:
+                value = p['values'].get(key, {}).get(lang, '').strip()
+                if value.lower() in ['ppm', 'ppb']:
+                    value = ''
+                override = p.get('parameterLabels', {}).get(key, {}).get(lang)
+                body += '<td>' + ('<small>' + safe(override) + '</small>' if override else '') + safe(value or '—') + '</td>'
+            doc = p['datasheet']
+            if doc['type'] == 'pdf':
+                body += '<td><a class="product-table-download" href="/' + safe(doc['local']) + '" download="' + safe(doc['filename']) + '">PDF ↓</a></td>'
+            else:
+                body += '<td>' + self.link('/?' + urllib.parse.urlencode({'product': p['model'], 'type': 'datasheet'}) + '#contact', tr(('联系索取', 'Request PDF'), lang), 'product-pending-link') + '</td>'
+            body += '<td>' + self.link(self.inquiry('product', p, lang), tr(('询价', 'Inquire'), lang), 'product-inquiry-link') + '</td></tr>'
+        body += '</tbody></table></div><p id="product-empty" class="product-empty" hidden>' + tr(('没有符合条件的型号，请减少筛选条件或联系芯聚电子协助选型', 'No matching models. Reduce the filters or contact SIMACITY for selection assistance'), lang) + '</p>'
+        body += '<p class="detail-note">' + tr(('参数为型号可选范围，不代表所有选项可同时组合；“—”表示目录未列明。请下载原厂规格书核对测试条件、订货配置与接口要求。', 'Parameters describe available model options, not simultaneous combinations. “—” means the catalog does not specify a value. Verify test conditions, ordering configuration and interface requirements in the manufacturer datasheet.'), lang) + '</p></section>'
+        return body
+
     def listing(self, kind, items, lang):
         path = route(kind, lang=lang)
         title = tr(LABELS[kind], lang)
         description = tr((f'{len(items)} 个条目，查看 SiTime {title}及相关本站资料。', f'Browse {len(items)} SiTime {title.lower()} entries and related local resources.'), lang)
+        if kind == 'product':
+            description = tr((f'按类别与技术参数筛选 {len(items)} 个 SiTime 型号，查看规格、下载原厂 PDF 或联系芯聚电子询价。', f'Filter {len(items)} SiTime models by family and specifications, download manufacturer PDFs or request a quote from SIMACITY.'), lang)
         body = '<div class="detail-kicker">SIMACITY / SiTime</div><h1>' + safe(title) + '</h1><p class="detail-lead">' + safe(description) + '</p><div class="detail-list-tools"><label for="page-filter">' + tr(('搜索当前目录', 'Search this directory'), lang) + '</label><input id="page-filter" type="search" placeholder="' + tr(('型号或关键词', 'Model or keyword'), lang) + '" autocomplete="off"><p id="page-filter-status" role="status" aria-live="polite"></p></div>'
         body = body.replace('<p id="page-filter-status"', self.filter_controls(kind, lang) + '<p id="page-filter-status"')
         if kind == 'solution':
             body += '<p>' + self.link(route('industry', lang=lang), tr(('按行业查看 →', 'Browse industries →'), lang)) + '</p>'
-        body += self.cards(kind, items, lang)
+        if kind == 'product':
+            body = body.split('<div class="detail-list-tools">', 1)[0] + self.product_directory(items, lang)
+        else:
+            body += self.cards(kind, items, lang)
         entity = {'@type': 'CollectionPage', '@id': self.origin + path, 'name': title, 'url': self.origin + path,
                   'mainEntity': {'@type': 'ItemList', 'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'name': self.title(kind, item, lang), 'url': self.origin + route(kind, item.get('model', item.get('id')), lang)} for i, item in enumerate(items)]}}
         self.write(path, title, description, body, lang, route(kind, lang='en' if lang == 'zh' else 'zh'), [(tr(('首页', 'Home'), lang), '/'), (title, path)], entity)

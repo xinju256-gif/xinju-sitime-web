@@ -82,6 +82,8 @@ def upload_required(deploy_id, required, by_hash, token):
 def verify_public(base, origin):
     checks = [('/', '<title>SiTime中国官方代理商'),
               ('/products/sit8008/', '<h1>SiT8008</h1>'),
+              ('/products/', 'class="product-selector-table"'),
+              ('/en/products/', 'class="product-selector-table"'),
               ('/solutions/microwave-outdoor-units-odu-timing-solutions/', '工程选型说明'),
               ('/en/products/sit8008/', '<html lang="en">'),
               ('/downloads/', '<h1>资料下载</h1>'),
