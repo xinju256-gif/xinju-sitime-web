@@ -9,6 +9,7 @@ import urllib.parse
 import xml.etree.ElementTree as ET
 
 from news_sync import ROOT, load_content
+from title_style import clean_title_text, clean_heading_markup
 
 GROUPS = {'product': 'products', 'solution': 'solutions', 'industry': 'industries', 'news': 'news', 'download': 'downloads'}
 LABELS = {'product': ('产品中心', 'Products'), 'solution': ('解决方案', 'Solutions'),
@@ -86,8 +87,8 @@ class StaticPages:
 
     def title(self, kind, item, lang):
         if kind == 'product':
-            return item['model'] + ' · ' + self.categories[item['category']]['name'][lang]
-        return item['title'][lang]
+            return clean_title_text(item['model'] + ' · ' + self.categories[item['category']]['name'][lang])
+        return clean_title_text(item['title'][lang])
 
     def description(self, kind, item, lang):
         if kind == 'product':
@@ -100,7 +101,7 @@ class StaticPages:
             value = '；'.join(parts) if lang == 'zh' else '. '.join(parts)
         else:
             prefix = item['date'] + ' · ' if kind == 'news' else ''
-            value = prefix + self.title(kind, item, lang) + '：' + item['summary'][lang]
+            value = prefix + item['title'][lang] + '：' + item['summary'][lang]
         limit = 180 if lang == 'zh' else 300
         return value if len(value) <= limit else value[:limit - 1].rstrip() + '…'
 
@@ -140,7 +141,7 @@ class StaticPages:
 <link rel="stylesheet" href="/styles.css"><script type="application/ld+json">{json_script({'@context':'https://schema.org','@graph':graph})}</script>
 <script defer src="/detail-search-data.js"></script><script defer src="/detail-pages.js"></script></head><body class="standalone-page">'''
         breadcrumb_html = '<nav class="detail-breadcrumbs" aria-label="' + tr(('面包屑', 'Breadcrumb'), lang) + '">' + '<span aria-hidden="true"> / </span>'.join(self.link(url, label) for label, url in crumbs) + '</nav>'
-        html = head + self.header(lang, alternate) + '<main id="main" class="detail-main">' + breadcrumb_html + body + '</main>' + self.footer(lang) + '</body></html>'
+        html = clean_heading_markup(head + self.header(lang, alternate) + '<main id="main" class="detail-main">' + breadcrumb_html + body + '</main>' + self.footer(lang) + '</body></html>')
         destination = self.target / path.lstrip('/') / 'index.html'
         destination.parent.mkdir(parents=True, exist_ok=True)
         destination.write_text(html)

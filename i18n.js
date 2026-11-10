@@ -46,6 +46,17 @@
     ['计时产品选型指南', 'Timing product selection guide'], ['从系统需求出发，逐步缩小计时方案的选择范围。', 'Start with system requirements to narrow down your timing options.'], ['定义应用场景及工作温度范围。', 'Define the application and operating temperature range.'], ['列出频率、精度、抖动和相位噪声要求。', 'List frequency, accuracy, jitter and phase noise requirements.'], ['确认电源、逻辑接口、封装和功耗限制。', 'Check supply voltage, logic interfaces, package and power limits.'], ['对照官方数据手册，并在实际板卡上验证。', 'Consult official data sheets and validate on your actual board.'], ['认识 MEMS 精密计时', 'Understanding MEMS precision timing'], ['MEMS 即微机电系统。通过在硅片上制造微型机械结构，可以将机械谐振与电子电路相结合。', 'MEMS stands for microelectromechanical systems. Tiny mechanical structures fabricated on silicon combine mechanical resonance with electronic circuits.'], ['谐振器产生稳定的机械振动。', 'A resonator produces stable mechanical oscillation.'], ['配套电路维持振荡，并完成温度补偿与输出处理。', 'Supporting circuits sustain oscillation, compensate for temperature and process the output.'], ['不同系列适用于不同环境，实际性能应以对应数据手册为依据。', 'Different families suit different environments. Refer to the relevant data sheet for actual performance.'], ['开始设计前的需求清单', 'Pre-design requirements checklist'], ['整理以下信息，有助于与技术团队高效讨论。', 'Prepare the following information for an effective discussion with the technical team.'], ['应用场景、系统框图及产品开发阶段。', 'Application, system block diagram and development stage.'], ['输入与输出频率、接口类型和供电电压。', 'Input and output frequencies, interface types and supply voltage.'], ['精度、抖动、功耗与工作温度要求。', 'Accuracy, jitter, power and operating temperature requirements.'], ['目标封装尺寸、预计用量和项目时间表。', 'Target package size, estimated volume and project timeline.'], ['整理您的应用需求 ↗', 'Discuss your requirements ↗'], ['暂无匹配结果，请尝试“振荡器”“汽车”或“技术”。', 'No matching results. Try “oscillators”, “automotive” or “technology”.'],
     ['发给芯聚电子的咨询邮件', 'Your inquiry to SIMACITY'], ['收件人：芯聚电子 sales@simacity.com.cn。您可以打开邮件客户端，检查内容后发送，也可以复制以下内容。网页不会自动发送邮件。', 'To: SIMACITY, sales@simacity.com.cn. Open your email app to review and send, or copy the draft below. This page will not send email automatically.'], ['整理后的需求内容', 'Prepared inquiry'], ['复制需求内容', 'Copy inquiry'], ['已复制，可粘贴至邮件。', 'Copied. You can paste it into your email.'], ['请使用系统复制命令复制已选中的内容。', 'Use your system copy command to copy the selected text.'], ['打开邮件客户端 ↗', 'Open email app ↗']
   ]);
+  const cleanHeadingText = (value) => value.split('\n').map(line => line.replace(/[。．.!！?？…]+(?=["'”’»）)\]】]*\s*$)/u, '')).join('\n');
+  const headingTranslations = new Map([...translations].map(([key, value]) => [cleanHeadingText(key).trim(), value]));
+  function endsHeadingLine(node, root) {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_ELEMENT | NodeFilter.SHOW_TEXT);
+    walker.currentNode = node;
+    while (walker.nextNode()) {
+      if (walker.currentNode.nodeType === Node.ELEMENT_NODE && walker.currentNode.tagName === 'BR') return true;
+      if (walker.currentNode.nodeType === Node.TEXT_NODE && walker.currentNode.nodeValue.trim()) return false;
+    }
+    return true;
+  }
   let language = 'zh';
   try { if (localStorage.getItem('simacity-language') === 'en') language = 'en'; } catch { /* Storage can be unavailable in embedded previews. */ }
   const textSources = new WeakMap();
@@ -64,7 +75,13 @@
     if (ignored(node)) return;
     let record = textSources.get(node);
     if (!record || node.nodeValue !== record.rendered) record = { source: node.nodeValue };
-    const rendered = translate(record.source);
+    let rendered = translate(record.source);
+    const heading = node.parentElement?.closest('h1,h2,h3,h4,h5,h6,[data-heading-lines]');
+    if (heading) {
+      const key = record.source.trim();
+      if (language === 'en' && !translations.has(key) && headingTranslations.has(key)) rendered = record.source.replace(key, headingTranslations.get(key));
+      if (endsHeadingLine(node, heading)) rendered = cleanHeadingText(rendered);
+    }
     textSources.set(node, { source: record.source, rendered });
     if (node.nodeValue !== rendered) node.nodeValue = rendered;
   }
