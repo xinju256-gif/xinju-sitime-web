@@ -87,7 +87,8 @@ def verify_public(base, origin):
               ('/downloads/', '<h1>资料下载</h1>'),
               ('/en/downloads/', '<h1>Datasheet downloads</h1>'),
               ('/sitemap.xml', origin + '/products/sit8008/'),
-              ('/robots.txt', 'Sitemap: ' + origin + '/sitemap.xml')]
+              ('/robots.txt', 'Sitemap: ' + origin + '/sitemap.xml'),
+              ('/news/fed8b534016db3/', '<h1>SiTime发布2026年第三季度财务业绩</h1>')]
     if urllib.parse.urlsplit(base).scheme != 'https':
         raise ValueError('Verification URL must use HTTPS')
     results = []
@@ -100,7 +101,7 @@ def verify_public(base, origin):
             for old_section in ['products', 'applications', 'downloads', 'news']:
                 if re.search(r'<section\b[^>]*\bid="' + old_section + '"', text):
                     raise ValueError('Removed homepage section is still published: ' + old_section)
-            if '查找选型' not in text or '下载规格书' not in text or 'href="/downloads/"' not in text:
+            if any(marker not in text for marker in ['查询型号', 'id="hero-model-form"', 'action="/products/"', '下载规格书', 'href="/downloads/"', 'SiTime发布2026年第三季度财务业绩']):
                 raise ValueError('Homepage search destinations were not published')
         if path.endswith('/') and 'rel="canonical" href="' + origin + path + '"' not in text:
             raise ValueError('Wrong canonical at ' + path)

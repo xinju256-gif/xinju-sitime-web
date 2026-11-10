@@ -11,6 +11,8 @@ window.detailPageHref = (kind, id, lang = window.siteI18n.language) => {
       news: ['浏览新闻详情目录 →', 'Browse news detail pages →']
     };
     for (const link of document.querySelectorAll('[data-site-directory]')) link.href = window.detailPageHref(link.dataset.siteDirectory, '');
+    for (const form of document.querySelectorAll('[data-site-form]')) form.action = window.detailPageHref(form.dataset.siteForm, '');
+    for (const link of document.querySelectorAll('[data-featured-news]')) link.href = window.detailPageHref('news', link.dataset.featuredNews);
     for (const link of document.querySelectorAll('[data-independent-directory]')) {
       const kind = link.dataset.independentDirectory;
       link.hidden = !window.SITE_PAGES;
@@ -19,5 +21,6 @@ window.detailPageHref = (kind, id, lang = window.siteI18n.language) => {
     }
   }
   document.addEventListener('site:languagechange', renderDirectories);
+  document.getElementById('hero-model-form')?.addEventListener('submit', () => { const query = document.getElementById('hero-model-query'); query.value = query.value.trim(); });
   renderDirectories();
 })();

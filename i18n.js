@@ -1,5 +1,16 @@
 (() => {
   const translations = new Map([
+    ["查询型号", "Find a model"],
+    ["精密计时产品选型", "Precision timing product selection"],
+    ["输入型号或关键词", "Enter a model or keyword"],
+    ["输入型号或关键词，例如 SiT8008、TCXO、LVDS", "Enter a model or keyword, e.g. SiT8008, TCXO or LVDS"],
+    ["搜索型号", "Search models"],
+    ["搜索", "Search"],
+    ["支持按型号、产品类别及输出接口查找，查看参数与原厂规格书。", "Search by model, family or output interface to view specifications and manufacturer datasheets."],
+    ["最新动态", "Latest news"],
+    ["了解更多", "Learn more"],
+    ["SiTime发布2026年第三季度财务业绩", "SiTime Reports Third Quarter 2026 Financial Results"],
+
     ['查找选型', 'Find a product'], ['下载规格书', 'Find a datasheet'],
     ['首页', 'Home'], ['产品中心', 'Products'],
     ["资料下载", "Downloads"],
