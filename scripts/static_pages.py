@@ -152,7 +152,7 @@ class StaticPages:
 <div class="nav-actions"><a href="{route('product',lang=lang)}" id="detail-search-open" aria-label="{tr(('搜索本站资料','Search this site'),lang)}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></a><a class="language" href="{alternate}" hreflang="{'zh-CN' if en else 'en'}">{tr(('简体中文 / EN','中文 / EN'),lang)}</a><a class="button small" href="/#contact">{tr(('联系我们 ↗','Contact ↗'),lang)}</a></div></header>'''
 
     def footer(self, lang):
-        return f'''<footer class="detail-footer"><div><strong>SIMACITY / 芯聚电子</strong><p>{tr(('SiTime 精密计时产品选型与咨询','SiTime precision timing selection and inquiries'),lang)}</p></div><div><a href="tel:+862162271972">021-62271972</a><a href="mailto:sales@simacity.com.cn">sales@simacity.com.cn</a><a href="/#contact">{tr(('联系芯聚电子','Contact SIMACITY'),lang)}</a></div><p>{tr(('参数以本站原厂规格书为准 · 本站非 SiTime 官方网站','Consult the local manufacturer datasheets. This is not the SiTime corporate website.'),lang)}</p></footer>
+        return f'''<footer class="detail-footer"><div><strong>SIMACITY / 芯聚电子</strong><p>{tr(('SiTime 精密计时产品选型与咨询','SiTime precision timing selection and inquiries'),lang)}</p></div><div><a href="tel:+862162271972">021-62271972</a><a href="mailto:sales@simacity.com.cn">sales@simacity.com.cn</a><a href="/#contact">{tr(('联系芯聚电子','Contact SIMACITY'),lang)}</a></div><p>{tr(('上海芯聚电子 · SiTime中国官方代理商','SIMACITY · SiTime Authorized Distributor in China'),lang)}</p></footer>
 <dialog id="detail-search-dialog"><button class="dialog-close" type="button" aria-label="{tr(('关闭搜索','Close search'),lang)}">×</button><h2>{tr(('搜索本站资料','Search this site'),lang)}</h2><label for="detail-search">{tr(('型号、应用或新闻关键词','Model, application or news keyword'),lang)}</label><input id="detail-search" type="search" autocomplete="off"><div id="detail-search-results" aria-live="polite"></div></dialog>'''
 
     def write(self, path, title, description, body, lang, alternate, crumbs, entity):
@@ -216,7 +216,6 @@ class StaticPages:
             default = {'title': ['计时产品阅读提示', 'Timing product context'], 'body': ['选型时请把资讯中的产品方向与实际需求区分开。具体参数和完整测试条件，请查阅本站对应型号的原厂 PDF。', 'Distinguish product announcements from application requirements. Consult the local manufacturer PDF for exact specifications and test conditions.']}
             topic = next((topic for topic in self.notes['topics'] if re.search(topic['pattern'], item['title']['en'], re.I)), default)
             output += '<h2>' + safe(tr(topic['title'], lang)) + '</h2><p>' + safe(tr(topic['body'], lang)) + '</p>'
-            output += '<p class="detail-muted">' + tr(('以上为本站原创阅读提示，不属于原厂文章的逐字转载。', 'These are original SIMACITY reading notes, not a verbatim reproduction of the manufacturer article.'), lang) + '</p>'
         return output + '</section>'
 
     def cards(self, kind, items, lang):
@@ -327,7 +326,7 @@ class StaticPages:
             body += '<section><h2>' + tr(('本行业应用方案', 'Industry applications'), lang) + '</h2>'
             body += self.cards('solution', related, lang) if related else '<p>' + tr(('该行业暂无独立应用条目，可联系芯聚电子讨论选型。', 'No separate application entries are listed for this industry. Contact SIMACITY for selection assistance.'), lang) + '</p>'
             body += '</section>'
-        body += '<div class="detail-actions">' + self.link(route('download', lang=lang), tr(('查找原厂规格书 ↓', 'Find manufacturer datasheets ↓'), lang), 'button') + self.link(self.inquiry(kind, item, lang), tr(('联系芯聚电子 →', 'Contact SIMACITY →'), lang), 'detail-card-link') + '</div><p class="detail-note">' + tr(('依据 SiTime 公开信息整理，本站提供原创概览和阅读提示；具体器件条件以本站原厂 PDF 为准。', 'Prepared from public SiTime information with original overviews and reading notes. Consult the local manufacturer PDFs for device conditions.'), lang) + '</p></article>'
+        body += '<div class="detail-actions">' + self.link(route('download', lang=lang), tr(('查找原厂规格书 ↓', 'Find manufacturer datasheets ↓'), lang), 'button') + self.link(self.inquiry(kind, item, lang), tr(('联系芯聚电子 →', 'Contact SIMACITY →'), lang), 'detail-card-link') + '</div><p class="detail-note">' + tr(('芯聚电子为您提供SiTime产品选型、原厂规格书、技术支持与询价服务。', 'SIMACITY provides SiTime product selection, manufacturer datasheets, technical support and quotations.'), lang) + '</p></article>'
         entity = {'@type': ('NewsArticle' if item.get('type') == 'release' else 'BlogPosting') if kind == 'news' else 'TechArticle',
                   '@id': self.origin + path + '#article', 'headline': title, 'description': self.description(kind, item, lang),
                   'inLanguage': 'en' if lang == 'en' else 'zh-CN', 'mainEntityOfPage': self.origin + path,

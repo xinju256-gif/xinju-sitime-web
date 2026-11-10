@@ -105,6 +105,10 @@ def verify_public(base, origin):
                     raise ValueError('Removed homepage section is still published: ' + old_section)
             if any(marker not in text for marker in ['查询型号', 'id="hero-model-form"', 'action="/products/"', '下载规格书', 'href="/downloads/"', 'SiTime发布2026年第三季度财务业绩']):
                 raise ValueError('Homepage search destinations were not published')
+        if path.endswith('/'):
+            positioning = 'SIMACITY · SiTime Authorized Distributor in China' if path.startswith('/en/') else '上海芯聚电子 · SiTime中国官方代理商'
+            if positioning not in text or re.search(r'非\s*SiTime\s*官方网站|not the (?:official SiTime website|SiTime corporate website)', text, re.I):
+                raise ValueError('Distributor positioning was not published at ' + path)
         if path.endswith('/') and 'rel="canonical" href="' + origin + path + '"' not in text:
             raise ValueError('Wrong canonical at ' + path)
         results.append(path)

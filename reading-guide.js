@@ -22,7 +22,6 @@
     } else {
       const topic = topics.find(([pattern]) => pattern.test(item.title.en)) || [null, ['计时产品阅读提示', 'Timing product context'], ['选型时请把资讯中的产品方向与实际应用需求区分开。具体频率、输出接口、供电、温度和测试条件，应查看本站对应型号的原厂 PDF。', 'Distinguish product announcements from application requirements. Consult the local manufacturer PDF for exact frequency, output, supply, temperature and test conditions.']];
       add('h3', choose(topic[1])); add('p', choose(topic[2]));
-      add('p', choose(['以上为芯聚电子补充的原创阅读提示，不属于原厂文章的逐字转载。', 'These are original SIMACITY reading notes, not a verbatim reproduction of the manufacturer article.'])).className = 'local-reading-note';
     }
     body.append(section);
   };
