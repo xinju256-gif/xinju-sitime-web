@@ -94,6 +94,7 @@ class StaticPages:
         self.products = {p['model']: p for p in catalog['products']}
         self.categories = {c['id']: c for c in catalog['categories']}
         self.notes = load_content(ROOT / 'reading-data.js')
+        self.news_details = load_content(ROOT / 'news-details-data.js')
         self.config = site_config()
         self.origin = self.config['site_url']
         self.pages = []
@@ -212,6 +213,19 @@ class StaticPages:
                 pair = self.notes['focusCopy'].get(key, self.notes['focusCopy']['接口配合'])
                 output += '<h3>' + safe(item['focus'][lang][i]) + '</h3><p>' + safe(tr(pair, lang)) + '</p>'
             output += '<h2>' + tr(('从需求到验证', 'From requirements to validation'), lang) + '</h2><ol>' + ''.join('<li>' + safe(tr(pair, lang)) + '</li>' for pair in WORKFLOW) + '</ol>'
+        elif item['id'] in self.news_details['articles']:
+            detail = self.news_details['articles'][item['id']]
+            if detail.get('highlight'):
+                highlight = detail['highlight']
+                output += '<h2>' + safe(highlight['title'][lang]) + '</h2>'
+                output += ''.join('<p>' + safe(p) + '</p>' for p in highlight['paragraphs'][lang])
+            output += '<h2>' + tr(('原厂信息摘录', 'Manufacturer excerpt'), lang) + '</h2><blockquote class="news-source-excerpt" lang="en"><p>' + safe(detail['excerpt']) + '</p><cite>SiTime · ' + safe(item['date']) + '</cite></blockquote>'
+            if detail['models'] or detail['platforms']:
+                output += '<h2>' + tr(('文中涉及的型号与平台', 'Models and platforms mentioned'), lang) + '</h2><p>' + safe(' / '.join(detail['models'] + detail['platforms'])) + '</p>'
+            profile = self.news_details['profiles'][detail['profile']]
+            output += '<section class="news-editorial-context"><div class="detail-kicker">' + tr(('延伸阅读', 'Further context'), lang) + '</div><h2>' + safe(profile['title'][lang]) + '</h2>'
+            output += ''.join('<p>' + safe(p) + '</p>' for p in profile['paragraphs'][lang])
+            output += '<h3>' + tr(('阅读与应用关注点', 'Reading and application checklist'), lang) + '</h3><ul>' + ''.join('<li>' + safe(p) + '</li>' for p in profile['checks'][lang]) + '</ul></section>'
         else:
             default = {'title': ['计时产品阅读提示', 'Timing product context'], 'body': ['选型时请把资讯中的产品方向与实际需求区分开。具体参数和完整测试条件，请查阅本站对应型号的原厂 PDF。', 'Distinguish product announcements from application requirements. Consult the local manufacturer PDF for exact specifications and test conditions.']}
             topic = next((topic for topic in self.notes['topics'] if re.search(topic['pattern'], item['title']['en'], re.I)), default)
@@ -318,7 +332,10 @@ class StaticPages:
         if kind == 'news' and lang == 'zh':
             body += '<p class="detail-muted">原文题名：' + safe(item['title']['en']) + '</p>'
         body += self.reading(item, kind, lang)
-        models = [self.products[m] for m in item['models'] if m in self.products]
+        mentioned = self.news_details['articles'].get(item['id'], {}).get('models', []) if kind == 'news' else []
+        model_ids = list(dict.fromkeys(item['models'] + mentioned))
+        known_models = {m.lower(): p for m, p in self.products.items()}
+        models = [known_models[m.lower()] for m in model_ids if m.lower() in known_models]
         if models:
             body += '<section><h2>' + tr(('相关产品与本站资料', 'Related products and local documents'), lang) + '</h2>' + self.cards('product', models, lang) + '</section>'
         if kind == 'industry':
@@ -331,6 +348,8 @@ class StaticPages:
                   '@id': self.origin + path + '#article', 'headline': title, 'description': self.description(kind, item, lang),
                   'inLanguage': 'en' if lang == 'en' else 'zh-CN', 'mainEntityOfPage': self.origin + path,
                   'author': {'@type': 'Organization', 'name': self.config['name']}, 'publisher': {'@id': self.origin + '/#organization'}}
+        if kind == 'news':
+            entity['datePublished'] = item['date']
         if item.get('image'):
             entity['image'] = self.origin + '/' + item['image']
         crumbs = [(tr(('首页', 'Home'), lang), '/'), (tr(LABELS[kind], lang), route(kind, lang=lang)), (title, path)]

@@ -45,7 +45,7 @@ const imageLoader = `(() => {
     cache.get(local).then(url=>{image.src=url;}).catch(()=>{image.src=fallback;});
   };
 })();`;
-const scripts = ['i18n.js', 'site-assets.js', 'reading-data.js', 'reading-guide.js', 'catalog-data.js', 'content-data.js', 'app.js', 'site-pages-config.js', 'page-links.js', 'inquiry-config.js', 'inquiry.js', 'local-routes.js'];
+const scripts = ['i18n.js', 'site-assets.js', 'reading-data.js', 'news-details-data.js', 'reading-guide.js', 'catalog-data.js', 'content-data.js', 'app.js', 'site-pages-config.js', 'page-links.js', 'inquiry-config.js', 'inquiry.js', 'local-routes.js'];
 const script = scripts.map((name) => name === 'catalog-data.js' ? 'window.MEMS_CATALOG = ' + JSON.stringify(catalog) + ';' : name === 'site-assets.js' ? imageLoader : name === 'site-pages-config.js' ? 'window.SITE_PAGES = false; window.SITE_ORIGIN = "https://sitime-cn.com";' : read(name)).join('\n;\n');
 new vm.Script(script);
 const config = {

@@ -90,7 +90,9 @@ def verify_public(base, origin):
               ('/en/downloads/', '<h1>Datasheet downloads</h1>'),
               ('/sitemap.xml', origin + '/products/sit8008/'),
               ('/robots.txt', 'Sitemap: ' + origin + '/sitemap.xml'),
-              ('/news/fed8b534016db3/', '<h1>SiTime发布2026年第三季度财务业绩</h1>')]
+              ('/news/fed8b534016db3/', '<h1>SiTime发布2026年第三季度财务业绩</h1>'),
+              ('/news/bc52f6538f1c37/', 'class="news-editorial-context"'),
+              ('/en/news/fc0e5b9aac316c/', 'PLL building blocks and operation')]
     if urllib.parse.urlsplit(base).scheme != 'https':
         raise ValueError('Verification URL must use HTTPS')
     results = []
@@ -105,6 +107,8 @@ def verify_public(base, origin):
                     raise ValueError('Removed homepage section is still published: ' + old_section)
             if any(marker not in text for marker in ['查询型号', 'id="hero-model-form"', 'action="/products/"', '下载规格书', 'href="/downloads/"', 'SiTime发布2026年第三季度财务业绩']):
                 raise ValueError('Homepage search destinations were not published')
+        if '/news/' in path and path.endswith('/') and 'class="news-source-excerpt"' not in text:
+            raise ValueError('Expanded news article was not published at ' + path)
         if path.endswith('/'):
             positioning = 'SIMACITY · SiTime Authorized Distributor in China' if path.startswith('/en/') else '上海芯聚电子 · SiTime中国官方代理商'
             if positioning not in text or re.search(r'非\s*SiTime\s*官方网站|not the (?:official SiTime website|SiTime corporate website)', text, re.I):

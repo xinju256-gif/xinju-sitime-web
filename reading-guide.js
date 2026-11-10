@@ -19,6 +19,25 @@
         ['在本站产品目录中筛选型号，并直接下载对应原厂规格书核对完整测试条件。', 'Filter models in this site’s catalog and download their manufacturer datasheets to check full test conditions.'],
         ['使用具体订货代码确认配置、资格等级及交期，再开展原理图、布局和样机验证。', 'Confirm configuration, qualification and lead time for the ordering code, then validate schematic, layout and prototype.']
       ]) { const li = document.createElement('li'); li.textContent = choose(pair); list.append(li); }
+    } else if (window.NEWS_DETAILS?.articles[item.id]) {
+      const detail = window.NEWS_DETAILS.articles[item.id];
+      const language = window.siteI18n.language;
+      if (detail.highlight) {
+        add('h3', detail.highlight.title[language]);
+        detail.highlight.paragraphs[language].forEach(text => add('p', text));
+      }
+      add('h3', choose(['原厂信息摘录', 'Manufacturer excerpt']));
+      const excerpt = add('blockquote', detail.excerpt); excerpt.lang = 'en'; excerpt.className = 'news-source-excerpt';
+      if (detail.models.length || detail.platforms.length) {
+        add('h3', choose(['文中涉及的型号与平台', 'Models and platforms mentioned']));
+        add('p', [...detail.models, ...detail.platforms].join(' / '));
+      }
+      const profile = window.NEWS_DETAILS.profiles[detail.profile];
+      add('h3', choose(['延伸阅读', 'Further context']) + ' · ' + profile.title[language]);
+      profile.paragraphs[language].forEach(text => add('p', text));
+      add('h3', choose(['阅读与应用关注点', 'Reading and application checklist']));
+      const list = add('ul', '');
+      profile.checks[language].forEach(text => { const li = document.createElement('li'); li.textContent = text; list.append(li); });
     } else {
       const topic = topics.find(([pattern]) => pattern.test(item.title.en)) || [null, ['计时产品阅读提示', 'Timing product context'], ['选型时请把资讯中的产品方向与实际应用需求区分开。具体频率、输出接口、供电、温度和测试条件，应查看本站对应型号的原厂 PDF。', 'Distinguish product announcements from application requirements. Consult the local manufacturer PDF for exact frequency, output, supply, temperature and test conditions.']];
       add('h3', choose(topic[1])); add('p', choose(topic[2]));
