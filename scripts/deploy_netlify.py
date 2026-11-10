@@ -129,6 +129,9 @@ def main():
     if not token or not (root / 'index.html').is_file():
         raise SystemExit('A Netlify token and built dist are required')
     info = request_json('/sites/' + site, token)
+    if info.get('built_with_badge_enabled') is True:
+        request_json('/sites/' + site, token, json.dumps({'built_with_badge_enabled': False}).encode(), method='PATCH')
+        notice('Disabled the site-level Netlify badge.')
     files, by_hash = file_manifest(root)
     notice('Netlify API connected. Preparing ' + str(len(files)) + ' website files.')
     summary('## Netlify deployment')
