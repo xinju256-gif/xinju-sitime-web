@@ -109,6 +109,8 @@ def verify_public(base, origin):
                 raise ValueError('Homepage search destinations were not published')
         if '/news/' in path and path.endswith('/') and 'class="news-source-excerpt"' not in text:
             raise ValueError('Expanded news article was not published at ' + path)
+        if path.endswith('/') and '<img class="sitime-logo-image" src="/assets/brand/sitime-logo.svg"' not in text:
+            raise ValueError('New SiTime logo was not published at ' + path)
         if path.endswith('/'):
             positioning = 'SIMACITY · SiTime Authorized Distributor in China' if path.startswith('/en/') else '上海芯聚电子 · SiTime中国官方代理商'
             if positioning not in text or re.search(r'非\s*SiTime\s*官方网站|not the (?:official SiTime website|SiTime corporate website)', text, re.I):
@@ -121,7 +123,16 @@ def verify_public(base, origin):
         raw = response.read()
     if not raw.startswith(b'%PDF-') or hashlib.sha256(raw).digest() != hashlib.sha256(local_pdf.read_bytes()).digest():
         raise ValueError('Published PDF checksum mismatch')
-    return results + ['/assets/datasheets/SiT8008.pdf']
+    results.append('/assets/datasheets/SiT8008.pdf')
+    for logo in ['sitime-logo.svg', 'sitime-logo-white.svg']:
+        path = '/assets/brand/' + logo
+        with urllib.request.urlopen(base.rstrip('/') + path, timeout=30) as response:
+            raw = response.read()
+        expected = (ROOT / 'dist' / path.lstrip('/')).read_bytes()
+        if hashlib.sha256(raw).digest() != hashlib.sha256(expected).digest():
+            raise ValueError('Published logo checksum mismatch: ' + logo)
+        results.append(path)
+    return results
 
 
 def main():

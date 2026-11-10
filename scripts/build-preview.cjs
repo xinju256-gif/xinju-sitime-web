@@ -17,7 +17,7 @@ for (const p of catalog.products) {
   if (!copy || copy.sha256 !== sha256 || copy.bytes !== bytes.length || p.datasheet.sha256 !== sha256) throw Error(`Unverified preview PDF: ${p.model}`);
   p.datasheet.previewCopy = copy.url;
 }
-const markup = read('index.html').replace(/<link rel="stylesheet" href="styles.css">\s*/g, '').replace(/<script defer src="[^"]+"><\/script>\s*/g, '').replace(/(<a\b[^>]*href=")\/(?!\/)/g, '$1https://sitime-cn.com/');
+const markup = read('index.html').replace(/<link rel="stylesheet" href="styles.css">\s*/g, '').replace(/<script defer src="[^"]+"><\/script>\s*/g, '').replace(/(<a\b[^>]*href=")\/(?!\/)/g, '$1https://sitime-cn.com/').replace(/src="\/(assets\/brand\/sitime-logo(?:-white)?\.svg)"/g, (_, local) => 'src="data:image/svg+xml;base64,' + Buffer.from(read(local)).toString('base64') + '"');
 for (const [local, meta] of Object.entries(imageCopies)) {
   const raw = fs.readFileSync(path.join(root, local));
   if (raw.length !== meta.bytes || crypto.createHash('sha256').update(raw).digest('hex') !== meta.sha256) throw Error(`Unverified preview image: ${local}`);
