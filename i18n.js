@@ -1,5 +1,18 @@
 (() => {
   const translations = new Map([
+    ["查询型号", "Find a model"],
+    ["精密计时产品选型", "Precision timing product selection"],
+    ["输入型号或关键词", "Enter a model or keyword"],
+    ["输入型号或关键词，例如 SiT8008、TCXO、LVDS", "Enter a model or keyword, e.g. SiT8008, TCXO or LVDS"],
+    ["搜索型号", "Search models"],
+    ["搜索", "Search"],
+    ["支持按型号、产品类别及输出接口查找，查看参数与原厂规格书。", "Search by model, family or output interface to view specifications and manufacturer datasheets."],
+    ["最新动态", "Latest news"],
+    ["了解更多", "Learn more"],
+    ["SiTime发布2026年第三季度财务业绩", "SiTime Reports Third Quarter 2026 Financial Results"],
+
+    ['查找选型', 'Find a product'], ['下载规格书', 'Find a datasheet'],
+    ['首页', 'Home'], ['产品中心', 'Products'],
     ["资料下载", "Downloads"],
     ["产品询价与技术咨询", "Product inquiries & technical support"],
     ["带 * 的项目为必填项。", "Fields marked * are required."],
@@ -38,12 +51,23 @@
     ['THE MEMS ADVANTAGE / 技术创新', 'THE MEMS ADVANTAGE'], ['重新定义计时。', 'Redefining timing.'], ['从一片硅开始。', 'Starting with silicon.'], ['将 MEMS、模拟电路与系统设计相结合，突破传统计时技术的边界。以更小的尺寸、更高的可靠性和更灵活的配置，满足不断演进的电子系统需求。', 'Combining MEMS, analog circuits and system design pushes the boundaries of traditional timing. Smaller footprints, greater reliability and flexible configuration meet the needs of evolving electronic systems.'], ['硅基 MEMS 技术', 'Silicon MEMS technology'], ['出色的环境适应能力', 'Resilience in demanding environments'], ['灵活的可编程架构', 'Flexible, programmable architecture'], ['探索技术资源', 'Explore technical resources'],
     ['KNOWLEDGE & INSIGHTS / 资源中心', 'KNOWLEDGE & INSIGHTS'], ['灵感、知识与下一步。', 'Ideas, insights and what comes next.'], ['设计指南', 'Design guide'], ['如何选择适合您应用的', 'How do you choose the right'], ['计时解决方案？', 'timing solution?'], ['从频率、稳定性到环境要求，了解选型关键。', 'Understand key selection criteria, from frequency and stability to environmental requirements.'], ['阅读指南 →', 'Read the guide →'], ['技术洞察', 'Technology insights'], ['认识 MEMS：', 'Meet MEMS:'], ['精密计时背后的创新', 'innovation behind precision timing'], ['探索微机电系统如何为电子设计带来新可能。', 'Explore how microelectromechanical systems enable new possibilities in electronics.'], ['了解更多 →', 'Learn more →'], ['工程支持', 'Engineering support'], ['让您的下一个设计，', 'Start your next design'], ['从容起步。', 'with confidence.'], ['整理设计需求，开启计时方案评估。', 'Define your requirements and begin evaluating timing solutions.'], ['查看设计清单 →', 'View the checklist →'],
     ['下一次突破，', 'Your next breakthrough'], ['从精准的起点开始。', 'starts with precision.'], ['告诉芯聚电子您的应用需求，一起探索合适的计时方案。', 'Tell SIMACITY about your application and explore the right timing solution.'], ['芯聚电子 · SIMACITY', 'SIMACITY'], ['上海市长宁区延安西路华敏翰尊国际 726 栋 22 楼 I 座', 'Suite I, 22/F, Building 726, Huamin Hanzun International, West Yan’an Road, Changning District, Shanghai, China'], ['您的称呼', 'Your name'], ['如何称呼您', 'How should we address you?'], ['工作邮箱', 'Work email'], ['应用需求', 'Application requirements'], ['例如：数据中心应用，需要低抖动时钟方案…', 'For example: a low-jitter clock solution for a data center…'], ['生成发给芯聚电子的邮件', 'Create email to SIMACITY'], ['收件人：芯聚电子 sales@simacity.com.cn。生成后可打开邮件客户端或复制内容；网页不会自动发送或保存您的信息。', 'To: SIMACITY, sales@simacity.com.cn. Open your email app or copy the draft. This page does not automatically send or store your information.'],
-    ['SIMACITY / 芯聚电子', 'SIMACITY'], ['与芯聚电子一起，', 'Find your timing solution'], ['找到适合您的计时方案。', 'with SIMACITY.'], ['欢迎就 SiTime 计时产品、应用需求与选型问题联系芯聚电子。通过电话、邮件或企业二维码，开启您的方案沟通。', 'Contact SIMACITY to discuss SiTime products, application requirements and product selection. Start a conversation by phone, email or our company QR code.'], ['联系地址', 'Our address'], ['上海市长宁区延安西路华敏翰尊国际', 'Huamin Hanzun International, West Yan’an Road,'], ['726 栋 22 楼 I 座', 'Suite I, 22/F, Building 726, Changning, Shanghai, China'], ['芯聚电子企业二维码，扫码联系芯聚电子', 'SIMACITY company QR code — scan to contact us'], ['扫码联系芯聚电子', 'Scan to contact SIMACITY'], ['企业二维码', 'Company QR code'], ['芯聚电子 · 精密计时，驱动无限可能。', 'SIMACITY · Precision timing. Limitless possibilities.'], ['产品与技术', 'Products & technology'], ['计时产品', 'Timing products'], ['MEMS 技术', 'MEMS technology'], ['探索更多', 'Explore more'], ['应用领域', 'Applications'], ['设计资源', 'Design resources'], ['保持联系', 'Get in touch'], ['咨询方案', 'Discuss your application'], ['© 2026 芯聚电子 SIMACITY', '© 2026 SIMACITY'], ['SiTime 产品信息以官方资料为准 · 本站非 SiTime 官方网站', 'Refer to official SiTime documentation for product specifications. This is not the official SiTime website.'], ['返回顶部 ↑', 'Back to top ↑'],
+    ['SIMACITY / 芯聚电子', 'SIMACITY'], ['与芯聚电子一起，', 'Find your timing solution'], ['找到适合您的计时方案。', 'with SIMACITY.'], ['上海芯聚电子是SiTime中国官方代理商，为您提供计时产品选型、原厂规格书、技术支持与询价服务。通过电话、邮件或企业二维码，开启您的方案沟通。', 'SIMACITY is a SiTime authorized distributor in China, offering timing product selection, manufacturer datasheets, technical support and quotations. Contact us by phone, email or our company QR code.'], ['联系地址', 'Our address'], ['上海市长宁区延安西路华敏翰尊国际', 'Huamin Hanzun International, West Yan’an Road,'], ['726 栋 22 楼 I 座', 'Suite I, 22/F, Building 726, Changning, Shanghai, China'], ['芯聚电子企业二维码，扫码联系芯聚电子', 'SIMACITY company QR code — scan to contact us'], ['扫码联系芯聚电子', 'Scan to contact SIMACITY'], ['企业二维码', 'Company QR code'], ['芯聚电子 · 精密计时，驱动无限可能。', 'SIMACITY · Precision timing. Limitless possibilities.'], ['产品与技术', 'Products & technology'], ['计时产品', 'Timing products'], ['MEMS 技术', 'MEMS technology'], ['探索更多', 'Explore more'], ['应用领域', 'Applications'], ['设计资源', 'Design resources'], ['保持联系', 'Get in touch'], ['咨询方案', 'Discuss your application'], ['© 2026 芯聚电子 SIMACITY', '© 2026 SIMACITY'], ['上海芯聚电子 · SiTime中国官方代理商', 'SIMACITY · SiTime Authorized Distributor in China'], ['返回顶部 ↑', 'Back to top ↑'],
     ['关闭弹窗', 'Close dialog'], ['关闭搜索', 'Close search'], ['寻找您的计时方案', 'Find your timing solution'], ['搜索产品或应用', 'Search products or applications'], ['试试“振荡器”或“汽车”', 'Try “oscillators” or “automotive”'], ['关闭联系方式', 'Close contact details'], ['产品咨询与选型沟通，欢迎联系芯聚电子。', 'Contact SIMACITY for product inquiries and selection support.'], ['联系电话', 'Telephone'], ['电子邮箱', 'Email'], ['芯聚电子企业二维码，扫码联系', 'SIMACITY company QR code — scan to contact us'],
     ['为系统提供稳定的频率基准，适用于通信、汽车、工业和消费电子等领域。', 'A stable frequency reference for communications, automotive, industrial and consumer electronics.'], ['选型关注：输出频率、频率稳定性、抖动与相位噪声。', 'Selection criteria: output frequency, frequency stability, jitter and phase noise.'], ['系统接口：确认供电电压、输出类型、封装尺寸和工作温度。', 'System interfaces: check supply voltage, output type, package size and operating temperature.'], ['具体型号和性能参数请以 SiTime 官方最新数据手册为准。', 'Refer to the latest official SiTime data sheets for specific models and performance specifications.'], ['通过时钟生成、分配和同步，为复杂系统提供协调一致的时序。', 'Clock generation, distribution and synchronization deliver coordinated timing for complex systems.'], ['明确输入参考时钟、输出通道数和所需频率。', 'Define the input reference clock, output channel count and required frequencies.'], ['评估系统抖动预算、同步需求和接口标准。', 'Evaluate the system jitter budget, synchronization needs and interface standards.'], ['利用硅基微机电结构产生稳定谐振，为计时系统提供基础。', 'Silicon microelectromechanical structures generate stable resonance as a foundation for timing systems.'], ['结合芯片架构和集成方式评估适用性。', 'Assess suitability for your chip architecture and integration approach.'], ['关注封装、环境条件和系统可靠性需求。', 'Consider packaging, environmental conditions and system reliability requirements.'], ['具体产品供应及技术规格请联系官方渠道确认。', 'Confirm product availability and technical specifications with official channels.'],
     ['计时产品选型指南', 'Timing product selection guide'], ['从系统需求出发，逐步缩小计时方案的选择范围。', 'Start with system requirements to narrow down your timing options.'], ['定义应用场景及工作温度范围。', 'Define the application and operating temperature range.'], ['列出频率、精度、抖动和相位噪声要求。', 'List frequency, accuracy, jitter and phase noise requirements.'], ['确认电源、逻辑接口、封装和功耗限制。', 'Check supply voltage, logic interfaces, package and power limits.'], ['对照官方数据手册，并在实际板卡上验证。', 'Consult official data sheets and validate on your actual board.'], ['认识 MEMS 精密计时', 'Understanding MEMS precision timing'], ['MEMS 即微机电系统。通过在硅片上制造微型机械结构，可以将机械谐振与电子电路相结合。', 'MEMS stands for microelectromechanical systems. Tiny mechanical structures fabricated on silicon combine mechanical resonance with electronic circuits.'], ['谐振器产生稳定的机械振动。', 'A resonator produces stable mechanical oscillation.'], ['配套电路维持振荡，并完成温度补偿与输出处理。', 'Supporting circuits sustain oscillation, compensate for temperature and process the output.'], ['不同系列适用于不同环境，实际性能应以对应数据手册为依据。', 'Different families suit different environments. Refer to the relevant data sheet for actual performance.'], ['开始设计前的需求清单', 'Pre-design requirements checklist'], ['整理以下信息，有助于与技术团队高效讨论。', 'Prepare the following information for an effective discussion with the technical team.'], ['应用场景、系统框图及产品开发阶段。', 'Application, system block diagram and development stage.'], ['输入与输出频率、接口类型和供电电压。', 'Input and output frequencies, interface types and supply voltage.'], ['精度、抖动、功耗与工作温度要求。', 'Accuracy, jitter, power and operating temperature requirements.'], ['目标封装尺寸、预计用量和项目时间表。', 'Target package size, estimated volume and project timeline.'], ['整理您的应用需求 ↗', 'Discuss your requirements ↗'], ['暂无匹配结果，请尝试“振荡器”“汽车”或“技术”。', 'No matching results. Try “oscillators”, “automotive” or “technology”.'],
     ['发给芯聚电子的咨询邮件', 'Your inquiry to SIMACITY'], ['收件人：芯聚电子 sales@simacity.com.cn。您可以打开邮件客户端，检查内容后发送，也可以复制以下内容。网页不会自动发送邮件。', 'To: SIMACITY, sales@simacity.com.cn. Open your email app to review and send, or copy the draft below. This page will not send email automatically.'], ['整理后的需求内容', 'Prepared inquiry'], ['复制需求内容', 'Copy inquiry'], ['已复制，可粘贴至邮件。', 'Copied. You can paste it into your email.'], ['请使用系统复制命令复制已选中的内容。', 'Use your system copy command to copy the selected text.'], ['打开邮件客户端 ↗', 'Open email app ↗']
   ]);
+  const cleanHeadingText = (value) => value.split('\n').map(line => line.replace(/[。．.!！?？…]+(?=["'”’»）)\]】]*\s*$)/u, '')).join('\n');
+  const headingTranslations = new Map([...translations].map(([key, value]) => [cleanHeadingText(key).trim(), value]));
+  function endsHeadingLine(node, root) {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_ELEMENT | NodeFilter.SHOW_TEXT);
+    walker.currentNode = node;
+    while (walker.nextNode()) {
+      if (walker.currentNode.nodeType === Node.ELEMENT_NODE && walker.currentNode.tagName === 'BR') return true;
+      if (walker.currentNode.nodeType === Node.TEXT_NODE && walker.currentNode.nodeValue.trim()) return false;
+    }
+    return true;
+  }
   let language = 'zh';
   try { if (localStorage.getItem('simacity-language') === 'en') language = 'en'; } catch { /* Storage can be unavailable in embedded previews. */ }
   const textSources = new WeakMap();
@@ -62,7 +86,13 @@
     if (ignored(node)) return;
     let record = textSources.get(node);
     if (!record || node.nodeValue !== record.rendered) record = { source: node.nodeValue };
-    const rendered = translate(record.source);
+    let rendered = translate(record.source);
+    const heading = node.parentElement?.closest('h1,h2,h3,h4,h5,h6,[data-heading-lines]');
+    if (heading) {
+      const key = record.source.trim();
+      if (language === 'en' && !translations.has(key) && headingTranslations.has(key)) rendered = record.source.replace(key, headingTranslations.get(key));
+      if (endsHeadingLine(node, heading)) rendered = cleanHeadingText(rendered);
+    }
     textSources.set(node, { source: record.source, rendered });
     if (node.nodeValue !== rendered) node.nodeValue = rendered;
   }

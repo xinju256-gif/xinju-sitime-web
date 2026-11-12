@@ -1,0 +1,180 @@
+{
+  "fed8b534016db3": {
+    "title": {
+      "zh": "第三季度经营数据",
+      "en": "Third-quarter operating figures"
+    },
+    "paragraphs": {
+      "zh": [
+        "本次财报覆盖截至2026年9月30日的第三季度。SiTime公布净营收2.987亿美元，上年同期为8360万美元。GAAP毛利为1.541亿美元、毛利率51.6%，营业利润为830万美元，净利润为440万美元，摊薄每股收益为0.14美元。",
+        "非GAAP口径下，毛利为2.111亿美元、毛利率70.7%，营业利润为1.295亿美元，净利润为1.303亿美元，摊薄每股收益为4.01美元。两组数据包含不同调整项目，不能直接混用。2026年9月30日的现金、现金等价物及短期投资合计为3.243亿美元。",
+        "公告还披露一拆三的普通股拆股计划：登记日为2026年12月3日，预计12月4日收盘后派发新增股份，并于12月7日开始按拆股调整后价格交易。这些日期属于公告披露的后续安排。"
+      ],
+      "en": [
+        "The results cover the quarter ended September 30, 2026. Net revenue was $298.7 million, versus $83.6 million a year earlier. GAAP gross profit was $154.1 million with a 51.6% margin; operating income was $8.3 million and net income was $4.4 million, or $0.14 per diluted share.",
+        "Non-GAAP gross profit was $211.1 million with a 70.7% margin; operating income was $129.5 million and net income was $130.3 million, or $4.01 per diluted share. These measures use different adjustments. Cash, cash equivalents and short-term investments totaled $324.3 million at September 30.",
+        "The release also announced a three-for-one common stock split, with a December 3, 2026 record date, distribution expected after market close on December 4, and split-adjusted trading expected on December 7. These were forward schedules disclosed in the announcement."
+      ]
+    }
+  },
+  "bc52f6538f1c37": {
+    "title": {
+      "zh": "EMI的传播路径与时钟控制方法",
+      "en": "EMI paths and clock-level controls"
+    },
+    "paragraphs": {
+      "zh": [
+        "文章把EMI放在电子系统的耦合关系中讨论：干扰可能通过传导、感应和空间耦合进入电路，造成信号质量下降或工作异常。RFI通常关注射频范围，EMI的讨论范围更广；在高速时钟、紧凑布局和无线功能同时存在的设计中，需要关注干扰源、传播路径和受扰对象。",
+        "SiTime在文中列举SiT9005与SiT9025，说明扩频调制与可编程边沿速率能够从时钟源端参与EMI控制。扩频与边沿速率并非同一参数：前者改变频谱能量分布，后者影响信号转换速度。是否启用以及如何设置，应结合接收端容限和整机测试确定。"
+      ],
+      "en": [
+        "The article discusses interference through conduction, induction and coupling, and distinguishes the broader scope of EMI from radio-frequency interference. In compact designs with fast clocks and wireless functions, evaluate the source, propagation path and affected circuit together.",
+        "SiTime identifies SiT9005 and SiT9025 as examples combining spread-spectrum modulation and programmable slew-rate control. Modulation redistributes spectral energy, whereas slew rate changes transition speed. Configuration should follow receiver tolerance and complete-system testing."
+      ]
+    }
+  },
+  "fc0e5b9aac316c": {
+    "title": {
+      "zh": "PLL的组成与工作过程",
+      "en": "PLL building blocks and operation"
+    },
+    "paragraphs": {
+      "zh": [
+        "PLL是一种闭环反馈系统，用于让输出信号与参考时钟建立所需的频率和相位关系。文章介绍鉴相器、环路滤波器、压控振荡器和分频器的协同过程：比较误差、处理校正信号，再持续调整输出。",
+        "应用层面，PLL参与处理器时钟产生、高速接口的时钟数据恢复、无线频率合成和数据转换器采样时钟。文章还介绍Cascade网络同步器通过多个PLL域、可配置带宽与频率转换支持复杂同步，并提及SyncE和IEEE 1588 PTP。参考源的噪声和稳定性仍是整条链路的重要输入。"
+      ],
+      "en": [
+        "A PLL is a closed-loop feedback system that establishes the required frequency and phase relationship between an output and a reference. The article describes a phase detector, loop filter, voltage-controlled oscillator and divider comparing errors and continuously correcting the output.",
+        "Applications include processor clock generation, clock and data recovery, RF synthesis and converter sampling. The article also discusses Cascade network synchronizers, multiple PLL domains, configurable bandwidth and translation, with SyncE and IEEE 1588 PTP. Reference quality remains an important input to the chain."
+      ]
+    }
+  },
+  "39c74f29c48144": {
+    "title": {
+      "zh": "独立PNT信号源与本地振荡器",
+      "en": "Independent PNT signals and local oscillators"
+    },
+    "paragraphs": {
+      "zh": [
+        "文章以Iridium PNT ASIC为例，讨论传统GNSS以外的独立授时和定位路径。其介绍的ASIC采用8 mm × 8 mm封装，可用于独立接收或与GNSS构成混合架构，并使用外部TCXO或OCXO提供本地频率参考。",
+        "独立卫星信号路径与高稳定本地时钟解决不同问题：前者增加参考来源的多样性，后者帮助维持测量与输出的稳定。文章重点讨论温度跃变、振动、供电变化和参考中断时的表现，因此器件评估应包含动态环境与重新获取参考的过程。"
+      ],
+      "en": [
+        "Using the Iridium PNT ASIC, the article examines an independent signal path beyond conventional GNSS. It describes an 8 mm by 8 mm ASIC supporting standalone reception or a hybrid architecture, with an external TCXO or OCXO providing the local reference.",
+        "Signal diversity and oscillator stability serve different purposes. The independent path adds a reference source, while the oscillator supports stable measurement and outputs. Evaluation should include thermal transients, vibration, supply changes, reference interruption and reacquisition."
+      ]
+    }
+  },
+  "ff4bb115701ae9": {
+    "title": {
+      "zh": "Token吞吐量与系统协同",
+      "en": "Token throughput and system coordination"
+    },
+    "paragraphs": {
+      "zh": [
+        "Token是模型处理信息时使用的编码单元，可能对应词片段、代码、图像块或音频片段，并不固定等同于一个汉字或单词。分词器负责把输入转换为模型可以处理的编码，推理过程也会逐步生成新的Token。",
+        "文章将性能观察从单颗处理器转向整个AI系统：内存、数据传输和互连效率会共同影响Token吞吐量。精密计时的关联主要体现在高速链路和系统协同，而不是“一个Token对应一个时钟周期”；估计实际性能仍需结合模型和硬件工作负载。"
+      ],
+      "en": [
+        "Tokens are encoded units used by models and can represent text fragments, code, image patches or audio. A token is not necessarily a complete word or character. Tokenizers encode inputs and inference generates additional tokens iteratively.",
+        "The article considers token throughput at the system level, where memory, data movement and interconnect efficiency matter alongside compute. Precision timing supports links and coordination; it does not imply one token per clock cycle. Performance depends on the actual model and workload."
+      ]
+    }
+  },
+  "b11e1c89fa8fc1": {
+    "title": {
+      "zh": "谐振器为何不是独立时钟输出",
+      "en": "Why a resonator is not an independent clock output"
+    },
+    "paragraphs": {
+      "zh": [
+        "谐振器依靠物理结构的共振确定频率，但作为无源元件，它本身不直接提供完整的电气时钟输出。驱动电路维持振动并把频率特性转化为可用信号，二者组合才形成振荡器系统。",
+        "文章比较石英、硅MEMS和原子参考三种路线，涉及长期与短期稳定性、老化、尺寸、功耗及机械环境。比较的重点是场景取舍：小尺寸、环境鲁棒性和极高长期稳定度并非单一指标，需结合配套电路和系统目标判断。"
+      ],
+      "en": [
+        "A resonator establishes frequency through physical resonance but, as a passive element, does not itself supply a complete electrical clock output. A drive circuit sustains the motion and converts the frequency characteristic into a usable signal.",
+        "The article compares quartz, silicon MEMS and atomic references across stability, aging, size, power and mechanical conditions. These are application trade-offs that must be evaluated together with supporting circuitry and system objectives."
+      ]
+    }
+  },
+  "66cf971414a3cf": {
+    "title": {
+      "zh": "老化与保持性能的联系",
+      "en": "Aging and holdover performance"
+    },
+    "paragraphs": {
+      "zh": [
+        "老化描述振荡器输出频率随时间发生的长期变化，通常在规定时段内以ppm或ppb表述。它与瞬时抖动、一次温度变化或初始频偏不同。对缺少外部校准的系统，长期变化会逐步影响时间保持和维护周期。",
+        "文章讨论了材料与封装应力等因素，并把5G设备、GNSS参考中断、测试测量及远程地震传感列为应用背景。选型时应对照规格书的老化时间区间、回流焊后的条件和系统校准策略，不能把某个典型值当作所有环境下的终身误差上限。"
+      ],
+      "en": [
+        "Aging is long-term output frequency change over a specified interval, usually expressed in ppm or ppb. It differs from instantaneous jitter, initial offset or a single temperature excursion. Without external calibration, it can influence holdover and maintenance intervals.",
+        "The article discusses material and package stress and applications including 5G, GNSS interruptions, test equipment and remote seismic sensing. Compare specified aging intervals, post-reflow conditions and calibration strategy rather than treating one typical value as a lifetime bound."
+      ]
+    }
+  },
+  "e0b1c324c3a96a": {
+    "title": {
+      "zh": "GNSS驯服与24小时保持",
+      "en": "GNSS discipline and 24-hour holdover"
+    },
+    "paragraphs": {
+      "zh": [
+        "文章介绍VIAVI µPNT GDO-1000模块，结合GNSS接收、本地精密振荡器及补偿算法。GNSS正常时对本地时钟进行驯服与建模，外部参考不可用时再利用本地时间基准和已有模型维持输出。",
+        "文中描述该模块支持L1/L5双频GNSS接收、微秒级的24小时保持，并采用SiTime Endura Epoch或Elite X振荡器方案。这里的24小时保持属于模块与算法组合的系统表现，不能直接当作任意单颗振荡器独立工作时都能达到的承诺。"
+      ],
+      "en": [
+        "The article introduces the VIAVI µPNT GDO-1000, combining GNSS reception, a precision local oscillator and compensation algorithms. With GNSS available, the system disciplines and models the local clock; during interruption, it relies on that time base and learned behavior.",
+        "The module is described with L1/L5 reception, microsecond-class 24-hour holdover, and SiTime Endura Epoch or Elite X oscillators. This is a module-level result with algorithms, not a blanket guarantee for an arbitrary standalone oscillator."
+      ]
+    }
+  },
+  "355ea537b0e74b": {
+    "title": {
+      "zh": "Chorus 2的多路时钟能力",
+      "en": "Chorus 2 multi-output clock capabilities"
+    },
+    "paragraphs": {
+      "zh": [
+        "文章面向AI服务器GPU基板、PCIe交换和重定时等应用，介绍Chorus 2的8路或12路输出配置。多路集成的目的，是在有限板级空间中协调不同频率和接口需求，同时管理抖动与输出间时序。",
+        "报道列出的功能包括PCIe Gen7相关合规、156.25 MHz条件下低于110 fs的抖动表现、四个独立扩频时钟以及最多20组OTP定制配置。具体值需要对应所选型号与完整测试条件，不能把不同配置的最佳指标直接拼成一组订货规格。"
+      ],
+      "en": [
+        "The article presents Chorus 2 with 8 or 12 outputs for AI server GPU boards, PCIe switches and retimers. Integration coordinates multiple frequencies and interfaces while managing jitter and output timing in limited board space.",
+        "Reported features include PCIe Gen7-related compliance, jitter below 110 fs at 156.25 MHz, four independent spread-spectrum clocks and up to 20 custom OTP configurations. Associate each figure with its model and complete test conditions rather than combining best-case figures across configurations."
+      ]
+    }
+  },
+  "ac508a91e76bb6": {
+    "title": {
+      "zh": "瑞萨计时业务收购完成",
+      "en": "Completion of the Renesas timing acquisition"
+    },
+    "paragraphs": {
+      "zh": [
+        "SiTime于2026年7月1日宣布完成对瑞萨部分计时业务资产的收购。该条新闻属于交易完成公告，与此前的讨论、拟议收购和等待期进展属于不同阶段，阅读历史消息时需要把时间线串联起来。",
+        "公告介绍了所收购业务的客户基础及AI数据中心、通信、工业和汽车等市场布局，并提出完成收购后12个月至少3亿美元营收的预期。该数字是公告当时的业务展望，不是已经实现的全年财务结果；具体型号的供应与支持安排仍需单独确认。"
+      ],
+      "en": [
+        "SiTime announced completion of its acquisition of certain Renesas timing assets on July 1, 2026. This completion notice is a distinct milestone from earlier discussions, proposals and regulatory updates.",
+        "The release describes the acquired customer base and markets including AI datacenters, communications, industrial and automotive. Its expectation of at least $300 million revenue in the following 12 months was an outlook, not an achieved annual result. Confirm model-specific supply and support separately."
+      ]
+    }
+  },
+  "76aee5c6cb47ca": {
+    "title": {
+      "zh": "从相位噪声到链路误码",
+      "en": "From phase noise to link errors"
+    },
+    "paragraphs": {
+      "zh": [
+        "文章把时序噪声分别放在频域和时域中观察：相位噪声与抖动描述信号偏离理想状态的不同侧面，不能仅凭名称或单点数值判断两个器件在系统中的表现。",
+        "文章讨论RF、频率合成、高速数据链路、时钟分配和测量等场景。在高速互连中，时序裕量收缩可能表现为眼图闭合、误码、重试或间歇性问题，因此调试时应同时关注时钟源、供电、分配路径和接收端。"
+      ],
+      "en": [
+        "The article examines timing noise in frequency and time domains. Phase noise and jitter describe different views of deviation from ideal timing, so names or isolated values alone do not establish system performance.",
+        "Applications include RF, synthesis, high-speed links, distribution and test equipment. Reduced timing margin may appear as eye closure, errors, retries or intermittent behavior. Debugging should examine the source, supply, distribution and receiver together."
+      ]
+    }
+  }
+}

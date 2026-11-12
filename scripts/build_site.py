@@ -69,7 +69,7 @@ def build(strict=False):
     if target.exists():
         shutil.rmtree(target)
     target.mkdir()
-    for name in ['index.html', 'styles.css', 'i18n.js', 'catalog-data.js', 'app.js', 'catalog.js', 'content.js', 'inquiry.js', 'downloads.js', 'inquiry-received.html', 'site-assets.js', 'reading-data.js', 'reading-guide.js', 'local-routes.js', 'detail-pages.js', 'page-links.js']:
+    for name in ['index.html', 'styles.css', 'i18n.js', 'catalog-data.js', 'app.js', 'catalog.js', 'content.js', 'inquiry.js', 'downloads.js', 'inquiry-received.html', 'site-assets.js', 'reading-data.js', 'news-details-data.js', 'reading-guide.js', 'local-routes.js', 'detail-pages.js', 'page-links.js']:
         shutil.copy2(ROOT / name, target / name)
     forms_enabled = os.environ.get('NETLIFY') == 'true' or os.environ.get('SIMACITY_ENABLE_NETLIFY_FORMS') == '1'
     (target / 'inquiry-config.js').write_text('window.SIMACITY_INQUIRY = ' + json.dumps({'enabled': forms_enabled}) + ';\n')

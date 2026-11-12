@@ -1,0 +1,572 @@
+[
+  {
+    "key": "earnings",
+    "pattern": "Reports.*Financial Results|Raises Revenue Guidance",
+    "title": {
+      "zh": "如何理解财务数据",
+      "en": "Understanding the financial figures"
+    },
+    "paragraphs": {
+      "zh": [
+        "财报需要结合报告期、比较期间和会计口径阅读。营收体现业务规模，毛利率反映收入与直接成本之间的关系，净利润还会受到研发、销售管理费用、收购相关支出和其他项目影响。单独看某一项增长率，无法完整说明经营变化。",
+        "GAAP与非GAAP数据应分别比较。非GAAP指标通常会剔除部分费用，适合补充观察业务趋势，但不能替代GAAP财务结果。公告中的业绩展望属于发布时的预期，需要与已经实现的历史业绩区分。"
+      ],
+      "en": [
+        "Read financial results together with the reporting period, comparison period and accounting basis. Revenue describes business scale, while gross margin, operating expenses and other items influence profitability. A single growth rate does not explain the entire change in performance.",
+        "Compare GAAP and non-GAAP figures separately. Adjusted measures can provide additional context but do not replace GAAP results. Guidance represents expectations at the announcement date and must be distinguished from achieved results."
+      ]
+    },
+    "checks": {
+      "zh": [
+        "核对营收、毛利率与净利润是否采用同一报告期",
+        "对照GAAP与非GAAP调节项目",
+        "产品采购和交付安排向芯聚电子单独确认"
+      ],
+      "en": [
+        "Check that revenue, margin and income cover the same period",
+        "Review the GAAP to non-GAAP reconciliation",
+        "Confirm procurement and delivery arrangements with SIMACITY"
+      ]
+    }
+  },
+  {
+    "key": "earnings-notice",
+    "pattern": "to Announce.*Financial Results",
+    "title": {
+      "zh": "公告安排与后续跟踪",
+      "en": "Announcement schedule and follow-up"
+    },
+    "paragraphs": {
+      "zh": [
+        "这类公告用于预告财务报告和业绩交流活动的安排，不能作为对应季度经营结果已经公布的依据。阅读时应分别记录公告发布日期、计划披露日期和所覆盖的会计期间。",
+        "如同一报告期已有后续正式财报，应结合正式结果了解营收、盈利和业务变化。历史活动时间仅反映当时安排，不应当作当前仍可报名的活动。"
+      ],
+      "en": [
+        "This announcement schedules financial reporting and an earnings discussion. It does not establish that the financial results have already been released. Distinguish its publication date, scheduled release date and the accounting period it covers.",
+        "Where a subsequent results announcement exists, use it to assess revenue, profitability and business developments. Historical event times describe the original schedule rather than an event that is still open for registration."
+      ]
+    },
+    "checks": {
+      "zh": [
+        "区分预告与正式财报",
+        "核对会议时区及原始活动日期",
+        "结合后续正式公告阅读"
+      ],
+      "en": [
+        "Distinguish the notice from the results release",
+        "Check the original date and time zone",
+        "Read the subsequent results announcement"
+      ]
+    }
+  },
+  {
+    "key": "capital",
+    "pattern": "Offering|IPO|Convertible|Stock|Raises \\$|Investment in SiTime|Acquired by|Wholly Owned|Acquisition|Acquire|Acquires|Hart-Scott|Discussions with Renesas",
+    "title": {
+      "zh": "交易进展与业务影响",
+      "en": "Transaction context and business implications"
+    },
+    "paragraphs": {
+      "zh": [
+        "公司交易类新闻应首先分清所处阶段：讨论、拟议、协议签署、监管等待期结束和最终完成，含义并不相同。融资规模、交易金额及业务目标也需要对应公告当时披露的条件，不能把计划直接当作已实现结果。",
+        "对电子产品客户而言，更需要关注相关业务是否涉及现有型号、技术支持、供货渠道和产品路线。交易消息本身不等于器件规格、订货代码或交期发生变更；正在量产的项目应继续逐项核对产品与供应信息。"
+      ],
+      "en": [
+        "Distinguish discussions, proposed transactions, signed agreements, regulatory milestones and completion. Financing amounts and business targets relate to the conditions disclosed at the time; a proposal is not an achieved result.",
+        "For equipment designers, relevant follow-up concerns product coverage, technical support, supply channels and roadmap continuity. A transaction announcement alone does not change a device specification, ordering code or delivery commitment."
+      ]
+    },
+    "checks": {
+      "zh": [
+        "识别公告属于拟议、定价还是完成阶段",
+        "确认正在使用的具体型号与供货安排",
+        "区分经营目标与已实现业绩"
+      ],
+      "en": [
+        "Identify the proposal, pricing or completion stage",
+        "Confirm the exact models and supply arrangements in use",
+        "Separate targets from achieved performance"
+      ]
+    }
+  },
+  {
+    "key": "investor-event",
+    "pattern": "to Present|Financial Conferences|Conference on|Growth Conference",
+    "title": {
+      "zh": "交流活动信息",
+      "en": "Event context"
+    },
+    "paragraphs": {
+      "zh": [
+        "本条属于投资者或行业交流活动信息，主要用于了解公司在当时的业务沟通安排。活动名称、参与时间和交流形式应与公告发布日期结合阅读，历史日程不代表当前仍在进行。",
+        "交流活动和产品技术规格承担不同作用。若您关注新闻提及的某个市场或产品方向，可进一步在本站产品中心查看具体型号，并通过原厂规格书和技术沟通判断其与项目需求的匹配程度。"
+      ],
+      "en": [
+        "This item describes an investor or industry communication event. Read its name, timing and format together with the publication date; a historical schedule is not a current invitation.",
+        "An event announcement and a product specification serve different purposes. For a market or product direction of interest, use the local catalog and manufacturer datasheets to evaluate specific device requirements."
+      ]
+    },
+    "checks": {
+      "zh": [
+        "核对原始活动日期和时区",
+        "区分公司交流信息与具体产品参数",
+        "询问具体型号的供货和技术支持"
+      ],
+      "en": [
+        "Check the original event date and time zone",
+        "Separate corporate discussion from device specifications",
+        "Ask about model-specific supply and support"
+      ]
+    }
+  },
+  {
+    "key": "people",
+    "pattern": "Board of Directors|Appoints|Executive Team|Women|Kindness|Thanksgiving|Gratitude|HR Leader|Q&A with SiTime Executive|Headquarters|Office|Center of Excellence|Sustainability|Sustainable|Russell|MidCap|Fastest Growing",
+    "title": {
+      "zh": "公司动态与长期发展",
+      "en": "Corporate developments and long-term context"
+    },
+    "paragraphs": {
+      "zh": [
+        "公司新闻反映特定时间点的组织、人员、运营或可持续发展活动。阅读这类信息，可以了解企业发展的背景，但不宜据此推导某一器件具备特定认证、可靠性等级或交付承诺。",
+        "产品项目仍应围绕具体订货代码开展确认。对于选型、样品、规格书和技术支持需求，芯聚电子可协助梳理应用条件，并对接相应的产品资料与服务。"
+      ],
+      "en": [
+        "Corporate news records organizational, personnel, operational or sustainability developments at a particular time. It provides business context rather than proof of a device certification, reliability grade or delivery commitment.",
+        "Product decisions should continue to use the exact ordering code. SIMACITY can help organize requirements for selection, samples, documentation and technical support."
+      ]
+    },
+    "checks": {
+      "zh": [
+        "结合发布日期理解历史公司动态",
+        "产品认证按具体型号核对",
+        "采购服务以具体项目需求沟通"
+      ],
+      "en": [
+        "Interpret corporate developments in their historical context",
+        "Verify certification for the exact model",
+        "Discuss procurement services for the actual project"
+      ]
+    }
+  },
+  {
+    "key": "emi",
+    "pattern": "EMI|Electromagnetic|Spread Spectrum|Emissions",
+    "title": {
+      "zh": "时钟如何影响电磁干扰",
+      "en": "How clocks influence electromagnetic interference"
+    },
+    "paragraphs": {
+      "zh": [
+        "时钟周期性翻转，其基波和谐波能量可能通过走线、供电及空间耦合进入其他电路。扩频通过调整频率随时间的分布降低某些频点的能量峰值；可编程边沿速率则用于在接收端时序要求与高频辐射之间取得平衡。",
+        "两种方法解决的问题不同。扩频会改变瞬时频率，边沿放缓会影响上升下降时间与负载下的信号形态，因此必须检查接收器是否允许对应调制方式。器件选型还应配合回流路径、端接、去耦与整机EMC测试。"
+      ],
+      "en": [
+        "A periodic clock concentrates energy at its fundamental and harmonics. That energy can couple through traces, power networks and space. Spread spectrum redistributes frequency over time to reduce spectral peaks, while programmable slew rate balances receiver timing needs with high-frequency emissions.",
+        "These methods have different effects. Modulation changes instantaneous frequency and slower edges affect rise time and loaded waveforms. Check receiver tolerance and validate routing, return paths, termination, decoupling and system EMC performance."
+      ]
+    },
+    "checks": {
+      "zh": [
+        "确认接收器支持的扩频方向与调制深度",
+        "核对负载条件下的边沿时间和占空比",
+        "在整机工况下复测EMI与时序裕量"
+      ],
+      "en": [
+        "Check allowed modulation direction and depth",
+        "Verify edge times and duty cycle at the actual load",
+        "Re-test emissions and timing margin in the complete system"
+      ]
+    }
+  },
+  {
+    "key": "pll",
+    "pattern": "PLL|Cascade|Synchroniz|Jitter Cleaner|Software Solution|TimeFabric",
+    "title": {
+      "zh": "从参考时钟到系统同步",
+      "en": "From reference clock to system synchronization"
+    },
+    "paragraphs": {
+      "zh": [
+        "锁相环通过比较参考信号与反馈信号来调整输出频率和相位。环路带宽影响系统对参考变化的跟踪速度，也决定不同偏移频段内参考噪声与本地振荡器噪声对输出的贡献，不能只凭单个抖动数值评估整个时钟链路。",
+        "网络同步还涉及参考源选择、失锁检测、保持模式、频率转换和恢复策略。PTP、SyncE与本地振荡器各自承担不同任务；软件控制能协调这些功能，但无法代替硬件在温度、供电与机械扰动下的稳定性。"
+      ],
+      "en": [
+        "A PLL adjusts output frequency and phase by comparing a reference with feedback. Loop bandwidth affects tracking speed and how reference and local oscillator noise contribute at different offsets. One jitter number cannot characterize an entire clock chain.",
+        "Network synchronization also involves reference selection, loss detection, holdover, translation and recovery. PTP, SyncE and local oscillators perform different functions. Software coordinates them but does not replace hardware stability under thermal, electrical and mechanical disturbances."
+      ]
+    },
+    "checks": {
+      "zh": [
+        "定义输入参考、输出频率及接口",
+        "检查环路带宽、保持与参考切换行为",
+        "按系统要求验证PTP、SyncE及恢复过程"
+      ],
+      "en": [
+        "Define reference inputs, output frequencies and interfaces",
+        "Check bandwidth, holdover and reference switching",
+        "Validate PTP, SyncE and recovery behavior as required"
+      ]
+    }
+  },
+  {
+    "key": "noise",
+    "pattern": "Noise|Jitter|SerDes|Optical|Phase|JESD204",
+    "title": {
+      "zh": "把噪声指标放回信号链",
+      "en": "Putting noise metrics into the signal chain"
+    },
+    "paragraphs": {
+      "zh": [
+        "相位噪声描述频域中相对载波的相位波动，抖动则描述时域中边沿偏离理想位置的程度。积分带宽、载波频率和计算方法不同，得到的抖动结果也会不同，因此比较器件前需要统一测试条件。",
+        "高速链路关注的是接收端最终时序裕量。参考源、缓冲器、供电噪声、布线和接收端PLL均可能影响结果。针对SerDes、光模块或数据转换器，应按实际时钟传递函数和标准要求分配噪声预算，而不是直接相加不同条件下的典型值。"
+      ],
+      "en": [
+        "Phase noise describes phase fluctuations relative to a carrier in the frequency domain; jitter expresses edge displacement in time. Integration bandwidth, carrier frequency and calculation method affect the result, so comparisons require consistent measurement conditions.",
+        "High-speed links depend on timing margin at the receiver. Reference sources, buffers, supply noise, routing and receiver PLLs can all contribute. Allocate noise budgets using the actual transfer function and interface requirements rather than adding unrelated typical values."
+      ]
+    },
+    "checks": {
+      "zh": [
+        "统一载波频率、积分带宽与测试方法",
+        "核对输出接口、端接和供电噪声",
+        "结合接收端要求评估整条时钟链"
+      ],
+      "en": [
+        "Align carrier, integration bandwidth and measurement method",
+        "Check interface, termination and supply noise",
+        "Evaluate the entire path against receiver requirements"
+      ]
+    }
+  },
+  {
+    "key": "pnt",
+    "pattern": "GNSS|GPS|PNT|Holdover|Navigation|Missile|Defense|Endura|Epoch|Aerospace|Radar|UAS",
+    "title": {
+      "zh": "外部参考中断后的计时能力",
+      "en": "Timing when the external reference is lost"
+    },
+    "paragraphs": {
+      "zh": [
+        "GNSS或网络参考正常时，系统可以持续校正本地时钟；进入保持模式后，时间误差会随频率偏差和保持时长逐渐累积。长期老化、温度变化、振动和供电变化都会影响本地时间基准，因此保持能力是系统级指标。",
+        "稳定的振荡器可以改善参考中断期间的时间基准，但其自身并不识别全部干扰或欺骗信号。可信PNT需要把参考源多样性、异常检测、保持算法和恢复策略结合设计，并按目标环境验证误差上限。"
+      ],
+      "en": [
+        "A system can discipline its local clock while GNSS or a network reference is valid. In holdover, time error accumulates with frequency error and duration. Aging, temperature, vibration and supply changes affect the local time base, making holdover a system-level characteristic.",
+        "A stable oscillator supports continuity but does not independently detect every interference or spoofing event. Resilient PNT combines diverse references, anomaly detection, holdover algorithms and recovery behavior, validated in the intended environment."
+      ]
+    },
+    "checks": {
+      "zh": [
+        "明确保持时长和允许的累计时间误差",
+        "验证动态温度、振动与老化影响",
+        "测试失锁、异常参考及重新锁定过程"
+      ],
+      "en": [
+        "Define holdover duration and allowed time error",
+        "Evaluate thermal transients, vibration and aging",
+        "Test reference loss, invalid references and reacquisition"
+      ]
+    }
+  },
+  {
+    "key": "aging",
+    "pattern": "Aging|G-sensitivity|Stability|Robust|Reliability|Rugged|Temperature|105.C|125C",
+    "title": {
+      "zh": "从静态精度走向环境稳定性",
+      "en": "From static accuracy to environmental stability"
+    },
+    "paragraphs": {
+      "zh": [
+        "频率稳定性需要结合引起变化的条件理解。温度变化、供电和负载变化、机械应力及长期老化属于不同的误差来源；某一项指标较好，不代表其他误差也可忽略，更不等于整机累计误差已经满足要求。",
+        "老化应对应明确的时间区间，振动敏感度则要结合加速度和振动频谱评估。设计时可以把各项误差纳入预算，并在回流焊后、冷热变化和实际安装条件下重新确认，而不是只使用室温下的一次测量结果。"
+      ],
+      "en": [
+        "Frequency stability must be read with the conditions that cause variation. Temperature, supply and load changes, mechanical stress and aging are distinct contributors. Strong performance in one category does not establish the complete system error budget.",
+        "Aging relates to a defined interval, while vibration sensitivity depends on acceleration and spectrum. Build an error budget and recheck performance after reflow, during thermal changes and in the final mounting conditions."
+      ]
+    },
+    "checks": {
+      "zh": [
+        "区分初始精度、温度稳定性与长期老化",
+        "对应时间区间、温区和机械条件比较",
+        "评估回流焊及整机安装后的变化"
+      ],
+      "en": [
+        "Distinguish initial accuracy, temperature stability and aging",
+        "Compare equal intervals, temperature ranges and mechanical conditions",
+        "Assess changes after reflow and final assembly"
+      ]
+    }
+  },
+  {
+    "key": "resonator",
+    "pattern": "Resonator|Titan|MEMS vs Quartz|MEMS triumphs|Quartz|Silicon MEMS",
+    "title": {
+      "zh": "谐振器、振荡器与系统的关系",
+      "en": "Resonators, oscillators and the system"
+    },
+    "paragraphs": {
+      "zh": [
+        "谐振器提供物理谐振特性，振荡器则结合驱动与控制电路产生可使用的电气时钟。两者在供电、接口、启动和外围电路方面的职责不同，选用谐振器时需要确认驱动器匹配，选用有源振荡器时则要确认接收端时钟要求。",
+        "MEMS与石英器件的比较，应同时考虑温度、机械敏感度、封装、功耗、启动和可配置能力。技术路线本身不能替代型号级验证；外形或标称频率相同，也不代表可以直接替换。"
+      ],
+      "en": [
+        "A resonator provides physical resonance; an oscillator combines it with drive and control circuits to deliver an electrical clock. Their power, interface, startup and external-circuit requirements differ. Match a resonator to its driver and an active oscillator to its receiver.",
+        "Compare MEMS and quartz at the model level across temperature, mechanical sensitivity, package, power, startup and configurability. Technology alone does not establish interchangeability, even when dimensions or nominal frequencies match."
+      ]
+    },
+    "checks": {
+      "zh": [
+        "区分无源谐振器与有源振荡器",
+        "确认驱动条件、引脚及启动要求",
+        "替代前完成接口与环境验证"
+      ],
+      "en": [
+        "Distinguish passive resonators from active oscillators",
+        "Confirm drive, pinout and startup conditions",
+        "Validate interface and environmental performance before substitution"
+      ]
+    }
+  },
+  {
+    "key": "clock-generator",
+    "pattern": "Chorus|Clock Generator|Clock Chip|Integrated Clock|Symphonic|Clocking",
+    "title": {
+      "zh": "多路时钟的集成与配置",
+      "en": "Integrating and configuring multiple clocks"
+    },
+    "paragraphs": {
+      "zh": [
+        "多路时钟发生器可把频率合成、分配和配置功能集中到较少器件中。收益不仅取决于输出数量，还取决于各输出能否同时满足频率、接口、抖动、时序关系和启动顺序要求。",
+        "用于PCIe、SerDes或处理器平台时，还应确认扩频策略、输出间串扰、偏斜与配置保存方式。引脚兼容只是替代条件之一，电源、上电默认状态和软件寄存器同样需要逐项检查。"
+      ],
+      "en": [
+        "A multi-output generator integrates frequency synthesis, distribution and configuration. Its value depends on simultaneous frequency, interface, jitter, sequencing and timing requirements rather than output count alone.",
+        "For PCIe, SerDes and processor platforms, verify spread-spectrum behavior, coupling, skew and configuration storage. Pin compatibility is only one replacement condition; supplies, power-up defaults and software registers also matter."
+      ]
+    },
+    "checks": {
+      "zh": [
+        "列出所有输出频率与电气接口",
+        "确认输出间偏斜、串扰及上电顺序",
+        "核对配置、默认状态和整机合规要求"
+      ],
+      "en": [
+        "List all output frequencies and electrical interfaces",
+        "Check skew, coupling and power sequencing",
+        "Verify configuration, defaults and system compliance"
+      ]
+    }
+  },
+  {
+    "key": "tcxo-ocxo",
+    "pattern": "TCXO|OCXO|Emerald|Elite",
+    "title": {
+      "zh": "温补与恒温方案的取舍",
+      "en": "Choosing temperature-compensated or oven-controlled timing"
+    },
+    "paragraphs": {
+      "zh": [
+        "TCXO通过温度补偿减小频率变化，OCXO则通过控温降低谐振器所处环境的波动。评估方案时需要同时考虑稳定性、动态温度响应、预热时间、稳态与启动功耗，以及保持性能所需的误差预算。",
+        "较小封装或较低典型功耗并不自动意味着适合所有系统。对于高精度同步，应检查相位噪声、老化、供电变化和安装条件；是否能替换现有方案，应在完整工作范围内验证。"
+      ],
+      "en": [
+        "A TCXO compensates temperature-related frequency changes; an OCXO controls the resonator temperature. Compare stability, thermal response, warm-up, steady-state and startup power, and the error budget needed for holdover.",
+        "Small dimensions or low typical power do not guarantee suitability. High-precision synchronization also depends on phase noise, aging, supply behavior and mounting. Validate replacements over the complete operating range."
+      ]
+    },
+    "checks": {
+      "zh": [
+        "同时比较温稳、老化和相位噪声",
+        "考虑预热、启动功耗与动态温度响应",
+        "结合保持误差预算决定方案"
+      ],
+      "en": [
+        "Compare stability, aging and phase noise together",
+        "Account for warm-up, startup power and thermal response",
+        "Choose against the required holdover error budget"
+      ]
+    }
+  },
+  {
+    "key": "ai",
+    "pattern": "AI|GPU|Token|SmartNIC|Datacenter|Data Center|Huang|Edge Computing|Human and Machine|Intelligent Edge",
+    "title": {
+      "zh": "算力系统为何需要精密计时",
+      "en": "Why compute systems need precision timing"
+    },
+    "paragraphs": {
+      "zh": [
+        "AI和数据中心的有效吞吐量取决于计算、内存和互连协同工作。稳定的参考时钟有助于维持高速接口的时序裕量；链路重试、同步等待和数据搬运也可能影响整体利用率，不能仅用处理器主频描述系统效率。",
+        "计时器件的作用需要通过具体架构验证。应把参考时钟、缓冲与分配、网络同步和供电环境纳入评估。文章中介绍的行业趋势或性能方向，不等于为任意系统承诺固定的GPU利用率或吞吐量提升。"
+      ],
+      "en": [
+        "Effective AI and datacenter throughput depends on compute, memory and interconnect working together. Stable reference clocks support high-speed interface margins; retries, synchronization and data movement also influence utilization. Processor frequency alone does not describe efficiency.",
+        "Evaluate timing in the actual architecture, including sources, distribution, synchronization and supply conditions. An industry trend or performance direction is not a guaranteed utilization or throughput increase in every system."
+      ]
+    },
+    "checks": {
+      "zh": [
+        "按PCIe、以太网或SerDes要求建立时钟预算",
+        "核对多路分配、同步与供电条件",
+        "用整机吞吐、延迟和误码率评估收益"
+      ],
+      "en": [
+        "Build the clock budget for PCIe, Ethernet or SerDes requirements",
+        "Check distribution, synchronization and power conditions",
+        "Evaluate throughput, latency and error rate in the complete system"
+      ]
+    }
+  },
+  {
+    "key": "automotive",
+    "pattern": "Automotive|Vehicle|Driverless|Driving|ADAS|Transportation|Car",
+    "title": {
+      "zh": "车载环境下的设计关注点",
+      "en": "Design considerations in vehicles"
+    },
+    "paragraphs": {
+      "zh": [
+        "车载时钟面对温度变化、机械扰动和长期使用条件。不同功能域对时钟的需求差异明显：高速互连关注抖动与接口，传感和定位关注同步，低功耗节点则可能更关注启动与待机功耗。",
+        "汽车级器件需要按具体型号和订货选项核对资格等级、温区、输出及可靠性资料。器件资格认证、功能安全支持和整机系统安全并不是同一概念，需要在项目需求中分别确认。"
+      ],
+      "en": [
+        "Vehicle clocks operate under thermal changes, mechanical disturbance and long service life. Different functions emphasize different needs: jitter and interfaces for interconnects, synchronization for sensing, or startup and standby power for low-power nodes.",
+        "Verify qualification, temperature grade, outputs and reliability for the exact ordering option. Device qualification, functional safety support and system safety are distinct matters and need separate confirmation."
+      ]
+    },
+    "checks": {
+      "zh": [
+        "按功能域明确抖动、同步和功耗要求",
+        "确认型号资格等级与完整温区",
+        "完成车载供电和机械环境验证"
+      ],
+      "en": [
+        "Define jitter, synchronization and power needs by function",
+        "Confirm model qualification and temperature range",
+        "Validate automotive supply and mechanical conditions"
+      ]
+    }
+  },
+  {
+    "key": "low-power",
+    "pattern": "Wearable|IoT|kHz|Power|Battery|Medical|Micro|µPower|Ambient|Portable",
+    "title": {
+      "zh": "低功耗与小型化的系统权衡",
+      "en": "System trade-offs in low-power designs"
+    },
+    "paragraphs": {
+      "zh": [
+        "低功耗计时不能只比较振荡器的运行电流。时钟精度会影响唤醒间隔、通信接收窗口和休眠策略；启动时间、待机模式、外围元件和温度变化，也会改变整机的平均能耗。",
+        "小型化设计还需要核对封装焊盘、布线空间、输出负载及生产工艺。若目标是延长电池寿命，应使用实际工作与休眠占空比计算能量预算，并在代表性温区和电池电压下测试。"
+      ],
+      "en": [
+        "Low-power timing involves more than operating current. Accuracy influences wake intervals, receive windows and sleep strategy. Startup, standby modes, external components and temperature also affect average system energy.",
+        "Miniaturization requires checks for pads, routing, output load and assembly. To assess battery life, calculate energy using the actual active and sleep duty cycles and test representative temperatures and battery voltages."
+      ]
+    },
+    "checks": {
+      "zh": [
+        "统计运行、启动与休眠的平均能耗",
+        "核对频率精度与唤醒窗口关系",
+        "验证封装、负载和生产工艺"
+      ],
+      "en": [
+        "Account for active, startup and sleep energy",
+        "Relate frequency accuracy to wake windows",
+        "Validate package, load and assembly process"
+      ]
+    }
+  },
+  {
+    "key": "industrial",
+    "pattern": "Industrial|Factory|Robot|Grid|Meter|Energy|Seismic|Sensor|Wireless|5G|Ethernet|Telecom|Network",
+    "title": {
+      "zh": "工业与通信场景的选型方法",
+      "en": "Selecting timing for industrial and communications systems"
+    },
+    "paragraphs": {
+      "zh": [
+        "工业和通信设备通常需要在较宽环境条件下维持稳定运行。参考时钟的频率误差、抖动、启动和环境敏感度，会分别影响通信链路、测量精度或系统同步，因此需要先建立应用层面的要求。",
+        "选型时把标称频率、电压、输出接口、封装和温区列为基础约束，再评估噪声、长期变化和异常恢复。完成原理图核对后，还需要在供电变化、温度循环和实际负载下验证。"
+      ],
+      "en": [
+        "Industrial and communications equipment often needs stable operation across a broad environment. Frequency error, jitter, startup and environmental sensitivity influence links, measurement or synchronization differently, so begin with application-level requirements.",
+        "Set nominal frequency, supply, interface, package and temperature constraints before evaluating noise, long-term variation and recovery. Validate supply changes, thermal cycles and actual loads after schematic review."
+      ]
+    },
+    "checks": {
+      "zh": [
+        "先定义系统频率误差与同步指标",
+        "核对电压、输出、封装和温区",
+        "在实际负载及环境变化下验证"
+      ],
+      "en": [
+        "Define system frequency and synchronization requirements",
+        "Verify supply, output, package and temperature",
+        "Validate under real loads and environmental changes"
+      ]
+    }
+  },
+  {
+    "key": "supply-chain",
+    "pattern": "Distribut|Partner|Supply Chain|Inventory|Availability|Lead Time|Programmer|Programmable|Programming|Time to Revenue",
+    "title": {
+      "zh": "可配置产品与供货管理",
+      "en": "Configurable products and supply planning"
+    },
+    "paragraphs": {
+      "zh": [
+        "可编程计时产品可以围绕频率和部分电气选项配置，但可编程范围仍由具体型号决定。供应链新闻中的区域覆盖、编程服务和交付安排具有时间与业务条件，应与当前采购需求单独确认。",
+        "建立BOM时，应保存完整订货代码及已确认的配置。需要替代或样品时，可先提供原型号、频率、供电、接口、封装、温区和数量，再核对样品配置、批量一致性与交付计划。"
+      ],
+      "en": [
+        "Programmable timing can configure frequency and selected electrical options within model-specific limits. Regional coverage, programming services and delivery arrangements described in supply-chain news relate to their original business conditions.",
+        "Maintain the complete ordering code and approved configuration in the BOM. For alternatives or samples, provide frequency, supply, interface, package, temperature and quantity, then confirm sample configuration, production consistency and delivery."
+      ]
+    },
+    "checks": {
+      "zh": [
+        "保留完整订货代码和配置记录",
+        "替代时逐项核对电气与机械条件",
+        "当前库存、烧录服务和交期单独确认"
+      ],
+      "en": [
+        "Keep full ordering codes and configuration records",
+        "Compare electrical and mechanical replacement conditions",
+        "Confirm current stock, programming service and delivery separately"
+      ]
+    }
+  },
+  {
+    "key": "general",
+    "pattern": ".*",
+    "title": {
+      "zh": "从产品信息到项目验证",
+      "en": "From product information to project validation"
+    },
+    "paragraphs": {
+      "zh": [
+        "精密计时为电子系统提供频率与时间参考。阅读产品和技术动态时，应先确定其关注的是频率精度、短期噪声、环境稳定性、尺寸功耗，还是多器件之间的同步，不同目标需要不同的验证方法。",
+        "把资讯转化为设计决策，需要进一步落实到型号、订货配置及使用条件。芯聚电子可协助梳理原型号和应用需求，提供参数查询、原厂规格书、替代选型与询价服务，便于开展后续原理图和样机验证。"
+      ],
+      "en": [
+        "Precision timing provides frequency and time references. Identify whether a development concerns accuracy, short-term noise, environmental stability, size and power, or synchronization. These goals require different validation methods.",
+        "A design decision needs a concrete model, ordering configuration and operating conditions. SIMACITY can help with parameters, manufacturer documentation, alternatives and quotations for schematic and prototype evaluation."
+      ]
+    },
+    "checks": {
+      "zh": [
+        "定义应用所需的核心计时指标",
+        "以具体型号核对订货与测试条件",
+        "结合原理图、样机和环境测试确认"
+      ],
+      "en": [
+        "Define the key timing requirements",
+        "Verify ordering and test conditions for the model",
+        "Confirm through schematic, prototype and environmental tests"
+      ]
+    }
+  }
+]

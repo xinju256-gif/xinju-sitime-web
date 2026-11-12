@@ -1,20 +1,53 @@
 name: Review and publish website
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
 permissions:
   contents: read
-
-on:
-  push:
-    branches: [ main ]
-
+concurrency:
+  group: website-${{ github.ref }}
+  cancel-in-progress: false
 jobs:
-  Editorial-review:
+  review:
+    name: Editorial review
     runs-on: ubuntu-latest
-    env:
-      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-      NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+    timeout-minutes: 15
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      # 这里放你原本部署、校验、发布的步骤
-      # 你原来里面剩下的步骤原样保留放这里
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test review gates
+        run: python -m unittest discover -s tests -v
+      - name: Validate reviewed entries and build
+        env:
+          SIMACITY_ENABLE_NETLIFY_FORMS: '1'
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: python scripts/build_site.py --strict
+      - name: Check static detail pages and SEO
+        run: python scripts/check_static_seo.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: website
+          path: dist/
+          retention-days: 14
+      - name: Deploy approved website to Netlify
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          missing_config=0
+          for secret_name in NETLIFY_AUTH_TOKEN NETLIFY_SITE_ID; do
+            if [ -z "${!secret_name}" ]; then
+              echo "::error::$secret_name is unavailable to this workflow. Check this repository's Actions Repository secrets."
+              echo "- $secret_name: unavailable" >> "$GITHUB_STEP_SUMMARY"
+              missing_config=1
+            else
+              echo "- $secret_name: available (value not shown)" >> "$GITHUB_STEP_SUMMARY"
+            fi
+          done
+          if [ "$missing_config" -ne 0 ]; then exit 1; fi
+          python scripts/deploy_netlify.py

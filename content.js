@@ -71,7 +71,7 @@
         if (!field.value.includes(pick(item.title))) field.value = line + (field.value ? '\n' + field.value : ''); dialog.close();
       }); actions.append(inquiry);
     }
-    body.append(actions, el('p', 'editorial-detail-attribution', text('依据 SiTime 公开资料整理。本站提供原创概览与工程阅读提示，具体器件条件请查阅本站原厂 PDF。', 'Prepared from public SiTime information. Original overviews and engineering reading notes are provided here; consult the local manufacturer PDFs for device conditions.')));
+    body.append(actions, el('p', 'editorial-detail-attribution', text('芯聚电子为您提供SiTime产品选型、原厂规格书、技术支持与询价服务。', 'SIMACITY provides SiTime product selection, manufacturer datasheets, technical support and quotations.')));
     $('#dialog-content').replaceChildren(body); if (!dialog.open) dialog.showModal();
   }
   dialog.addEventListener('close', () => { if (!dialog.open) currentItem = null; });
@@ -137,7 +137,7 @@
       solutionSearch: ['搜索应用或关键词', 'Search applications or keywords'], solutionNote: ['方案说明、选型关注点、相关产品和原厂规格书均可在本站查看，无需跳转原厂网站。', 'Read application notes, selection considerations, related products and manufacturer datasheets on this site.'],
       newsEyebrow: ['NEWS & INSIGHTS / 新闻动态', 'NEWS & INSIGHTS'], newsHeading: ['关注计时技术与行业动态。', 'Timing technology. Industry perspectives.'],
       newsIntro: [`${data.news.length} 条 SiTime 新闻与技术导读，保留原始发布日期，支持站内阅读。`, `${data.news.length} SiTime news and technical briefs, with original dates and on-site reading.`],
-      newsSearch: ['搜索新闻', 'Search updates'], newsYear: ['年份', 'Year'], newsNote: ['依据 SiTime 公开信息整理，提供中文题名、原创导读与工程阅读提示。', 'Prepared from public SiTime information, with editorial titles, original briefs and engineering reading notes.']
+      newsSearch: ['搜索新闻', 'Search updates'], newsYear: ['年份', 'Year'], newsNote: ['了解SiTime公司新闻、产品动态与计时技术，获取选型和应用支持。', 'Explore SiTime company news, product updates and timing technology, with selection and application support.']
     };
     document.querySelectorAll('[data-editorial-label]').forEach((node) => { node.textContent = text(...labels[node.dataset.editorialLabel]); });
     $('#solution-query').placeholder = text('例如：光模块、汽车、GNSS', 'Try optical modules, automotive or GNSS'); $('#news-query').placeholder = text('例如：AI、Titan、财务业绩', 'Try AI, Titan or financial results');
